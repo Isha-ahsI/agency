@@ -1,0 +1,14 @@
+//background.scss
+@each $color, $value in $theme-colors{
+    .bg-#{$color} {
+        background-color: $value !important;
+    }
+}
+
+.bg-gradient{
+    background-image: $gradient !important;   
+}
+    
+    
+    
+       

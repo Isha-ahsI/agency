@@ -1,0 +1,24 @@
+//button.scss
+@each $color, $value in $theme-colors{
+    .btn{
+        &.btn-#{$color} {
+            background-color: $value;
+            border:2px solid  $value;
+            &:hover {
+                background-color: transparent;
+                border:2px solid $value;
+                color: $value;
+            }
+        }
+        &.btn-outline-#{$color}{
+            border-color: $value;
+            color:$value;
+        }
+    }
+}
+
+.btn-close{
+    &:focus{
+        box-shadow: none;
+    }
+}

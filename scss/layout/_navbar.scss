@@ -1,0 +1,24 @@
+//navbar.scss
+.navbar{
+    .navbar-nav{
+        .nav-item{
+            .nav-link{
+                font-family: $font-family-base;
+                color: $nav-link-color;
+                font-size: $nav-link-font-size;
+                font-weight: $nav-link-font-weight;
+                padding: 0 $navbar-nav-link-padding-x;
+                &:hover{
+                    color:$nav-link-hover-color;
+                }
+                @media (max-width: 767.98px) {
+                    border: none;
+                }
+            }
+        }
+    }
+    .navbar-toggler{
+        padding: $navbar-toggler-padding-y $navbar-toggler-padding-x;
+        border-width: .15rem;
+    }
+}

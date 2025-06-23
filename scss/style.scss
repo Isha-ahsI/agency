@@ -1,0 +1,12 @@
+//style.scss
+
+@import "./variable";
+
+//layout
+@import"./layout/navbar";
+
+//components
+@import"./components/helper";
+@import "./components/utilities";
+@import "./components/background";
+@import"./components/button";

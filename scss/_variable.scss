@@ -1,0 +1,122 @@
+//variable.scss
+// scss-docs-start gray-color-variables
+$white:    #fff ;
+$gray-100: #f8f9fa ;
+$gray-200: #e9ecef ;
+$gray-300: #dee2e6 ;
+$gray-400: #ced4da ;
+$gray-500: #adb5bd ;
+$gray-600: #6c757d ;
+$gray-700: #495057 ;
+$gray-800: #343a40 ;
+$gray-900: #212529 ;
+$black:    #000 ;
+// scss-docs-end gray-color-variables
+
+// scss-docs-start color-variables
+$blue:   #023347;
+$indigo:  #6610f2 ;
+$purple:  #7233ea ;
+$pink:    #f23393 ;
+$red:     #dc2f2f ;
+$orange:  #f6781d ;
+$yellow:  #ffd323 ;
+$green:   #298f9c ;
+$teal:    #20c997 ;
+$cyan:    #2ad2e8 ;
+// scss-docs-end color-variables
+
+// scss-docs-start colors-map
+$colors: (
+  "blue":       $blue,
+  "indigo":     $indigo,
+  "purple":     $purple,
+  "pink":       $pink,
+  "red":        $red,
+  "orange":     $orange,
+  "yellow":     $yellow,
+  "green":      $green,
+  "teal":       $teal,
+  "cyan":       $cyan,
+  "black":      $black,
+  "white":      $white,
+  "gray":       $gray-600,
+  "gray-dark":  $gray-800
+) ;
+// scss-docs-end colors-map
+
+// scss-docs-start theme-color-variables
+$primary:       $blue ;
+$secondary:     $gray-600 ;
+$success:       $green ;
+$info:          $cyan ;
+$warning:       $yellow ;
+$danger:        $red ;
+$light:         $gray-100 ;
+$dark:          $gray-900 ;
+// scss-docs-end theme-color-variables
+
+// scss-docs-start theme-colors-map
+$theme-colors: (
+  "primary":    $primary,
+  "secondary":  $secondary,
+  "success":    $success,
+  "info":       $info,
+  "warning":    $warning,
+  "danger":     $danger,
+  "light":      $light,
+  "dark":       $dark
+) ;
+// scss-docs-end theme-colors-map
+
+// stylelint-enable value-keyword-case
+$font-family-base:  "Inter", sans-serif;
+$font-family-code: "Ubuntu", sans-serif;
+
+// $font-size-root affects the value of `rem`, which is used for as well font sizes, paddings, and margins
+// $font-size-base affects the font size of the body text
+$font-size-root:      null ;
+$font-size-base:      1rem ; 
+$font-size-sm:        $font-size-base * .875 ;
+$font-size-lg:        $font-size-base * 1.25 ;
+
+$font-weight-lighter: lighter ;
+$font-weight-light:   300 ;
+$font-weight-normal:  400 ;
+$font-weight-medium:  500 ;
+$font-weight-semibold:600 ;
+$font-weight-bold:    700 ;
+$font-weight-bolder:  bolder;
+
+$font-weight-base:    $font-weight-normal ;
+
+// scss-docs-start border-radius-variables
+$border-radius:.375rem ;
+$border-radius-sm: .25rem ;
+$border-radius-lg: .5rem ;
+$border-radius-xl: 1rem ;
+$border-radius-xxl:2rem ;
+$border-radius-pill:50rem ;
+// scss-docs-end border-radius-variables
+// fusv-disable
+$border-radius-2xl:$border-radius-xxl ; // Deprecated in v5.3.0
+// fusv-enable
+
+// scss-docs-start nav-variables
+$nav-link-color:$primary;
+$nav-link-hover-color:$success;
+$navbar-nav-link-padding-x:.75rem;
+$nav-link-font-size: 1rem;
+$nav-link-font-weight:$font-weight-medium;
+
+$navbar-toggler-padding-y:          .25rem ;
+$navbar-toggler-padding-x:          .5rem ;
+$navbar-toggler-font-size:          1rem;
+$navbar-toggler-border-radius:      $border-radius;
+$navbar-toggler-focus-width:        .25rem ;
+$navbar-toggler-transition:         box-shadow .15s ease-in-out ;
+
+// scss-docs-start variable-gradient
+$gradient: linear-gradient(180deg,rgba($success, .30), rgba($primary, .10));
+// scss-docs-end variable-gradient
+
