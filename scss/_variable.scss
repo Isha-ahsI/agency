@@ -90,6 +90,16 @@ $font-weight-bolder:  bolder;
 
 $font-weight-base:    $font-weight-normal ;
 
+// scss-docs-start display-headings
+$display-font-sizes: (
+  1: 5rem,
+  2: 4.5rem,
+  3: 4rem,
+  4: 3.5rem,
+  5: 3rem,
+  6: 2.5rem
+) ;
+
 // scss-docs-start border-radius-variables
 $border-radius:.375rem ;
 $border-radius-sm: .25rem ;
@@ -117,6 +127,7 @@ $navbar-toggler-focus-width:        .25rem ;
 $navbar-toggler-transition:         box-shadow .15s ease-in-out ;
 
 // scss-docs-start variable-gradient
-$gradient: linear-gradient(180deg,rgba($success, .30), rgba($primary, .10));
+$gradient: linear-gradient(180deg,rgba($success, .80), rgba($primary, .80));
 // scss-docs-end variable-gradient
+
 

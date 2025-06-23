@@ -12,3 +12,10 @@ h1,h2,h3,h4,h5,h6{
         color: $value !important;
     }
 }
+
+.text-gradiant{
+     display: inline-block;
+    background:$gradient;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

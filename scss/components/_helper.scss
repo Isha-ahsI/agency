@@ -6,5 +6,11 @@
     background-position: center;
     width: 100%;
     padding-top: 50px;
+    .metric{
+        position: absolute;
+        top:55%;
+        left:55%;
+        transform: translate(-55%,-55%);
+    }
 }
 
