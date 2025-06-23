@@ -17,13 +17,19 @@
   padding: 0.25rem 0.5rem;
   border-width: 0.15rem;
 }
+@media (max-width: 575.98px) {
+  .navbar .navbar-toggler {
+    padding: 0.2rem 0.3rem;
+    font-size: 18px;
+  }
+}
 
 .hero-section-primary {
   background-image: url("../../images/hero-bg.png");
   background-size: cover;
   background-position: center;
   width: 100%;
-  padding-top: 100px;
+  padding-top: 50px;
 }
 
 body {

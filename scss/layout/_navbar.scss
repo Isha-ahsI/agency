@@ -20,5 +20,9 @@
     .navbar-toggler{
         padding: $navbar-toggler-padding-y $navbar-toggler-padding-x;
         border-width: .15rem;
+        @media (max-width: 575.98px) {
+           padding: 0.2rem 0.3rem;
+           font-size: 18px;
+        }
     }
 }
