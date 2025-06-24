@@ -1,6 +1,11 @@
 //button.scss
 @each $color, $value in $theme-colors{
     .btn{
+        padding: $btn-padding-y $btn-padding-x;
+        @media (min-width: 0) and (max-width: 575.98px) {
+            padding: $btn-padding-y-sm $btn-padding-x-sm;
+            font-size:$btn-font-size-sm ;
+        }
         &.btn-#{$color} {
             background-color: $value;
             border:2px solid  $value;

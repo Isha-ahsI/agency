@@ -1,0 +1,9 @@
+//offcanvas.scss
+
+.offcanvas{
+    .offcanvas-body,.offcanvas-footer{
+         @media (min-width: 0) and (max-width: 767.98px){
+            border-top: 1px solid $secondary;
+         }
+    }
+}

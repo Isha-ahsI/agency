@@ -11,58 +11,89 @@
 </head>
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-md fixed-top bg-transparent">
-        <div class="container-fluid flex-md-column justify-content-center align-items-center">
-            <div class="row w-100 align-items-center mb-2">
-                <div class="col-md-4  text-nowrap">
-                    <span class="d-md-block d-none mail-id"><i class="ri-mail-fill"></i> info@boowebsite.com</span>
-                </div>
-                 <div class="col-md-4 col-sm-8 col-6">
+    <nav class="navbar navbar-expand-md fixed-top" id="mainNavbar">
+        <div class="container flex-md-column justify-content-center align-items-center">
+            <div class="d-flex justify-content-between align-items-center w-100">
+                <span class="d-md-block d-none mail-id"><i class="ri-mail-fill"></i> info@boowebsite.com</span>
+                <div class="nav-logo">
                     <a class="navbar-brand d-flex justify-content-md-center align-items-center text-center m-0" href="#">
-                         <!-- <img src="/docs/5.3/assets/brand/bootstrap-logo.svg" alt="" width="30" height="24" class="d-inline-block align-text-top me-2"> -->
-                         <h4 class="m-0 text-primary">Strivo</h4>
-                     </a> 
+                        <h4 class="m-0 text-primary">Strivo</h4>
+                    </a> 
                 </div>
-                <div class="col-md-4 col-sm-2 col-3 text-end">
-                    <a href="#" class="d-block profile-icon"><img src="./images/profile-icon.png" alt="userprofile"></a>
-                </div>
-                <div class="col-sm-2 col-3">
-                    <button class="navbar-toggler shadow-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                </div>
+                <button class="btn btn-success ms-auto">Get Started</button>
+                <button class="navbar-toggler shadow-none ms-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
             </div>
+            
             <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                 <div class="offcanvas-header">
                     <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
-                <div class="offcanvas-body small">
+                <div class="offcanvas-body">
                     <ul class="navbar-nav nav-underline justify-content-end flex-grow-1">
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#">Home</a>
+                            <a class="nav-link" aria-current="page" href="#">
+                                <i class="ri-home-4-line fs-5 d-md-none me-1"></i>
+                                <span>Home</span>
+                            </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">About Us</a>
-                        </li>
-                            <li class="nav-item">
-                            <a class="nav-link" href="#">Services</a>
-                        </li>
-                         <li class="nav-item">
-                            <a class="nav-link" href="#">Features</a>
-                        </li>
-                            <li class="nav-item">
-                            <a class="nav-link" href="#">Pricing</a>
-                        </li>
-                            <li class="nav-item">
-                            <a class="nav-link" href="#">Client</a>
+                            <a class="nav-link" href="#">
+                                 <i class="ri-information-line fs-5 d-md-none me-1"></i>
+                                 <span>About Us</span>
+                            </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Contact Us</a>
+                            <a class="nav-link" href="#">
+                                 <i class="ri-service-line fs-5 d-md-none me-1"></i> 
+                                 <span>Services</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                 <i class="ri-star-line fs-5 d-md-none me-1"></i>
+                                 <span>Features</span>
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i class="ri-money-dollar-circle-line fs-5 d-md-none me-1"></i>
+                                <span>Pricing</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i class="ri-layout-4-line fs-5 d-md-none me-1"></i>
+                                <span>Work</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i class="ri-send-plane-line fs-5 d-md-none me-1"></i>
+                                <span>Contact Us</span>
+                            </a>
                         </li>
                     </ul>
                 </div>
-                <div class="offcanvas-footer d-md-none d-block">
+                <div class="d-md-none p-3">
+                    <ul class="navbar-nav list-unstyled">
+                        <li class="nav-item">
+                            <a class="nav-link mb-3" href="#">
+                               <i class="ri-question-line fs-5"></i>
+                                <span>Help</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                               <i class="ri-logout-circle-r-line fs-5"></i>
+                                <span>Log out</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="offcanvas-footer d-md-none d-block p-4">
                     <span><i class="ri-mail-fill"></i> info@boowebsite.com</span>
                 </div>
             </div>
@@ -70,15 +101,27 @@
     </nav>
     
     <!-- Hero Section -->
-     <section class="hero-section-primary min-vh-100 d-flex align-items-center justify-content-center position-relative">
+     <section class="hero-section-primary overflow-hidden min-vh-100 d-flex align-items-center">
        <div class="container">
-            <div class="row justify-content-center align-items-center">
-                <div class="col-md-6 order-md-1 order-2 hero-content text-md-start text-center">
+            <div class="row align-items-center">
+                <div class="col-md-6 order-md-1 order-2  hero-content text-md-start text-center">
                     <h1 class="text-gradiant display-5 fw-medium mb-2">Smart <span class="display-4 fw-bold text-light">Strategies</span> to</h1>
                     <h1 class="text-gradiant display-5 fw-medium mb-2">Fuel Business</h1>
                     <h1 class="text-gradiant display-4 fw-bold mb-4">Growth</h1>
-                    <p class="text-secondary mb-3">We blend creative thinking with proven strategies to help your business grow smarter and faster — turning bold ideas into measurable results.</p>
-                    <a href="#" class="btn btn-success">Discover More</a>
+                    <p class="text-primary mb-4">We blend creative thinking with proven strategies to help your business grow smarter and faster — turning bold ideas into measurable results.</p>
+                    <div class="d-sm-flex justify-content-md-start justify-content-sm-center align-items-sm-center text-sm-start">
+                        <ul class="list-1 list-unstyled text-primary pe-sm-4 mb-sm-3 mb-0 lh-lg">
+                            <li><i class="ri-checkbox-circle-fill"></i> Innovative Solutions</li>
+                            <li><i class="ri-checkbox-circle-fill"></i> Strategic Partnerships</li>
+                            <li><i class="ri-checkbox-circle-fill"></i> Expertise and Consulting</li>
+                        </ul>
+                        <ul class="list-2 list-unstyled text-primary ps-sm-4 lh-lg">
+                            <li><i class="ri-checkbox-circle-fill"></i> Customized Solutions</li>
+                            <li><i class="ri-checkbox-circle-fill"></i> Timely and Reliable</li>
+                            <li><i class="ri-checkbox-circle-fill"></i> Continuous Improvement</li>
+                        </ul>
+                    </div>
+                    <a href="#" class="btn btn-success">Explore More</a>
                 </div>
                 <div class="col-lg-5 offset-lg-1 col-md-6 order-md-2 order-1 mb-md-0 mb-4  hero-img">
                     <div class="position-relative">
@@ -95,8 +138,8 @@
      
     
     <script src="./js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.7/gsap.min.js" integrity="sha512-f6bQMg6nkSRw/xfHw5BCbISe/dJjXrVGfz9BSDwhZtiErHwk7ifbmBEtF9vFW8UNIQPhV2uEFVyI/UHob9r7Cw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js" integrity="sha512-P2IDYZfqSwjcSjX0BKeNhwRUH8zRPGlgcWl5n6gBLzdi4Y5/0O4zaXrtO4K9TZK6Hn1BenYpKowuCavNandERg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.7/gsap.min.js" integrity="sha512-f6bQMg6nkSRw/xfHw5BCbISe/dJjXrVGfz9BSDwhZtiErHwk7ifbmBEtF9vFW8UNIQPhV2uEFVyI/UHob9r7Cw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js" integrity="sha512-P2IDYZfqSwjcSjX0BKeNhwRUH8zRPGlgcWl5n6gBLzdi4Y5/0O4zaXrtO4K9TZK6Hn1BenYpKowuCavNandERg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
     <script src="./js/script.js"></script>
 </body>
 </html>

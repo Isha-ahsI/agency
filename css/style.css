@@ -1,23 +1,43 @@
+.navbar.nav-scroll {
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+  z-index: 999;
+}
+@media (min-width: 768px) {
+  .navbar .nav-logo {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    left: 0;
+    right: 0;
+  }
+}
 .navbar .navbar-nav .nav-item .nav-link {
   font-family: "Inter", sans-serif;
   color: #023347;
   font-size: 1rem;
   font-weight: 500;
-  padding: 0 0.75rem;
 }
 .navbar .navbar-nav .nav-item .nav-link:hover {
   color: #298f9c;
 }
-@media (max-width: 767.98px) {
+@media (min-width: 768px) {
+  .navbar .navbar-nav .nav-item .nav-link {
+    padding: 0.25rem 0.75rem;
+  }
+}
+@media (min-width: 0) and (max-width: 767.98px) {
   .navbar .navbar-nav .nav-item .nav-link {
     border: none;
+    padding: 0 0;
   }
 }
 .navbar .navbar-toggler {
-  padding: 0.25rem 0.5rem;
+  padding: 0.25rem 0.75rem;
   border-width: 0.15rem;
 }
-@media (max-width: 575.98px) {
+@media (min-width: 0) and (max-width: 575.98px) {
   .navbar .navbar-toggler {
     padding: 0.2rem 0.3rem;
     font-size: 18px;
@@ -29,13 +49,18 @@
   background-size: cover;
   background-position: center;
   width: 100%;
-  padding-top: 50px;
+  padding-top: 100px;
 }
-.hero-section-primary .metric {
+.hero-section-primary .hero-img .metric {
   position: absolute;
   top: 55%;
   left: 55%;
   transform: translate(-55%, -55%);
+}
+@media (min-width: 576px) {
+  .hero-section-primary .hero-content ul.list-1 {
+    border-right: 2px solid #6c757d;
+  }
 }
 
 body {
@@ -122,6 +147,15 @@ h1, h2, h3, h4, h5, h6 {
   background-image: linear-gradient(180deg, rgba(41, 143, 156, 0.8), rgba(2, 51, 71, 0.8)) !important;
 }
 
+.btn {
+  padding: 0.55rem 1rem;
+}
+@media (min-width: 0) and (max-width: 575.98px) {
+  .btn {
+    padding: 0.4rem 0.6rem;
+    font-size: 0.9rem;
+  }
+}
 .btn.btn-primary {
   background-color: #023347;
   border: 2px solid #023347;
@@ -136,6 +170,15 @@ h1, h2, h3, h4, h5, h6 {
   color: #023347;
 }
 
+.btn {
+  padding: 0.55rem 1rem;
+}
+@media (min-width: 0) and (max-width: 575.98px) {
+  .btn {
+    padding: 0.4rem 0.6rem;
+    font-size: 0.9rem;
+  }
+}
 .btn.btn-secondary {
   background-color: #6c757d;
   border: 2px solid #6c757d;
@@ -150,6 +193,15 @@ h1, h2, h3, h4, h5, h6 {
   color: #6c757d;
 }
 
+.btn {
+  padding: 0.55rem 1rem;
+}
+@media (min-width: 0) and (max-width: 575.98px) {
+  .btn {
+    padding: 0.4rem 0.6rem;
+    font-size: 0.9rem;
+  }
+}
 .btn.btn-success {
   background-color: #298f9c;
   border: 2px solid #298f9c;
@@ -164,6 +216,15 @@ h1, h2, h3, h4, h5, h6 {
   color: #298f9c;
 }
 
+.btn {
+  padding: 0.55rem 1rem;
+}
+@media (min-width: 0) and (max-width: 575.98px) {
+  .btn {
+    padding: 0.4rem 0.6rem;
+    font-size: 0.9rem;
+  }
+}
 .btn.btn-info {
   background-color: #2ad2e8;
   border: 2px solid #2ad2e8;
@@ -178,6 +239,15 @@ h1, h2, h3, h4, h5, h6 {
   color: #2ad2e8;
 }
 
+.btn {
+  padding: 0.55rem 1rem;
+}
+@media (min-width: 0) and (max-width: 575.98px) {
+  .btn {
+    padding: 0.4rem 0.6rem;
+    font-size: 0.9rem;
+  }
+}
 .btn.btn-warning {
   background-color: #ffd323;
   border: 2px solid #ffd323;
@@ -192,6 +262,15 @@ h1, h2, h3, h4, h5, h6 {
   color: #ffd323;
 }
 
+.btn {
+  padding: 0.55rem 1rem;
+}
+@media (min-width: 0) and (max-width: 575.98px) {
+  .btn {
+    padding: 0.4rem 0.6rem;
+    font-size: 0.9rem;
+  }
+}
 .btn.btn-danger {
   background-color: #dc2f2f;
   border: 2px solid #dc2f2f;
@@ -206,6 +285,15 @@ h1, h2, h3, h4, h5, h6 {
   color: #dc2f2f;
 }
 
+.btn {
+  padding: 0.55rem 1rem;
+}
+@media (min-width: 0) and (max-width: 575.98px) {
+  .btn {
+    padding: 0.4rem 0.6rem;
+    font-size: 0.9rem;
+  }
+}
 .btn.btn-light {
   background-color: #f8f9fa;
   border: 2px solid #f8f9fa;
@@ -220,6 +308,15 @@ h1, h2, h3, h4, h5, h6 {
   color: #f8f9fa;
 }
 
+.btn {
+  padding: 0.55rem 1rem;
+}
+@media (min-width: 0) and (max-width: 575.98px) {
+  .btn {
+    padding: 0.4rem 0.6rem;
+    font-size: 0.9rem;
+  }
+}
 .btn.btn-dark {
   background-color: #212529;
   border: 2px solid #212529;
@@ -236,4 +333,10 @@ h1, h2, h3, h4, h5, h6 {
 
 .btn-close:focus {
   box-shadow: none;
+}
+
+@media (min-width: 0) and (max-width: 767.98px) {
+  .offcanvas .offcanvas-body, .offcanvas .offcanvas-footer {
+    border-top: 1px solid #6c757d;
+  }
 }/*# sourceMappingURL=style.css.map */

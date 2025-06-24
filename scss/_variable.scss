@@ -100,6 +100,15 @@ $display-font-sizes: (
   6: 2.5rem
 ) ;
 
+// scss-docs-start btn-variables
+$btn-padding-y: .55rem ;
+$btn-padding-x: 1rem ;
+ 
+$btn-padding-y-sm: 0.4rem;
+$btn-padding-x-sm: 0.6rem;
+$btn-font-size-sm: .9rem;
+// scss-docs-end btn-variables
+
 // scss-docs-start border-radius-variables
 $border-radius:.375rem ;
 $border-radius-sm: .25rem ;
@@ -120,7 +129,7 @@ $nav-link-font-size: 1rem;
 $nav-link-font-weight:$font-weight-medium;
 
 $navbar-toggler-padding-y:          .25rem ;
-$navbar-toggler-padding-x:          .5rem ;
+$navbar-toggler-padding-x:          .75rem ;
 $navbar-toggler-font-size:          1rem;
 $navbar-toggler-border-radius:      $border-radius;
 $navbar-toggler-focus-width:        .25rem ;

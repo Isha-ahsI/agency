@@ -5,12 +5,23 @@
     background-size: cover;
     background-position: center;
     width: 100%;
-    padding-top: 50px;
-    .metric{
-        position: absolute;
-        top:55%;
-        left:55%;
-        transform: translate(-55%,-55%);
+    padding-top: 100px;
+    .hero-img{
+        .metric{
+            position: absolute;
+            top:55%;
+            left:55%;
+            transform: translate(-55%,-55%);
+        }
+    }
+    .hero-content{
+        ul{
+            &.list-1{
+                @media (min-width:576px) {
+                   border-right: 2px solid $secondary;
+                }
+            }
+        }
     }
 }
 
