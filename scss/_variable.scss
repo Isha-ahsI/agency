@@ -14,7 +14,7 @@ $black:    #000 ;
 // scss-docs-end gray-color-variables
 
 // scss-docs-start color-variables
-$blue:   #023347;
+$blue:    #023b51;
 $indigo:  #6610f2 ;
 $purple:  #7233ea ;
 $pink:    #f23393 ;
@@ -78,7 +78,7 @@ $font-family-code: "Ubuntu", sans-serif;
 $font-size-root:      null ;
 $font-size-base:      1rem ; 
 $font-size-sm:        $font-size-base * .875 ;
-$font-size-lg:        $font-size-base * 1.25 ;
+$font-size-lg:        $font-size-base * 2.25 ;
 
 $font-weight-lighter: lighter ;
 $font-weight-light:   300 ;
@@ -89,6 +89,11 @@ $font-weight-bold:    700 ;
 $font-weight-bolder:  bolder;
 
 $font-weight-base:    $font-weight-normal ;
+
+$line-height-base:            1.5 ;
+$line-height-sm:              1.25 ;
+$line-height-lg:              2 ;
+
 
 // scss-docs-start display-headings
 $display-font-sizes: (
@@ -101,32 +106,32 @@ $display-font-sizes: (
 ) ;
 
 // scss-docs-start btn-variables
-$btn-padding-y: .55rem ;
-$btn-padding-x: 1rem ;
+$btn-padding-y:     .55rem ;
+$btn-padding-x:     1rem ;
  
-$btn-padding-y-sm: 0.4rem;
-$btn-padding-x-sm: 0.6rem;
-$btn-font-size-sm: .9rem;
+$btn-padding-y-sm:     0.4rem;
+$btn-padding-x-sm:     0.6rem;
+$btn-font-size-sm:    .9rem;
 // scss-docs-end btn-variables
 
 // scss-docs-start border-radius-variables
-$border-radius:.375rem ;
-$border-radius-sm: .25rem ;
-$border-radius-lg: .5rem ;
-$border-radius-xl: 1rem ;
-$border-radius-xxl:2rem ;
-$border-radius-pill:50rem ;
+$border-radius:           .375rem ;
+$border-radius-sm:        .25rem ;
+$border-radius-lg:        .5rem ;
+$border-radius-xl:        1rem ;
+$border-radius-xxl:       2rem ;
+$border-radius-pill:      50rem ;
 // scss-docs-end border-radius-variables
 // fusv-disable
-$border-radius-2xl:$border-radius-xxl ; // Deprecated in v5.3.0
+$border-radius-2xl:             5rem ; // Deprecated in v5.3.0
 // fusv-enable
 
 // scss-docs-start nav-variables
-$nav-link-color:$primary;
-$nav-link-hover-color:$success;
-$navbar-nav-link-padding-x:.75rem;
-$nav-link-font-size: 1rem;
-$nav-link-font-weight:$font-weight-medium;
+$nav-link-color:                  $primary;
+$nav-link-hover-color:            $success;
+$navbar-nav-link-padding-x:       .75rem;
+$nav-link-font-size:              1rem;
+$nav-link-font-weight:            $font-weight-medium;
 
 $navbar-toggler-padding-y:          .25rem ;
 $navbar-toggler-padding-x:          .75rem ;
@@ -138,5 +143,19 @@ $navbar-toggler-transition:         box-shadow .15s ease-in-out ;
 // scss-docs-start variable-gradient
 $gradient: linear-gradient(180deg,rgba($success, .80), rgba($primary, .80));
 // scss-docs-end variable-gradient
+
+// scss-docs-start box-shadow-variables
+$box-shadow:                  0 .5rem 1rem rgba($black, .3) ;
+$box-shadow-sm:               0 .125rem .25rem rgba($black, .075) ;
+$box-shadow-lg:               0 1rem 3rem rgba($black, .175) ;
+$box-shadow-inset:            inset 0 1px 2px rgba($black, .075) ;
+// scss-docs-end box-shadow-variables
+
+$transition-base:             all .2s ease-in-out ;
+$transition-fade:             opacity .15s linear ;
+// scss-docs-start collapse-transition
+$transition-collapse:         height .35s ease ;
+$transition-collapse-width:   width .35s ease ;
+// scss-docs-end collapse-transition
 
 
