@@ -35,6 +35,43 @@ document.addEventListener("DOMContentLoaded", function () {
       navbar.classList.remove("nav-scroll");
     }
   });
+
+  //swiper for logos
+   const swiper1 = new Swiper("#swiper1", {
+    slidesPerView: "auto",
+    spaceBetween: 50, 
+    loop: true,
+    speed: 3000,
+    autoplay: {
+      delay: 0, 
+      reverseDirection: false,
+      disableOnInteraction: false,
+    },
+    allowTouchMove: false, 
+    breakpoints: {
+      0: { slidesPerView: 3 },
+      768: { slidesPerView: 5 },
+      992: { slidesPerView: 7 },
+    },
+  });
+
+   const swiper2 = new Swiper("#swiper2", {
+    slidesPerView: "auto",
+    spaceBetween: 50,
+    loop: true,
+    speed: 2500,
+    autoplay: {
+      delay: 0, 
+      reverseDirection: true, 
+      disableOnInteraction: false,
+    },
+    allowTouchMove: false, 
+    breakpoints: {
+      0: { slidesPerView: 3 },
+      768: { slidesPerView: 5 },
+      992: { slidesPerView: 7 },
+    },
+  });
 });
 
 

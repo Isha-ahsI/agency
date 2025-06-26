@@ -567,4 +567,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 .card.service-card.service-card-soft-dark:hover {
   border-color: #212529;
+}
+
+.swiper.partner-swiper .swiper-wrapper {
+  transition-timing-function: linear !important;
 }/*# sourceMappingURL=style.css.map */

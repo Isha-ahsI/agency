@@ -1,0 +1,8 @@
+//swiper
+.swiper{
+    &.partner-swiper{
+        .swiper-wrapper{
+            transition-timing-function: linear !important;
+        }
+    }
+}
