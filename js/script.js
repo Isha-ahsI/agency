@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
   //counting of metric
   const counters = document.querySelectorAll('.counter');
-  
+
   counters.forEach(counter => {
     const updateCount = () => {
       const target = +counter.getAttribute('data-target');
@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
       if (current < target) {
         counter.innerText = Math.ceil(current + increment);
-        setTimeout(updateCount, 15);
+        setTimeout(updateCount, 20);
       } else {
         counter.innerText = "20k+";
       }
@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const observer = new IntersectionObserver(entries => {
       if (entries[0].isIntersecting) {
-        setTimeout(updateCount, 2000);
+        setTimeout(updateCount, 2500);
         observer.unobserve(counter);
       }
     });
@@ -26,42 +26,90 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   //sticky navbar
-   const navbar = document.getElementById("mainNavbar");
+  const navbar = document.getElementById("mainNavbar");
 
-    window.addEventListener("scroll", function () {
-      if (window.scrollY > 10) {
-        navbar.classList.add("nav-scroll");
-      } else {
-        navbar.classList.remove("nav-scroll");
-      }
-    });
+  window.addEventListener("scroll", function () {
+    if (window.scrollY > 10) {
+      navbar.classList.add("nav-scroll");
+    } else {
+      navbar.classList.remove("nav-scroll");
+    }
+  });
 });
 
 
 //gsap
-var tl=gsap.timeline()
+gsap.registerPlugin(ScrollTrigger);
+var tl = gsap.timeline()
 
 //navbar/hero section
-tl.from(".nav-item",{
-    y:-40,
-    opacity:0,
-    delay:0.4,
-    duration:0.5,
-    stagger:0.1
+tl.from(".navbar .nav-logo", {
+  scale: 0,
+  opacity: 0,
+  delay: 0.3,
+  duration: 1,
 })
 
-tl.from(".mail-id,.hero-content",{
-    x:-100,
-    opacity:0,
-    delay:0.5,
-    duration:1,
-    stagger:0.2
-},"0.5")
+tl.from(".navbar .navbar-nav .nav-item", {
+  y: -40,
+  opacity: 0,
+  delay: 0.4,
+  duration: 0.5,
+  stagger: 0.1
+}, "0.3")
 
-tl.from(".profile-icon,.navbar-toggler,.hero-img",{
-    x:100,
-    opacity:0,
-    delay:0.5,
-    duration:1,
-    stagger:0.2
-},"0.5")
+tl.from(".navbar .mail-id,.hero-section-primary .hero-content", {
+  x: -100,
+  opacity: 0,
+  delay: 0.7,
+  duration: 1,
+  stagger: 0.3
+}, "0.7")
+
+tl.from(".navbar .nav-btn,.navbar .navbar-toggler", {
+  x: 100,
+  opacity: 0,
+  delay: 0.7,
+  duration: 1,
+  stagger: 0.3
+}, "0.7")
+
+tl.from(".hero-section-primary .hero-img", {
+  scale: 0,
+  opacity: 0,
+  delay: 0.7,
+  duration: 2,
+}, "0.7")
+
+var tl2 = gsap.timeline()
+// service
+tl2.from(".service-section .service-title", {
+  scale: 0,
+  delay: 1,
+  duration: 2,
+  scrollTrigger: {
+    trigger: ".service-section",
+    scroller: "body",
+    markers: false,
+   end:"top 30%",
+   start:'top 70%',
+    scrub: 2,
+  }
+})
+
+tl2.from(".service-section .service-card", {
+  opacity: 0,
+  delay: 2,
+  duration: 2,
+  scrollTrigger: {
+    trigger: ".service-section",
+    scroller: "body",
+    markers: false,
+   end:"top 30%",
+   start:'top 70%',
+    scrub: 2,
+  }
+
+})
+
+

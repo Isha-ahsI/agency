@@ -489,11 +489,10 @@ h1, h2, h3, h4, h5, h6 {
   transition: all 0.4s ease-in-out;
 }
 .card.service-card .card-body .card-icon {
+  display: inline-block;
   border: 5px solid #fff;
-  font-size: 2.25rem;
+  background-color: #fff;
   border-radius: 2rem;
-  background-image: linear-gradient(180deg, rgba(41, 143, 156, 0.8), rgba(2, 59, 81, 0.8));
-  color: #fff;
 }
 .card.service-card .card-body .card-title {
   width: -moz-fit-content;
@@ -503,10 +502,10 @@ h1, h2, h3, h4, h5, h6 {
 .card.service-card .card-body .card-title::after {
   content: "";
   position: absolute;
-  bottom: -30%;
+  bottom: -10px;
   left: 0%;
   width: 100%;
-  height: 5%;
+  height: 1px;
   background-color: #023b51;
   transition: transform 0.4s ease;
   transform-origin: right;

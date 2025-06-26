@@ -1,4 +1,7 @@
 //helper.scss
+.section-lg{
+    padding: 100px 0px;
+}
 
 .hero-section-primary{
     background-image: url('../../images/hero-bg.png');
@@ -22,6 +25,19 @@
                 }
             }
         }
+    }
+}
+.underline-after{
+    &::after{
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 25%;
+        right: 0;
+        transform: translateY(-50%);
+        height: 1px;
+        width: 50%;
+        background-color:rgba($primary, 0.3); 
     }
 }
 
