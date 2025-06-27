@@ -1,0 +1,33 @@
+//img.scss
+.wave-bg {
+    background-image: url("../../images/about-bg.svg");
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    .aboutus-img {
+        position: relative;
+        border-radius: 33% 65% 83% 18% / 73% 55% 46% 27%;
+        z-index: 2;
+    }
+    .custom-border {
+        height: 100%;
+        width: 100%;
+        top: 0%;
+        left: 0;
+        border: 1px solid $primary;
+        background: transparent;
+        border-radius: 100% 48% 25% 99% / 44% 38% 100% 100%;
+        z-index: 1;
+    }
+    .custom-bg{
+        height: 100%;
+        width: 100%;
+        top: 0%;
+        left: 0%;
+        background-color: rgba($primary, 0.5);
+        border-radius:33% 65% 83% 18% / 73% 55% 46% 27%;
+        z-index: 0;
+    }
+}
