@@ -37,17 +37,17 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   //swiper for logos
-   const swiper1 = new Swiper("#swiper1", {
+  const swiper1 = new Swiper("#swiper1", {
     slidesPerView: "auto",
-    spaceBetween: 50, 
+    spaceBetween: 50,
     loop: true,
     speed: 3000,
     autoplay: {
-      delay: 0, 
+      delay: 0,
       reverseDirection: false,
       disableOnInteraction: false,
     },
-    allowTouchMove: false, 
+    allowTouchMove: false,
     breakpoints: {
       0: { slidesPerView: 3 },
       768: { slidesPerView: 5 },
@@ -55,17 +55,17 @@ document.addEventListener("DOMContentLoaded", function () {
     },
   });
 
-   const swiper2 = new Swiper("#swiper2", {
+  const swiper2 = new Swiper("#swiper2", {
     slidesPerView: "auto",
     spaceBetween: 50,
     loop: true,
     speed: 2500,
     autoplay: {
-      delay: 0, 
-      reverseDirection: true, 
+      delay: 0,
+      reverseDirection: true,
       disableOnInteraction: false,
     },
-    allowTouchMove: false, 
+    allowTouchMove: false,
     breakpoints: {
       0: { slidesPerView: 3 },
       768: { slidesPerView: 5 },
@@ -118,35 +118,61 @@ tl.from(".hero-section-primary .hero-img", {
   duration: 2,
 }, "0.7")
 
-var tl2 = gsap.timeline()
 // service
+var tl2 = gsap.timeline({
+   scrollTrigger: {
+    trigger: ".service-section",
+    scroller: "body",
+    markers: true,
+    end: "top 30%",
+    start: 'top 70%',
+   }
+})
 tl2.from(".service-section .service-title", {
   scale: 0,
-  delay: 1,
   duration: 2,
-  scrollTrigger: {
-    trigger: ".service-section",
-    scroller: "body",
-    markers: false,
-   end:"top 30%",
-   start:'top 70%',
-    scrub: 2,
-  }
 })
 
-tl2.from(".service-section .service-card", {
+tl2.from(".service-section .card.service-card", {
   opacity: 0,
-  delay: 2,
   duration: 2,
-  scrollTrigger: {
-    trigger: ".service-section",
-    scroller: "body",
-    markers: false,
-   end:"top 30%",
-   start:'top 70%',
-    scrub: 2,
-  }
-
 })
 
+//about us
+var tl3 = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".aboutus-section",
+    scroller: "body",
+    markers: false,
+    start: "top 0%",
+    end: "top 30%",
 
+  }
+})
+tl3.from(".aboutus-section .aboutus-content", {
+  x: 100,
+  opacity: 0,
+  delay: 0.7,
+  duration: 2
+})
+
+tl3.from(".aboutus-section .aboutus-img-wrap", {
+  scale: 0,
+  opacity: 0,
+  duration: 2
+},-0.1)
+
+//partner
+var tl4 = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".partner-section",
+    scroller: "body",
+    markers: false,
+    start: "top 30%",
+    end: "top 30%",
+  }
+})
+tl4.from(".partner-section .partner-swiper", {
+  opacity: 0,
+  duration: 2
+})
