@@ -569,6 +569,38 @@ h1, h2, h3, h4, h5, h6 {
   border-color: #212529;
 }
 
+.wave-bg {
+  background-image: url("../../images/about-bg.svg");
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.wave-bg .aboutus-img {
+  position: relative;
+  border-radius: 33% 65% 83% 18%/73% 55% 46% 27%;
+  z-index: 2;
+}
+.wave-bg .custom-border {
+  height: 100%;
+  width: 100%;
+  top: 0%;
+  left: 0;
+  border: 1px solid #023b51;
+  background: transparent;
+  border-radius: 100% 48% 25% 99%/44% 38% 100% 100%;
+  z-index: 1;
+}
+.wave-bg .custom-bg {
+  height: 100%;
+  width: 100%;
+  top: 0%;
+  left: 0%;
+  background-color: rgba(2, 59, 81, 0.5);
+  border-radius: 33% 65% 83% 18%/73% 55% 46% 27%;
+  z-index: 0;
+}
+
 .swiper.partner-swiper .swiper-wrapper {
   transition-timing-function: linear !important;
 }/*# sourceMappingURL=style.css.map */
