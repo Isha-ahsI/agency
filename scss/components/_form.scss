@@ -1,0 +1,20 @@
+//form
+form {
+    .input-group{
+        .form-control {
+            border-color: $white;
+            box-shadow:none ;
+            padding: 10px 10px;
+        }
+        .input-group-text{
+            background-color: $success;
+            color: $white;
+            border: transparent;
+            &:hover{
+                .input-icon{
+                    transform: translateX(5px);
+                }
+            }
+        }
+    }
+}
