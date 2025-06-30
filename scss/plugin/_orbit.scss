@@ -1,0 +1,217 @@
+//orbit.scss
+
+.hero-section-primary {
+    .hero-img {
+        .orbit-container {
+            width: 100%;
+            max-width: 500px;
+            height: 500px;
+            position: relative;
+        }
+
+        .orbit {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            border: 2px dashed rgba($success, 0.3);
+            border-radius: 50%;
+            transform: translate(-50%, -50%);
+            animation: rotate 30s linear infinite;
+        }
+
+        .orbit-inner {
+            width: 200px;
+            height: 200px;
+            animation-duration: 80s;
+        }
+
+        .orbit-middle {
+            width: 350px;
+            height: 350px;
+            animation-duration: 60s;
+        }
+
+        .orbit-outer {
+            width: 500px;
+            height: 500px;
+            animation-duration: 40s;
+        }
+
+        .orbit-img,
+        .orbit-dots {
+            border-radius: 50%;
+            overflow: hidden;
+            position: absolute;
+            transform: translate(-50%, -50%) rotate(-0deg);
+            animation: counterRotate 30s linear infinite;
+        }
+
+        .orbit-img {
+            width: 60px;
+            height: 60px;
+            box-shadow: 0 0 10px rgba($success, 0.7);
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        .orbit-dots {
+            width: 15px;
+            height: 15px;
+            box-shadow: 0 0 5px $success, 0 0 10px $success;
+            animation: glowPulse 1.5s infinite ease-in-out;
+        }
+
+        .orbit-inner .orbit-img,
+        .orbit-inner .orbit-dots {
+            animation-duration: 80s;
+        }
+
+        .orbit-middle .orbit-img,
+        .orbit-inner .orbit-dots {
+            animation-duration: 60s;
+        }
+
+        .orbit-outer .orbit-img,
+        .orbit-inner .orbit-dots {
+            animation-duration: 40s;
+        }
+
+        .orbit-i1 {
+            top: 20%;
+            left: 90%;
+            height: 40px;
+            width: 40px;
+        }
+
+        .orbit-i2 {
+            top: 85%;
+            left: 20%;
+        }
+
+        .orbit-i3 {
+            top: 20%;
+            left: 10%;
+            background-color: rgba($success, 0.7)
+        }
+
+        .orbit-m1 {
+            top: 20%;
+            left: 10%;
+            height: 50px;
+            width: 50px;
+        }
+
+        .orbit-m2 {
+            top: 30%;
+            left: 96%;
+            background-color: rgba($success, 0.7)
+        }
+
+        .orbit-m3 {
+            top: 90%;
+            left: 80%;
+            height: 40px;
+            width: 40px;
+        }
+
+        .orbit-m4 {
+            top: 70%;
+            left: 4%;
+            background-color: rgba($primary, 0.7)
+        }
+
+        .orbit-m5 {
+            top: 0%;
+            left: 60%;
+        }
+
+        .orbit-o1 {
+            top: 0%;
+            left: 40%;
+            height: 50px;
+            width: 50px;
+        }
+
+        .orbit-o2 {
+            top: 20%;
+            left: 90%;
+            height: 40px;
+            width: 40px;
+        }
+
+        .orbit-o3 {
+            top: 60%;
+            left: 100%;
+        }
+
+        .orbit-o4 {
+            top: 98%;
+            left: 40%;
+            height: 50px;
+            width: 50px;
+        }
+
+        .orbit-o5 {
+            top: 55%;
+            left: 0%;
+        }
+
+        .orbit-o6 {
+            top: 90%;
+            left: 80%;
+            height: 10px;
+            width: 10px;
+            background-color: rgba($success, 0.7)
+        }
+
+        .orbit-o7 {
+            top: 5%;
+            left: 72%;
+            height: 10px;
+            width: 10px;
+            background-color: rgba($primary, 0.7)
+        }
+
+        .orbit-o8 {
+            top: 20%;
+            left: 10%;
+            height: 10px;
+            width: 10px;
+            background-color: rgba($success, 0.7)
+        }
+
+        .orbit-o9 {
+            top: 86%;
+            left: 15%;
+            height: 10px;
+            width: 10px;
+            background-color: rgba($primary, 0.7)
+        }
+
+        @keyframes rotate {
+            100% {
+                transform: translate(-50%, -50%) rotate(360deg);
+            }
+        }
+
+        @keyframes counterRotate {
+            100% {
+                transform: translate(-50%, -50%) rotate(-360deg);
+            }
+        }
+
+        @keyframes glowPulse {
+            0%,100% {
+                box-shadow: 0 0 10px $success, 0 0 20px $success;
+            }
+
+            50% {
+                box-shadow: 0 0 30px $success, 0 0 60px $success;
+            }
+        }
+    }
+}
