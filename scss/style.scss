@@ -4,6 +4,7 @@
 
 //layout
 @import"./layout/navbar";
+@import"./layout/footer";
 
 //components
 @import"./components/helper";
@@ -12,6 +13,9 @@
 @import"./components/button";
 @import"./components/offcanvas";
 @import "./components/card";
+@import "./components/img";
+@import "./components/form";
 
 //plugin
 @import"./plugin/swiper";
+@import "./plugin/orbit";
