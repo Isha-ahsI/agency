@@ -1,34 +1,37 @@
 //helper.scss
-.section-lg{
+.section-lg {
     padding: 100px 0px;
 }
 
-.hero-section-primary{
+.hero-section-primary {
     background-image: url('../../images/hero-bg01.png');
     background-size: cover;
     background-position: center;
     width: 100%;
     padding-top: 100px;
-    .hero-img{
-        .metric{
+
+    .hero-img {
+        .metric {
             position: absolute;
-            top:50%;
-            left:50%;
-            transform: translate(-50%,-50%);
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
         }
     }
-    .hero-content{
-        ul{
-            &.list-1{
+
+    .hero-content {
+        ul {
+            &.list-1 {
                 @media (min-width:576px) {
-                   border-right: 2px solid $secondary;
+                    border-right: 2px solid $secondary;
                 }
             }
         }
     }
 }
-.underline-after{
-    &::after{
+
+.underline-after {
+    &::after {
         content: "";
         position: absolute;
         top: 50%;
@@ -37,8 +40,24 @@
         transform: translateY(-50%);
         height: 1px;
         width: 50%;
-        background-color:rgba($primary, 0.3); 
+        background-color: rgba($primary, 0.3);
     }
 }
 
-
+.billing-toggle {
+    padding: 5px 10px;
+    border: 1px solid rgba($secondary, 0.5);
+    border-radius: $border-radius-2xl;
+    transition: $transition-base;
+    .billing-option{
+        border: 1px solid transparent;
+        border-radius: $border-radius-2xl;
+        background-color: transparent;
+        color: $success;
+        padding: 5px 15px;
+        &:hover,&.active{
+            background-color: rgba($success, 0.3);
+            color: $primary;
+        }
+    }
+}

@@ -11,6 +11,7 @@
         border-radius: 33% 65% 83% 18% / 73% 55% 46% 27%;
         z-index: 2;
     }
+
     .custom-border {
         height: 100%;
         width: 100%;
@@ -21,13 +22,15 @@
         border-radius: 100% 48% 25% 99% / 44% 38% 100% 100%;
         z-index: 1;
     }
-    .custom-bg{
+
+    .custom-bg {
         height: 100%;
         width: 100%;
         top: 0%;
         left: 0%;
         background-color: rgba($primary, 0.5);
-        border-radius:33% 65% 83% 18% / 73% 55% 46% 27%;
+        border-radius: 33% 65% 83% 18% / 73% 55% 46% 27%;
         z-index: 0;
     }
 }
+
