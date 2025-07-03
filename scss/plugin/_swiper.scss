@@ -3,6 +3,18 @@
     &.partner-swiper{
         .swiper-wrapper{
             transition-timing-function: linear !important;
+            .swiper-slide {
+                img {
+                    filter: grayscale(1);
+                    opacity: 0.75;
+                    transition: all 0.2s ease-in-out;
+                    &:hover {
+                        filter: none;
+                        opacity: 1;
+                    }
+                }
+            }
         }
     }
 }
+

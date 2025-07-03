@@ -192,26 +192,26 @@
             background-color: rgba($primary, 0.7)
         }
 
-        @keyframes rotate {
-            100% {
-                transform: translate(-50%, -50%) rotate(360deg);
-            }
-        }
+        // @keyframes rotate {
+        //     100% {
+        //         transform: translate(-50%, -50%) rotate(360deg);
+        //     }
+        // }
 
-        @keyframes counterRotate {
-            100% {
-                transform: translate(-50%, -50%) rotate(-360deg);
-            }
-        }
+        // @keyframes counterRotate {
+        //     100% {
+        //         transform: translate(-50%, -50%) rotate(-360deg);
+        //     }
+        // }
 
-        @keyframes glowPulse {
-            0%,100% {
-                box-shadow: 0 0 10px $success, 0 0 20px $success;
-            }
+        // @keyframes glowPulse {
+        //     0%,100% {
+        //         box-shadow: 0 0 10px $success, 0 0 20px $success;
+        //     }
 
-            50% {
-                box-shadow: 0 0 30px $success, 0 0 60px $success;
-            }
-        }
+        //     50% {
+        //         box-shadow: 0 0 30px $success, 0 0 60px $success;
+        //     }
+        // }
     }
 }
