@@ -48,8 +48,8 @@ document.addEventListener("DOMContentLoaded", function () {
     },
     allowTouchMove: false,
     breakpoints: {
-      0: { slidesPerView: 3},
-      576:{slidesPerView: 4 },
+      0: { slidesPerView: 3 },
+      576: { slidesPerView: 4 },
       768: { slidesPerView: 6 },
       992: { slidesPerView: 8 },
     },
@@ -66,17 +66,45 @@ document.addEventListener("DOMContentLoaded", function () {
     },
     allowTouchMove: false,
     breakpoints: {
-      0: { slidesPerView: 3},
-      576:{slidesPerView: 4 },
+      0: { slidesPerView: 3 },
+      576: { slidesPerView: 4 },
       768: { slidesPerView: 6 },
-      992: { slidesPerView: 8},
+      992: { slidesPerView: 8 },
     },
   });
+
+  //billing plan js
+  const toggleButtons = document.querySelectorAll('.billing-option');
+  const prices = document.querySelectorAll('.amount');
+
+  toggleButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      toggleButtons.forEach(btn => btn.classList.remove('active'));
+      button.classList.add('active');
+      const selectedPlan = button.getAttribute('data-plan');
+
+      // Update prices
+      prices.forEach(priceEl => {
+        const monthly = parseFloat(priceEl.dataset.monthly);
+        const yearly = parseFloat(priceEl.dataset.yearly);
+
+        if (selectedPlan === 'monthly') {
+          priceEl.innerText = `$${monthly}`;
+          priceEl.nextElementSibling.innerText = '/Month';
+        } else {
+          const discount = Math.round(((monthly * 12 - yearly) / (monthly * 12)) * 100);
+          priceEl.innerText = `$${yearly}`;
+          priceEl.nextElementSibling.innerText = `/Year (Save ${discount}%)`;
+        }
+      });
+    });
+  });
+
 });
 
 
 //gsap
-gsap.registerPlugin(ScrollTrigger,CustomEase, CustomBounce);
+gsap.registerPlugin(ScrollTrigger, CustomEase, CustomBounce);
 CustomBounce.create("myBounce", {
   strength: 0.6,
   squash: 3,
@@ -126,13 +154,13 @@ tl.from(".hero-section-primary .hero-img", {
 
 // service
 var tl2 = gsap.timeline({
-   scrollTrigger: {
+  scrollTrigger: {
     trigger: ".service-section",
     scroller: "body",
     markers: false,
     end: "top 30%",
     start: 'top 70%',
-   }
+  }
 })
 tl2.from(".service-section .service-title", {
   scale: 0,
@@ -166,7 +194,7 @@ tl3.from(".aboutus-section .aboutus-img-wrap", {
   scale: 0,
   opacity: 0,
   duration: 2
-},-0.1)
+}, -0.1)
 
 //partner
 var tl4 = gsap.timeline({
@@ -191,48 +219,48 @@ var tl5 = gsap.timeline({
     markers: true,
     start: "top 80%",
     end: "top 80%",
-     toggleActions: "play none none reverse"
+    toggleActions: "play none none reverse"
   }
 })
-tl5.from(".footer-section .footer-brand-title",{
+tl5.from(".footer-section .footer-brand-title", {
   x: -100,
   opacity: 0,
   delay: 0.3,
   duration: 1
 })
 
-tl5.from(".footer-section .footer-subscribe-box",{
+tl5.from(".footer-section .footer-subscribe-box", {
   x: 100,
   opacity: 0,
   delay: 0.3,
   duration: 1
-},-0.1)
+}, -0.1)
 
-tl5.from(".footer-section .footer-title,.footer-section .footer-nav-group .footer-nav-link,.footer-section .contact-info,.footer-section .location-info,.footer-section .mail-info",{
-  y:-30,
+tl5.from(".footer-section .footer-title,.footer-section .footer-nav-group .footer-nav-link,.footer-section .contact-info,.footer-section .location-info,.footer-section .mail-info", {
+  y: -30,
   opacity: 0,
   delay: 0.3,
   duration: 1,
   stagger: 0.1
 })
-tl5.from(".store-buttons-wrapper .store-button",{
+tl5.from(".store-buttons-wrapper .store-button", {
   opacity: 0,
   delay: 0.1,
   duration: 1,
   stagger: 0.1
 })
 
-tl5.from(".footer-tagline .Copyright-section",{
-  y:30,
+tl5.from(".footer-tagline .Copyright-section", {
+  y: 30,
   opacity: 0,
   delay: 0.1,
   duration: 1
 })
 
 tl5.from(".footer-tagline .footer-social-icons .social-media-icon", {
-   duration: 2, 
-   y: -100, 
-   ease: "myBounce" 
+  duration: 2,
+  y: -100,
+  ease: "myBounce"
 });
 
 tl5.to(".footer-tagline .footer-social-icons .social-media-icon", {
