@@ -111,9 +111,9 @@ CustomBounce.create("myBounce", {
   squashID: "myBounce-squash",
 });
 
+//navbar/hero section gsap
 var tl = gsap.timeline()
 
-//navbar/hero section
 tl.from(".navbar .nav-logo", {
   scale: 0,
   opacity: 0,
@@ -152,7 +152,7 @@ tl.from(".hero-section-primary .hero-img", {
   duration: 2,
 }, "0.7")
 
-// service
+// service gsap
 var tl2 = gsap.timeline({
   scrollTrigger: {
     trigger: ".service-section",
@@ -162,7 +162,7 @@ var tl2 = gsap.timeline({
     start: 'top 70%',
   }
 })
-tl2.from(".service-section .service-title", {
+tl2.from(".service-section .service-heading", {
   scale: 0,
   duration: 2,
 })
@@ -172,7 +172,7 @@ tl2.from(".service-section .card.service-card", {
   duration: 2,
 })
 
-//about us
+//about us gsap
 var tl3 = gsap.timeline({
   scrollTrigger: {
     trigger: ".aboutus-section",
@@ -196,7 +196,7 @@ tl3.from(".aboutus-section .aboutus-img-wrap", {
   duration: 2
 }, -0.1)
 
-//partner
+//partner gsap
 var tl4 = gsap.timeline({
   scrollTrigger: {
     trigger: ".partner-section",
@@ -206,17 +206,22 @@ var tl4 = gsap.timeline({
     end: "top 30%",
   }
 })
+tl4.from(".partner-section .partner-heading", {
+  scale:0,
+  opacity: 0,
+  duration: 1
+})
 tl4.from(".partner-section .partner-swiper", {
   opacity: 0,
-  duration: 2
+  duration: 1
 })
 
-//footer
+//footer gsap
 var tl5 = gsap.timeline({
   scrollTrigger: {
     trigger: "footer",
     scroller: "body",
-    markers: true,
+    markers: false,
     start: "top 80%",
     end: "top 80%",
     toggleActions: "play none none reverse"
@@ -270,3 +275,29 @@ tl5.to(".footer-tagline .footer-social-icons .social-media-icon", {
   transformOrigin: "center bottom",
   ease: "myBounce-squash",
 });
+
+//pricing gsap
+var tl6 = gsap.timeline()
+tl6.from(".pricing-section .pricing-heading",{
+  scale: 0,
+  duration: 2,
+  scrollTrigger: {
+    trigger: ".pricing-section .pricing-heading",
+    scroller: "body",
+    markers: true,
+    start: "top 50%",
+    end: "top 80%",
+  }
+})
+tl6.from(".pricing-section .price-card",{
+  opacity: 0,
+  duration: 1,
+  scrollTrigger: {
+    trigger: ".pricing-section .price-card",
+    scroller: "body",
+    markers: true,
+    start: "top 50%",
+    end: "top 80%",
+  }
+
+})
