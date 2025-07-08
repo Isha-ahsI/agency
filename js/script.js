@@ -100,6 +100,63 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
+  //team-member info
+  var data = [
+    { name: "Liam Carter", src: "images/user_images/user1.jpg", position: "Data Analyst" },
+    { name: "Emma Rivera", src: "images/user_images/user2.jpg", position: "Marketing Analyst" },
+    { name: "Isabella Moretti", src: "images/user_images/user3.jpg", position: "SEO Specialist" },
+    { name: "Lina Petrov", src: "images/user_images/user4.jpg", position: "Marketing Manager" },
+    { name: "Noah Rossi", src: "images/user_images/user5.jpg", position: "Content Strategist" },
+    { name: "Sophia Kim", src: "images/user_images/user6.jpg", position: "Growth Marketer" },
+    { name: "Aarav Mehta", src: "images/user_images/user7.jpg", position: "Managing Director" },
+    { name: "Leo Schneider", src: "images/user_images/user8.jpg", position: "Founder / CEO" },
+    { name: "Maya Thompson", src: "images/user_images/user9.jpg", position: "Managing Director" },
+    { name: "Olivia Hernández", src: "images/user_images/user10.jpg", position: "Marketing Manager" },
+    { name: "Milo Zhang", src: "images/user_images/user11.jpg", position: "SEO Specialist" },
+    { name: "Siddharth Nair", src: "images/user_images/user12.jpg", position: "Data Analyst" },
+    { name: "Giulia Romano", src: "images/user_images/user13.jpg", position: "Chief Growth Officer" },
+    { name: "Samuel Okafor", src: "images/user_images/user14.jpg", position: "Content Strategist" },
+    { name: "Yuki Takahashi", src: "images/user_images/user15.jpg", position: "SEO Specialist" },
+  ]
+  document.querySelectorAll(".view-user").forEach(function (btn) {
+    btn.addEventListener("click", function () {
+      var index = this.dataset.index;
+      var person = data[index];
+      var information = `<img src="${person.src}" alt="..." class="img-wrapper mb-2">
+                        <h3 class="text-success">${person.name}</h3>
+                        <h6 class="text-secondary">${person.position}</h6>
+                        <small class="text-secondary">As the ${person.position},I lead our team to deliver smart,
+                            growth-driven solutions that create lasting impact.</small>
+                        <hr>
+                        <h6 class="text-primary">${person.name.toLowerCase().replace(/\s/g, '')}@gmail.com</h6>
+                        <div class="d-flex justify-content-center align-items-center overflow-hidden">
+                            <a href="#" class="socialContainer insta-icon me-2 my-2">
+                                <div class="icon">
+                                    <i class="ri-instagram-line fs-6"></i>
+                                </div>
+                            </a>
+                            <a href="#" class="socialContainer twitter-icon me-2 my-2">
+                                <div class="icon">
+                                    <i class="ri-twitter-line fs-6"></i>
+                                </div>
+                            </a>
+                            <a href="#" class="socialContainer linkedin-icon me-2 my-2">
+                                <div class="icon">
+                                    <i class="ri-linkedin-fill fs-6"></i>
+                                </div>
+                            </a>
+                            <a href="#" class="socialContainer whatsapp-icon my-2">
+                                <div class="icon">
+                                    <i class="ri-whatsapp-line fs-6"></i>
+                                </div>
+                            </a>
+                        </div>`;
+      document.querySelector(".modal-body").innerHTML = information;
+
+      const modalInstance = bootstrap.Modal.getInstance(document.getElementById("personinfoModal"));
+      modalInstance.hide();
+    });
+  });
 });
 
 
@@ -207,7 +264,7 @@ var tl4 = gsap.timeline({
   }
 })
 tl4.from(".partner-section .partner-heading", {
-  scale:0,
+  scale: 0,
   opacity: 0,
   duration: 1
 })
@@ -278,7 +335,7 @@ tl5.to(".footer-tagline .footer-social-icons .social-media-icon", {
 
 //pricing gsap
 var tl6 = gsap.timeline()
-tl6.from(".pricing-section .pricing-heading",{
+tl6.from(".pricing-section .pricing-heading", {
   scale: 0,
   duration: 2,
   scrollTrigger: {
@@ -289,7 +346,7 @@ tl6.from(".pricing-section .pricing-heading",{
     end: "top 80%",
   }
 })
-tl6.from(".pricing-section .price-card",{
+tl6.from(".pricing-section .price-card", {
   opacity: 0,
   duration: 1,
   scrollTrigger: {
