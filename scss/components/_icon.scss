@@ -1,0 +1,82 @@
+//icon.scss
+
+.socialContainer {
+    text-decoration: none;
+    color: $light;
+    padding: 5px 10px;
+    // font-size: 1.25rem;
+    background-color: $success;
+    border-radius: $border-radius-2xl;
+    transition-duration: 0.3s;
+
+    &.insta-icon {
+        &:hover {
+            background-color: $pink ;
+            transition-duration: 0.3s;
+            transform: scale(1.2);
+        }
+    }
+
+    &.twitter-icon {
+        &:hover {
+            background-color: $cyan;
+            transition-duration: 0.3s;
+            transform: scale(1.2);
+        }
+    }
+
+    &.linkedin-icon {
+        &:hover {
+            background-color:lighten($primary, 20%);
+            transition-duration: 0.3s;
+            transform: scale(1.2);
+        }
+    }
+
+    &.whatsapp-icon {
+        &:hover {
+            background-color: darken($teal, 10%);
+            transition-duration: 0.3s;
+            transform: scale(1.2);
+        }
+    }
+    
+    &.youtube-icon{
+        &:hover{
+            background-color: $red;
+            transition-duration: 0.3s;
+            transform: scale(1.2);
+        }
+    }
+
+    &.facebook-icon{
+        &:hover{
+           background-color:lighten($primary, 30%);
+            transition-duration: 0.3s;
+            transform: scale(1.2); 
+        }
+    }
+    
+    &:active {
+        transform: scale(0.9);
+        transition-duration: 0.3s;
+    }
+
+    &:hover {
+        .icon {
+            animation: slide-in-top 0.3s both;
+        }
+    }
+}
+
+@keyframes slide-in-top {
+    0% {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

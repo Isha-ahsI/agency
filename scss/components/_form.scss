@@ -10,6 +10,7 @@ form {
             background-color: $success;
             color: $white;
             border: transparent;
+            transition: $transition-base;
             &:hover{
                 .input-icon{
                     transform: translateX(5px);

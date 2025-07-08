@@ -1,36 +1,141 @@
 //img.scss
-.wave-bg {
-    background-image: url("../../images/about-bg.svg");
-    width: 100%;
-    background-position: center;
+
+//hero-section image
+.hero-section-primary {
+    background-image: url('../../images/hero-bg01.png');
     background-size: cover;
-    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    padding-top: 100px;
 
-    .aboutus-img {
-        position: relative;
-        border-radius: 33% 65% 83% 18% / 73% 55% 46% 27%;
-        z-index: 2;
-    }
-
-    .custom-border {
-        height: 100%;
-        width: 100%;
-        top: 0%;
-        left: 0;
-        border: 1px solid $primary;
-        background: transparent;
-        border-radius: 100% 48% 25% 99% / 44% 38% 100% 100%;
-        z-index: 1;
-    }
-
-    .custom-bg {
-        height: 100%;
-        width: 100%;
-        top: 0%;
-        left: 0%;
-        background-color: rgba($primary, 0.5);
-        border-radius: 33% 65% 83% 18% / 73% 55% 46% 27%;
-        z-index: 0;
+    .hero-img {
+        .metric {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
     }
 }
 
+//about-section image
+.aboutus-section {
+    &.wave-bg-1 {
+        background-image: url("../../images/about-bg.svg");
+        width: 100%;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        .aboutus-img {
+            position: relative;
+            border-radius: 33% 65% 83% 18% / 73% 55% 46% 27%;
+            z-index: 2;
+        }
+
+        .custom-border {
+            height: 100%;
+            width: 100%;
+            top: 0%;
+            left: 0;
+            border: 1px solid $primary;
+            background: transparent;
+            border-radius: 100% 48% 25% 99% / 44% 38% 100% 100%;
+            z-index: 1;
+        }
+
+        .custom-bg {
+            height: 100%;
+            width: 100%;
+            top: 0%;
+            left: 0%;
+            background-color: rgba($primary, 0.5);
+            border-radius: 33% 65% 83% 18% / 73% 55% 46% 27%;
+            z-index: 0;
+        }
+    }
+}
+
+.team-section {
+    &.wave-bg-2 {
+        background-image: url('../../images/team-bg.svg');
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        padding-top: 100px;
+
+        .img-wrapper {
+            width: 100%;
+            height: 100%;
+            max-width: 120px;
+            max-height: 120px;
+            object-fit: cover;
+            transition: $transition-base;
+            box-shadow: $box-shadow-sm;
+
+            @media (min-width: 0) and (max-width: 575.98px) {
+                border-radius: $border-radius-lg;
+            }
+
+            @media (min-width: 576px) {
+                border-radius: $border-radius-xl;
+            }
+
+            .overlay {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                opacity: 0;
+                background-color: rgba($gray-100, 0.7);
+                width: 0;
+                height: 0;
+                transition: $transition-base;
+            }
+
+            .view-user{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                opacity: 0;
+                transition: $transition-base;
+                padding: 0;
+                background-color: transparent;
+                border: 0;
+                line-height: 1;
+            }
+
+            &:hover {
+                box-shadow: 0 0 5px rgba($success, 0.2), 0 0 10px rgba($success, 0.5);
+                scale: 1.1;
+
+                .overlay {
+                    height: 100%;
+                    width: 100%;
+                    opacity: 1;
+                    z-index: 1;
+                }
+
+                .view-user{
+                    opacity: 1;
+                    z-index: 2;
+                }
+            }
+        }
+    }
+}
+
+.team-info-modal {
+    .modal {
+        .img-wrapper {
+            width: 100%;
+            height: 100%;
+            max-width: 120px;
+            max-height: 120px;
+            object-fit: cover;
+            box-shadow: $box-shadow-sm;
+            border-radius: $border-radius-2xl;
+        }
+    }
+}

@@ -3,33 +3,6 @@
     padding: 100px 0px;
 }
 
-.hero-section-primary {
-    background-image: url('../../images/hero-bg01.png');
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    padding-top: 100px;
-
-    .hero-img {
-        .metric {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-        }
-    }
-
-    .hero-content {
-        ul {
-            &.list-1 {
-                @media (min-width:576px) {
-                    border-right: 2px solid $secondary;
-                }
-            }
-        }
-    }
-}
-
 .underline-after {
     &::after {
         content: "";
@@ -44,6 +17,20 @@
     }
 }
 
+//hero-section 
+.hero-section-primary {
+    .hero-content {
+        ul {
+            &.list-1 {
+                @media (min-width:576px) {
+                    border-right: 2px solid $secondary;
+                }
+            }
+        }
+    }
+}
+
+//prising section toggle
 .billing-toggle {
     padding: 5px 10px;
     border: 1px solid rgba($secondary, 0.5);
@@ -58,6 +45,15 @@
         &:hover,&.active{
             background-color: rgba($success, 0.3);
             color: $primary;
+        }
+    }
+}
+
+.modal{
+    backdrop-filter: blur(12px);
+    .modal-dialog{
+        .modal-content{
+            background-color: rgba($light, 0.7);
         }
     }
 }

@@ -1,25 +1,26 @@
 //footer.scss
-footer{
-    .footer-nav-link{
-        text-decoration: none;
-        color:$white;
-        &:hover{
-            color: $success;
-            text-decoration: underline;
-        }
-    }
-    .footer-social-icons{
-        .social-media-icon{
+footer {
+    .footer-section {
+        .footer-nav-link {
+            text-decoration: none;
             color: $white;
-            transition: $transition-base;
-            &:hover{    
-                color:$success;
-                scale: 1.2;
-                transform: translateY(-5px);
+
+            &:hover {
+                color: $success;
+                text-decoration: underline;
             }
-    
+        }
+
+        .store-buttons-wrapper{
+            .store-button{
+                transition: $transition-base;
+                &:hover{
+                    transform: scale(0.9);
+                }
+            }
         }
     }
+
     .footer-tagline {
         background-color: darken($primary, 4%);
         border-top: 1px solid rgba($white, 0.25);
