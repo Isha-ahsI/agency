@@ -18,4 +18,12 @@ form {
             }
         }
     }
+    &.contactus-form{
+        .form-control,.form-select{
+            border-radius: 0;
+            box-shadow: none;
+            border-color: transparent;
+            padding: 15px;
+        }
+    }
 }

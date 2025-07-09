@@ -40,7 +40,7 @@
                     width: 100%;
                     height: 1px;
                     background-color: $primary;
-                    transition: $transition-base;
+                    transition: transform 0.3s linear;
                     transform-origin: right;
                     transform: scaleX(0);
                 }
@@ -78,18 +78,30 @@
     }
 
     &.feature-card {
-        background: rgba($light, 0.2);
-        backdrop-filter: $primary(10px);
-        -webkit-backdrop-filter: $primary(10px);
+        // background: rgba($light, 0.2);
+        // backdrop-filter: $primary(10px);
+        // -webkit-backdrop-filter: $primary(10px);
+        background-image: url(../../images/business-brainstorming-graph-chart-report-data-concept.jpg);
+        background-position: center;
+        background-size: cover;
         border-radius: 10px;
-        border: 1px solid rgba($light, 0.3);
-        padding: 20px;
-        color: $white;
+        border: 1px solid transparent;
         box-shadow: 0 8px 32px rgba($dark, 0.1);
+
+        // padding: 20px;
+        .card-body {
+            position: relative;
+            color: $white;
+
+            .card-title {
+                left: 0;
+                bottom: 0;
+            }
+        }
     }
 
     &.price-card {
-        border:1px solid transparent;
+        border: 1px solid transparent;
         box-shadow: $box-shadow;
         padding: 1rem 0.5rem;
         transition: $transition-base;
@@ -101,6 +113,7 @@
             radial-gradient(at 41% 94%, hsla(162, 73%, 46%, 1) 0px, transparent 85%),
             radial-gradient(at 100% 99%, hsla(187, 59%, 38%, 1) 0px, transparent 85%);
         background-position: 0px 5px;
+
         .card-body {
             .card-title {
                 .card-ribbon {
@@ -157,6 +170,7 @@
                         .list-group-item {
                             color: $primary;
                             background-color: transparent;
+
                             &:not(:last-child) {
                                 border-bottom: 1px solid rgba($secondary, 0.5);
                             }
@@ -165,9 +179,64 @@
                 }
             }
         }
-        &:hover{
+
+        &:hover {
             transform: scale(0.9);
             border: 1px solid $success;
+        }
+    }
+
+    &.portfolio-card {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        border-color: transparent;
+        perspective: 1000px;
+
+        .card-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            transform-style: preserve-3d;
+            transition: transform 0.8s ease;
+
+            &:hover {
+                transform: rotateY(180deg);
+            }
+
+            .card-front,
+            .card-back {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                overflow: hidden;
+                backface-visibility: hidden;
+                padding: 100px 100px;
+            }
+
+            .card-front {
+                .card-img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    display: block;
+                }
+            }
+
+            .card-back {
+                position: relative;
+                transform: rotateY(180deg);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                .back-content {
+                    color: $dark;
+                    z-index: 2;
+                    text-align: center;
+                    background-color: $success;
+                }
+            }
         }
     }
 }

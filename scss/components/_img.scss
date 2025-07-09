@@ -93,7 +93,7 @@
                 transition: $transition-base;
             }
 
-            .view-user{
+            .view-user {
                 position: absolute;
                 top: 50%;
                 left: 50%;
@@ -117,7 +117,7 @@
                     z-index: 1;
                 }
 
-                .view-user{
+                .view-user {
                     opacity: 1;
                     z-index: 2;
                 }
@@ -136,6 +136,30 @@
             object-fit: cover;
             box-shadow: $box-shadow-sm;
             border-radius: $border-radius-2xl;
+        }
+    }
+}
+
+.contactus-section {
+    position: relative;
+    background-image: url('../../images/contactus.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
+    padding: 100px 0;
+
+    .overlay {
+        position: absolute;
+        inset: 0;
+        background: rgba($dark, 0.7); 
+        z-index: 0;
+    }
+
+    @media (max-width: 768px) {
+        .contactus-section {
+            background-attachment: scroll;
         }
     }
 }
