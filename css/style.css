@@ -197,7 +197,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .btn {
-  padding: 0.55rem 1rem;
+  padding: 0.55rem 1.5rem;
 }
 @media (min-width: 0) and (max-width: 575.98px) {
   .btn {
@@ -238,7 +238,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .btn {
-  padding: 0.55rem 1rem;
+  padding: 0.55rem 1.5rem;
 }
 @media (min-width: 0) and (max-width: 575.98px) {
   .btn {
@@ -279,7 +279,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .btn {
-  padding: 0.55rem 1rem;
+  padding: 0.55rem 1.5rem;
 }
 @media (min-width: 0) and (max-width: 575.98px) {
   .btn {
@@ -320,7 +320,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .btn {
-  padding: 0.55rem 1rem;
+  padding: 0.55rem 1.5rem;
 }
 @media (min-width: 0) and (max-width: 575.98px) {
   .btn {
@@ -361,7 +361,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .btn {
-  padding: 0.55rem 1rem;
+  padding: 0.55rem 1.5rem;
 }
 @media (min-width: 0) and (max-width: 575.98px) {
   .btn {
@@ -402,7 +402,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .btn {
-  padding: 0.55rem 1rem;
+  padding: 0.55rem 1.5rem;
 }
 @media (min-width: 0) and (max-width: 575.98px) {
   .btn {
@@ -443,7 +443,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .btn {
-  padding: 0.55rem 1rem;
+  padding: 0.55rem 1.5rem;
 }
 @media (min-width: 0) and (max-width: 575.98px) {
   .btn {
@@ -484,7 +484,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .btn {
-  padding: 0.55rem 1rem;
+  padding: 0.55rem 1.5rem;
 }
 @media (min-width: 0) and (max-width: 575.98px) {
   .btn {
@@ -571,7 +571,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
   height: 1px;
   background-color: #023b51;
-  transition: all 0.4s ease-in-out;
+  transition: transform 0.3s linear;
   transform-origin: right;
   transform: scaleX(0);
 }
@@ -633,14 +633,20 @@ h1, h2, h3, h4, h5, h6 {
   border-color: #212529;
 }
 .card.feature-card {
-  background: rgba(248, 249, 250, 0.2);
-  backdrop-filter: #023b51 10px;
-  -webkit-backdrop-filter: #023b51 10px;
+  background-image: url(../../images/business-brainstorming-graph-chart-report-data-concept.jpg);
+  background-position: center;
+  background-size: cover;
   border-radius: 10px;
-  border: 1px solid rgba(248, 249, 250, 0.3);
-  padding: 20px;
-  color: #fff;
+  border: 1px solid transparent;
   box-shadow: 0 8px 32px rgba(33, 37, 41, 0.1);
+}
+.card.feature-card .card-body {
+  position: relative;
+  color: #fff;
+}
+.card.feature-card .card-body .card-title {
+  left: 0;
+  bottom: 0;
 }
 .card.price-card {
   border: 1px solid transparent;
@@ -701,6 +707,52 @@ h1, h2, h3, h4, h5, h6 {
 .card.price-card:hover {
   transform: scale(0.9);
   border: 1px solid #298f9c;
+}
+.card.portfolio-card {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-color: transparent;
+  perspective: 1000px;
+}
+.card.portfolio-card .card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.8s ease;
+}
+.card.portfolio-card .card-inner:hover {
+  transform: rotateY(180deg);
+}
+.card.portfolio-card .card-inner .card-front,
+.card.portfolio-card .card-inner .card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  backface-visibility: hidden;
+  padding: 100px 100px;
+}
+.card.portfolio-card .card-inner .card-front .card-img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+}
+.card.portfolio-card .card-inner .card-back {
+  position: relative;
+  transform: rotateY(180deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card.portfolio-card .card-inner .card-back .back-content {
+  color: #212529;
+  z-index: 2;
+  text-align: center;
+  background-color: #298f9c;
 }
 
 .hero-section-primary {
@@ -825,6 +877,28 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 5rem;
 }
 
+.contactus-section {
+  position: relative;
+  background-image: url("../../images/contactus.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #fff;
+  padding: 100px 0;
+}
+.contactus-section .overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(33, 37, 41, 0.7);
+  z-index: 0;
+}
+@media (max-width: 768px) {
+  .contactus-section .contactus-section {
+    background-attachment: scroll;
+  }
+}
+
 form .input-group .form-control {
   border-color: #fff;
   box-shadow: none;
@@ -838,6 +912,12 @@ form .input-group .input-group-text {
 }
 form .input-group .input-group-text:hover .input-icon {
   transform: translateX(5px);
+}
+form.contactus-form .form-control, form.contactus-form .form-select {
+  border-radius: 0;
+  box-shadow: none;
+  border-color: transparent;
+  padding: 15px;
 }
 
 .socialContainer {
