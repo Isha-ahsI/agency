@@ -2,13 +2,13 @@
 form {
     .input-group{
         .form-control {
-            border-color: $white;
+            border-color: $light;
             box-shadow:none ;
             padding: 10px 10px;
         }
         .input-group-text{
             background-color: $success;
-            color: $white;
+            color: $light;
             border: transparent;
             transition: $transition-base;
             &:hover{
@@ -21,8 +21,8 @@ form {
     &.contactus-form{
         .form-control,.form-select{
             border-radius: 0;
-            box-shadow: none;
             border-color: transparent;
+            box-shadow: none;
             padding: 15px;
         }
     }

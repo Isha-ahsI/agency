@@ -2,7 +2,7 @@
 
 //hero-section image
 .hero-section-primary {
-    background-image: url('../../images/hero-bg01.png');
+    background-image: url('../../images/hero_bg01.png');
     background-size: cover;
     background-position: center;
     width: 100%;
@@ -21,7 +21,7 @@
 //about-section image
 .aboutus-section {
     &.wave-bg-1 {
-        background-image: url("../../images/about-bg.svg");
+        background-image: url("../../images/about_bg.svg");
         width: 100%;
         background-position: center;
         background-size: cover;
@@ -58,7 +58,7 @@
 
 .team-section {
     &.wave-bg-2 {
-        background-image: url('../../images/team-bg.svg');
+        background-image: url('../../images/team_bg.svg');
         background-size: cover;
         background-position: center;
         width: 100%;
@@ -147,7 +147,7 @@
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    color: #fff;
+    color: $light;
     padding: 100px 0;
 
     .overlay {

@@ -1,0 +1,49 @@
+//accordion.scss
+.accordion {
+    .accordion-item {
+        overflow: hidden;
+        border-radius: $accordion-border-radius;
+        border-left: 10px solid $success;
+        box-shadow: $box-shadow-sm;
+
+        &:not(:last-child) {
+            margin-bottom: 25px;
+        }
+
+        .accordion-header {
+            .accordion-button {
+                padding: $accordion-padding-y $accordion-padding-x;
+                font-size: 1.15rem;
+                background-color: rgba($success, 0.2);
+                color: $primary;
+
+                &:after {
+                    display: none;
+                }
+
+                .toggle-icon {
+                    font-size: 1.4rem;
+                    color: $primary;
+                     transition-duration: 0.6s;
+                }
+
+                &:not(.collapsed) {
+                    box-shadow: none;
+
+                    .toggle-icon {
+                        color: $success;
+                        transform: rotate(180deg);
+                    }
+                }
+            }
+        }
+
+        .accordion-collapse {
+            .accordion-body {
+                background-color: rgba($success, 0.1);
+                color: $secondary;
+                padding: $accordion-body-padding-y $accordion-body-padding-x;
+            }
+        }
+    }
+}
