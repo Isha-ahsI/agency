@@ -1,7 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
   //counting of metric
   const counters = document.querySelectorAll('.counter');
-
   counters.forEach(counter => {
     const updateCount = () => {
       const target = +counter.getAttribute('data-target');
@@ -27,7 +26,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
   //sticky navbar
   const navbar = document.getElementById("mainNavbar");
-
   window.addEventListener("scroll", function () {
     if (window.scrollY > 10) {
       navbar.classList.add("nav-scroll");
@@ -76,23 +74,20 @@ document.addEventListener("DOMContentLoaded", function () {
   //billing plan js
   const toggleButtons = document.querySelectorAll('.billing-option');
   const prices = document.querySelectorAll('.amount');
-
   toggleButtons.forEach(button => {
     button.addEventListener('click', () => {
       toggleButtons.forEach(btn => btn.classList.remove('active'));
       button.classList.add('active');
       const selectedPlan = button.getAttribute('data-plan');
-
-      // Update prices
+      const discount = 20;
       prices.forEach(priceEl => {
         const monthly = parseFloat(priceEl.dataset.monthly);
-        const yearly = parseFloat(priceEl.dataset.yearly);
+        const yearly = Math.round(monthly * 12 * 0.8);
 
         if (selectedPlan === 'monthly') {
           priceEl.innerText = `$${monthly}`;
           priceEl.nextElementSibling.innerText = '/Month';
         } else {
-          const discount = Math.round(((monthly * 12 - yearly) / (monthly * 12)) * 100);
           priceEl.innerText = `$${yearly}`;
           priceEl.nextElementSibling.innerText = `/Year (Save ${discount}%)`;
         }
@@ -157,6 +152,60 @@ document.addEventListener("DOMContentLoaded", function () {
       modalInstance.hide();
     });
   });
+
+  //Subjectwise category
+  const faqs = [
+    { id: 1, category: "general", question: "How can your agency help grow my business?", answer: "We combine data-driven insights with creative strategy to boost your brand visibility, drive more traffic, and convert leads into loyal customers." },
+    { id: 2, category: "pricing", question: "How much do your services cost?", answer: "Our pricing plans start at $19/month, with flexible packages tailored to your business goals." },
+    { id: 3, category: "process", question: "What is the onboarding process like?", answer: "We start with a discovery call to understand your business, followed by a custom strategy plan." },
+    { id: 4, category: "pricing", question: "Do you offer a free trial?", answer: "Yes, we offer a 7-day free trial so you can explore our tools and see the value before committing." },
+    { id: 5, category: "general", question: "How do I get started?", answer: "Simply reach out through our contact form or book a free consultation. We’ll assess your needs and propose a custom growth plan." },
+    { id: 6, category: "services", question: "What services does your agency offer?", answer: "We offer marketing strategy, branding, SEO, social media management, and lead generation to help businesses grow." },
+    { id: 7, category: "services", question: "Do you provide custom growth strategies?", answer: "Yes, we create tailored strategies based on your business goals, industry, and target audience." },
+    { id: 8, category: "pricing", question: "Can I change my plan later?", answer: "Absolutely! You can upgrade or downgrade your plan anytime based on your needs." },
+    { id: 9, category: "general", question: "Who can benefit from your services?", answer: "Our services are designed for startups, small to medium businesses, and enterprises looking to scale, improve online presence, or optimize operations." },
+    { id: 10, category: "general", question: "Is my business too small to work with you?", answer: "Not at all! We work with businesses of all sizes and offer scalable solutions that fit your current stage and future growth." },
+    { id: 11, category: "pricing", question: "Do you offer any discount on yearly plans?", answer: "Yes! When you choose a yearly plan, you receive an exclusive discount of up to 20% compared to monthly billing. This allows you to save more while enjoying uninterrupted access to all our premium features." },
+    { id: 12, category: "process", question: "Will I get regular updates on progress?", answer: "Yes, we provide weekly reports and monthly strategy calls to review performance." },
+    { id: 13, category: "process", question: "Can I be involved in the decision-making process?", answer: "Absolutely. We believe in collaboration and value your input at every stage." },
+    { id: 14, category: "process", question: "How long does it take to see results?", answer: "Results typically begin within 4–6 weeks, depending on your goals and industry." },
+    { id: 15, category: "services", question: "Do you offer social media marketing services?", answer: "Yes, we manage content creation, scheduling, engagement, and paid ads on platforms like Instagram, Facebook, and LinkedIn." },
+    { id: 16, category: "services", question: "What kind of analytics or reporting do you provide?", answer: "We provide monthly performance reports with insights on traffic, conversions, ROI, and suggestions for improvement." },
+  ];
+  const maxFaqsToShow = 6;
+  function renderAllFaqs(category) {
+    const accordionFlush = document.getElementById("accordionFlushExample1");
+    const selectedFaqs = faqs.filter(f => f.category === category).slice(0, maxFaqsToShow);
+    let output = "";
+
+    selectedFaqs.forEach(faq => {
+      output += `<div class="accordion-item">
+                  <h2 class="accordion-header" id="heading${faq.id}">
+                    <button class="accordion-button collapsed justify-content-between" type="button"
+                      data-bs-toggle="collapse" data-bs-target="#collapse${faq.id}"
+                      aria-expanded="false" aria-controls="collapse${faq.id}">
+                      ${faq.question}
+                      <div class="toggle-icon">
+                        <i class="ri-add-large-fill"></i>
+                      </div>
+                    </button>
+                  </h2>
+                  <div id="collapse${faq.id}" class="accordion-collapse collapse"
+                    aria-labelledby="heading${faq.id}" data-bs-parent="#accordionFlushExample1">
+                      <div class="accordion-body"> ${faq.answer} </div>
+                  </div>
+                </div> `;
+    });
+    accordionFlush.innerHTML = output;
+  }
+  const categoryButtons = document.querySelectorAll('#faq-categories .btn[data-category]');
+  categoryButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const category = btn.getAttribute('data-category');
+      renderAllFaqs(category);
+    });
+  });
+  renderAllFaqs("general");
 });
 
 
@@ -341,7 +390,7 @@ tl6.from(".pricing-section .pricing-heading", {
   scrollTrigger: {
     trigger: ".pricing-section .pricing-heading",
     scroller: "body",
-    markers: true,
+    markers: false,
     start: "top 50%",
     end: "top 80%",
   }
@@ -352,9 +401,38 @@ tl6.from(".pricing-section .price-card", {
   scrollTrigger: {
     trigger: ".pricing-section .price-card",
     scroller: "body",
+    markers: false,
+    start: "top 50%",
+    end: "top 80%",
+  }
+})
+
+//contactus gsap
+var tl8 = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".contactus-section .contactus-heading",
+    scroller: "body",
     markers: true,
     start: "top 50%",
     end: "top 80%",
   }
-
 })
+
+tl8.from(".contactus-section .contactus-heading", {
+  x: -100,
+  opacity: 0,
+  duration: 2,
+});
+
+tl8.from(".contactus-section .contactus-form", {
+  x: -100,
+  opacity: 0,
+  duration: 2,
+});
+
+tl8.from(".contactus-section .contact-info", {
+  x: 100,
+  opacity: 0,
+  duration: 2,
+}, 2);
+
