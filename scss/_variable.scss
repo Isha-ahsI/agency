@@ -120,9 +120,10 @@ $display-font-sizes: (
 // scss-docs-start btn-variables
 $btn-padding-y:     .55rem ;
 $btn-padding-x:     1.5rem ;
+$btn-font-size:     1.20rem;
  
 $btn-padding-y-sm:     0.4rem;
-$btn-padding-x-sm:     0.6rem;
+$btn-padding-x-sm:     1rem;
 $btn-font-size-sm:    .9rem;
 // scss-docs-end btn-variables
 
@@ -170,3 +171,15 @@ $transition-collapse:         height .35s ease ;
 $transition-collapse-width:   width .35s ease ;
 // scss-docs-end collapse-transition
 
+
+// Accordion
+// scss-docs-start accordion-variables
+$accordion-padding-y:                     1.25rem;
+$accordion-padding-x:                     1rem;
+$accordion-color:                         $light;
+$accordion-bg:                            $dark;
+$accordion-border-radius:                 $border-radius-lg;
+$accordion-border-color:                  $success;
+
+$accordion-body-padding-y:                $accordion-padding-y;
+$accordion-body-padding-x:                $accordion-padding-x;
