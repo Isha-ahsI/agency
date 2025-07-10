@@ -63,7 +63,8 @@
         transition-duration: 0.8s;
         box-shadow: $box-shadow-sm;
 
-        &:hover {
+        &:hover,
+        &:focus{
             color: $success;
             border-top: 2px solid $success;
             border-left: 2px solid $success;

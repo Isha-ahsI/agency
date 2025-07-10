@@ -444,7 +444,7 @@ h1, h2, h3, h4, h5, h6 {
   transition-duration: 0.8s;
   box-shadow: 0 0.125rem 0.7rem rgba(0, 0, 0, 0.2);
 }
-.btn.btn-glow:hover {
+.btn.btn-glow:hover, .btn.btn-glow:focus {
   color: #298f9c;
   border-top: 2px solid #298f9c;
   border-left: 2px solid #298f9c;
