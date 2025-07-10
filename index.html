@@ -35,10 +35,10 @@
             </div>
 
             <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
-                aria-labelledby="offcanvasNavbarLabel">
+                aria-labelledby="offcanvasNavbarLabel" data-bs-scroll="true" data-bs-backdrop="false">
                 <div class="offcanvas-header">
                     <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    <button type="button" class="btn btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
                 <div class="offcanvas-body">
                     <ul class="navbar-nav nav-underline justify-content-end flex-grow-1">
@@ -49,37 +49,37 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">
+                            <a class="nav-link" href="#aboutus">
                                 <i class="ri-information-line fs-5 d-md-none me-1"></i>
                                 <span>About Us</span>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">
+                            <a class="nav-link" href="#services">
                                 <i class="ri-service-line fs-5 d-md-none me-1"></i>
                                 <span>Services</span>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">
+                            <a class="nav-link" href="#features">
                                 <i class="ri-star-line fs-5 d-md-none me-1"></i>
                                 <span>Features</span>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">
+                            <a class="nav-link" href="#pricing">
                                 <i class="ri-money-dollar-circle-line fs-5 d-md-none me-1"></i>
                                 <span>Pricing</span>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">
+                            <a class="nav-link" href="#work">
                                 <i class="ri-layout-4-line fs-5 d-md-none me-1"></i>
                                 <span>Work</span>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">
+                            <a class="nav-link" href="#contactus">
                                 <i class="ri-send-plane-line fs-5 d-md-none me-1"></i>
                                 <span>Contact Us</span>
                             </a>
@@ -281,7 +281,7 @@
     </section>
 
     <!-- About-us Section -->
-    <section class="section-lg aboutus-section wave-bg-1 overflow-hidden">
+    <section class="section-lg aboutus-section wave-bg-1 overflow-hidden" id="aboutus">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-6 col-12 mb-lg-0 mb-5">
@@ -321,7 +321,7 @@
     </section>
 
     <!-- Services Section -->
-    <section class="section-lg service-section">
+    <section class="section-lg service-section" id="services">
         <div class="container">
             <div class="row">
                 <div class="col-12 mb-5">
@@ -491,7 +491,7 @@
     </section>
 
     <!-- Features Section -->
-    <section class="section-lg bg-primary">
+    <section class="section-lg bg-primary" id="features">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-12">
@@ -553,7 +553,7 @@
     </section>
 
     <!-- Pricing Section -->
-    <section class="section-lg pricing-section">
+    <section class="section-lg pricing-section" id="pricing">
         <div class="container">
             <div class="row">
                 <div class="col-12 text-center mb-5">
@@ -860,7 +860,7 @@
     </section>
 
     <!-- our-work(portfolio) Section-->
-    <section class="section-lg">
+    <section class="section-lg" id="work">
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -901,13 +901,13 @@
     </section>
 
     <!-- Contactus Section -->
-    <section class="section-lg contactus-section">
+    <section class="section-lg contactus-section" id="contactus">
         <div class="overlay"></div>
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-11 offset-lg-1 col-12 mb-4">
-                    <div class="contactus-heading position-relative z-1">
-                        <h1>Contact Us</h1>
+                <div class="col-lg-11 offset-lg-1 col-12 mb-4">
+                    <div class="contactus-heading position-relative z-1 text-lg-start text-center">
+                        <h1 class="display-2 fw-normal">Contact Us</h1>
                         <p>Have a question, project, or idea? We're here to help.</p>
                     </div>
                 </div>
@@ -915,18 +915,18 @@
                     <form class="contactus-form position-relative z-1 mb-lg-0 mb-4">
                         <div class="row">
                             <div class="col-12">
-                                <h2 class="text-center mb-0">Get in touch</h2>
+                                <h2 class="text-center mb-4">Get in touch</h2>
                             </div>
-                            <div class="col-6 my-4">
+                            <div class="col-sm-6 col-12 mb-4">
                                 <input type="text" class="form-control" placeholder="Company name" id="inputField04">
                             </div>
-                            <div class="col-6 my-4">
+                            <div class="col-sm-6 col-12 mb-4">
                                 <input type="mail" class="form-control" placeholder="Email Address" id="inputField02">
                             </div>
-                            <div class="col-6 mb-4">
+                            <div class="col-sm-6 col-12 mb-4">
                                 <input type="text" class="form-control" placeholder="Phone no" id="inputField03">
                             </div>
-                            <div class="col-6 mb-4">
+                            <div class="col-sm-6 col-12 mb-4">
                                 <select class="form-select" id="selectField01">
                                     <option selected>Interested Services</option>
                                     <option value="1">One</option>
@@ -935,63 +935,65 @@
                                 </select>
                             </div>
                             <div class="col-12 mb-4">
-                                <textarea class="form-control" placeholder="message"
-                                    id="exampleFormControlTextarea1" rows="3"></textarea>
+                                <textarea class="form-control" placeholder="message" id="exampleFormControlTextarea1"
+                                    rows="3"></textarea>
                             </div>
                             <div class="col-12 text-end">
-                                <a href="./index.html" class="btn btn-gradient rounded-5" type="button">Send</a>
+                                <a href="./index.html" class="btn btn-gradient rounded-5" type="button">
+                                    <i class="ri-send-plane-line"></i>
+                                    <span>Send</span>
+                                </a>
                             </div>
                         </div>
                     </form>
                 </div>
                 <div class="col-lg-4  col-12">
-                    <div class="contact-info position-relative z-1 ms-lg-4 ms-0">
-                        <div class="d-flex align-items-center">
+                    <div class="contact-info position-relative z-1 ms-lg-4 ms-0 mb-lg-0 mb-4 text-lg-start text-center">
+                        <div class="d-flex justify-content-lg-start justify-content-center align-items-center">
                             <i class="ri-phone-fill fs-5"></i>
                             <h5 class="m-0 ms-2">Contact Us</h5>
                         </div>
                         <p class="mb-0">01-000-999-333</p>
-                        <p> hello@strivoagency.com</p>
+                        <p class="mb-4"> hello@strivoagency.com</p>
 
-                        <div class="d-flex align-items-center">
+                        <div class="d-flex justify-content-lg-start justify-content-center align-items-center">
                             <i class="ri-map-pin-2-line fs-5"></i>
                             <h5 class="m-0 ms-2">Location</h5>
                         </div>
-                        <address>
+                        <address class="mb-4">
                             21 Innovation Avenue, Suite 403
                             Business Park, Sector 18B
                             Mumbai, Maharashtra 400072,
                             India
                         </address>
 
-                        <div class="d-flex align-items-center">
+                        <div class="d-flex justify-content-lg-start justify-content-center align-items-center">
                             <i class="ri-calendar-schedule-line fs-5"></i>
                             <h5 class="m-0 ms-2">Hours</h5>
                         </div>
                         <p class="mb-0">Service available : 24/7</p>
-                        <p>Office timing : 8am-6pm M-F</p>
+                        <p class="mb-4">Office timing : 8am-6pm M-F</p>
 
-                        <div class="footer-social-icons d-flex justify-content-lg-start justify-content-center align-items-center overflow-hidden">
-                            <a href="https://x.com/?lang=en" target="_blank"
-                                    class="socialContainer twitter-icon m-2">
+                        <div
+                            class="footer-social-icons d-flex justify-content-lg-start justify-content-center align-items-center overflow-hidden">
+                            <a href="https://x.com/?lang=en" target="_blank" class="socialContainer twitter-icon m-2">
                                 <div class="icon">
                                     <i class="ri-twitter-line fs-4"></i>
                                 </div>
                             </a>
                             <a href="https://in.linkedin.com/" target="_blank"
-                                    class="socialContainer linkedin-icon m-2">
+                                class="socialContainer linkedin-icon m-2">
                                 <div class="icon">
                                     <i class="ri-linkedin-fill fs-4"></i>
                                 </div>
                             </a>
-                            <a href="https://www.youtube.com/" target="_blank"
-                                    class="socialContainer youtube-icon m-2">
+                            <a href="https://www.youtube.com/" target="_blank" class="socialContainer youtube-icon m-2">
                                 <div class="icon">
                                     <i class="ri-youtube-fill fs-4"></i>
                                 </div>
                             </a>
                             <a href="https://www.facebook.com/" target="_blank"
-                                    class="socialContainer facebook-icon m-2">
+                                class="socialContainer facebook-icon m-2">
                                 <div class="icon">
                                     <i class="ri-facebook-circle-fill fs-4"></i>
                                 </div>
@@ -1002,8 +1004,40 @@
             </div>
         </div>
     </section>
-    
+
     <!-- FAQs Section-->
+    <section class="section-lg faqs-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 mb-4">
+                    <h1 class="display-5 text-primary text-center fw-medium">Frequently Asked Questions</h1>
+                    <p class="text-secondary text-center mb-0">Have questions about our services, process, or pricing?
+                    </p>
+                    <p class="text-secondary text-center">We’ve compiled a list of commonly asked questions to help you
+                        better understand how we support your business growth.</p>
+                </div>
+                <div class="col-12 mb-5">
+                    <div class="d-flex flex-wrap justify-content-center align-items-center gap-4" id="faq-categories">
+                        <button class="btn btn-glow"  data-category="general">General</button>
+                        <button class="btn btn-glow"  data-category="process">Process</button>
+                        <button class="btn btn-glow"  data-category="services">Services</button>
+                        <button class="btn btn-glow"  data-category="pricing">Pricing</button>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="row align-items-center">
+                        <div class="col-lg-7 col-12">
+                            <div class="accordion accordion-flush" id="accordionFlushExample1"></div>
+                        </div>
+                        <div class="col-lg-4 offset-lg-1 col-12 d-lg-block d-none">
+                            <img src="./images/julien-tromeur-Ni5whKlGzI8-unsplash.jpg" alt="man_searching" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
 
     <!-- footer -->
     <footer>
@@ -1179,14 +1213,14 @@
     <script src="./js/bootstrap.bundle.min.js"></script>
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.7/gsap.min.js"
         integrity="sha512-f6bQMg6nkSRw/xfHw5BCbISe/dJjXrVGfz9BSDwhZtiErHwk7ifbmBEtF9vFW8UNIQPhV2uEFVyI/UHob9r7Cw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"
         integrity="sha512-P2IDYZfqSwjcSjX0BKeNhwRUH8zRPGlgcWl5n6gBLzdi4Y5/0O4zaXrtO4K9TZK6Hn1BenYpKowuCavNandERg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/CustomBounce.min.js"
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/CustomBounce.min.js"
         integrity="sha512-PJRGw5+wyjY5yrbQnhzzo0xE9NSx71YD6LPdm9TqjMhR2+ak4Id5exTqt0dcjkiz7LeReq6O4Wkyub12BJ8h4w=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/CustomEase.min.js"
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/CustomEase.min.js"
         integrity="sha512-CuvnoNrIlhT8htAhjvvnA7EB4sUHfRvfFsjq+JvAKPotN8LlelK/lQgX+u9Gxxsl0+lXmEWRMLPv/oKT1W3dPw=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
