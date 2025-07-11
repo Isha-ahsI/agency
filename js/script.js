@@ -225,7 +225,7 @@ tl.from(".navbar .nav-logo", {
   opacity: 0,
   delay: 0.3,
   duration: 1,
-})
+});
 
 tl.from(".navbar .navbar-nav .nav-item", {
   y: -40,
@@ -233,7 +233,7 @@ tl.from(".navbar .navbar-nav .nav-item", {
   delay: 0.4,
   duration: 0.5,
   stagger: 0.1
-}, "0.3")
+}, "0.3");
 
 tl.from(".navbar .mail-id,.hero-section-primary .hero-content", {
   x: -100,
@@ -241,7 +241,7 @@ tl.from(".navbar .mail-id,.hero-section-primary .hero-content", {
   delay: 0.7,
   duration: 1,
   stagger: 0.3
-}, "0.7")
+}, "0.7");
 
 tl.from(".navbar .nav-btn,.navbar .navbar-toggler", {
   x: 100,
@@ -249,14 +249,14 @@ tl.from(".navbar .nav-btn,.navbar .navbar-toggler", {
   delay: 0.7,
   duration: 1,
   stagger: 0.3
-}, "0.7")
+}, "0.7");
 
 tl.from(".hero-section-primary .hero-img", {
   scale: 0,
   opacity: 0,
   delay: 0.7,
   duration: 2,
-}, "0.7")
+}, "0.7");
 
 // service gsap
 var tl2 = gsap.timeline({
@@ -271,12 +271,12 @@ var tl2 = gsap.timeline({
 tl2.from(".service-section .service-heading", {
   scale: 0,
   duration: 2,
-})
+});
 
 tl2.from(".service-section .card.service-card", {
   opacity: 0,
   duration: 2,
-})
+});
 
 //about us gsap
 var tl3 = gsap.timeline({
@@ -288,13 +288,14 @@ var tl3 = gsap.timeline({
     end: "top 30%",
 
   }
-})
+});
+
 tl3.from(".aboutus-section .aboutus-content", {
   x: 100,
   opacity: 0,
   delay: 0.7,
   duration: 2
-})
+});
 
 tl3.from(".aboutus-section .aboutus-img-wrap", {
   scale: 0,
@@ -311,16 +312,18 @@ var tl4 = gsap.timeline({
     start: "top 30%",
     end: "top 30%",
   }
-})
+});
+
 tl4.from(".partner-section .partner-heading", {
   scale: 0,
   opacity: 0,
   duration: 1
-})
+});
+
 tl4.from(".partner-section .partner-swiper", {
   opacity: 0,
   duration: 1
-})
+});
 
 //footer gsap
 var tl5 = gsap.timeline({
@@ -332,20 +335,21 @@ var tl5 = gsap.timeline({
     end: "top 80%",
     toggleActions: "play none none reverse"
   }
-})
+});
+
 tl5.from(".footer-section .footer-brand-title", {
   x: -100,
   opacity: 0,
   delay: 0.3,
   duration: 1
-})
+});
 
 tl5.from(".footer-section .footer-subscribe-box", {
   x: 100,
   opacity: 0,
   delay: 0.3,
   duration: 1
-}, -0.1)
+}, -0.1);
 
 tl5.from(".footer-section .footer-title,.footer-section .footer-nav-group .footer-nav-link,.footer-section .contact-info,.footer-section .location-info,.footer-section .mail-info", {
   y: -30,
@@ -353,20 +357,20 @@ tl5.from(".footer-section .footer-title,.footer-section .footer-nav-group .foote
   delay: 0.3,
   duration: 1,
   stagger: 0.1
-})
+});
+
 tl5.from(".store-buttons-wrapper .store-button", {
   opacity: 0,
   delay: 0.1,
   duration: 1,
   stagger: 0.1
-})
+});
 
 tl5.from(".footer-tagline .Copyright-section", {
   y: 30,
   opacity: 0,
-  delay: 0.1,
   duration: 1
-})
+});
 
 tl5.from(".footer-tagline .footer-social-icons .social-media-icon", {
   duration: 2,
@@ -394,7 +398,8 @@ tl6.from(".pricing-section .pricing-heading", {
     start: "top 50%",
     end: "top 80%",
   }
-})
+});
+
 tl6.from(".pricing-section .price-card", {
   opacity: 0,
   duration: 1,
@@ -405,18 +410,18 @@ tl6.from(".pricing-section .price-card", {
     start: "top 50%",
     end: "top 80%",
   }
-})
+});
 
 //contactus gsap
 var tl8 = gsap.timeline({
   scrollTrigger: {
     trigger: ".contactus-section .contactus-heading",
     scroller: "body",
-    markers: true,
+    markers: false,
     start: "top 50%",
     end: "top 80%",
   }
-})
+});
 
 tl8.from(".contactus-section .contactus-heading", {
   x: -100,
@@ -435,4 +440,33 @@ tl8.from(".contactus-section .contact-info", {
   opacity: 0,
   duration: 2,
 }, 2);
+
+//faqs
+var tl9=gsap.timeline({
+  scrollTrigger:{
+    trigger: ".faqs-section .faqs-heading",
+    scroller: "body",
+    markers: true,
+    start: "top 50%",
+    end: "top 80%",
+  }
+});
+
+tl9.from(".faqs-section .faqs-heading ,.faqs-section .faqs-filters",{
+  scale: 0,
+  opacity:0,
+  duration: 2,
+});
+
+tl9.from(".faqs-section .accordion",{
+  x: -100,
+  opacity: 0,
+  duration: 2,
+});
+
+tl9.from(".faqs-section .faqs-img",{
+  x: 100,
+  opacity: 0,
+  duration: 2,
+},2);
 
