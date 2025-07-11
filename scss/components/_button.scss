@@ -73,6 +73,12 @@
             box-shadow: rgba($success, 0.4) 5px 5px, rgba($success, 0.3) 10px 10px,
                 rgba($success, 0.2) 15px 15px;
         }
+        @media (min-width: 576px) and (max-width: 767.98px) {
+             font-size: $font-size-base;
+        }
+        @media (min-width: 0) and (max-width: 575.98px) {
+            font-size: $btn-font-size-sm;
+        }
     }
 
     &.btn-close {
