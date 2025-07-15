@@ -27,7 +27,8 @@
                         <h4 class="m-0 text-primary">Strivo</h4>
                     </a>
                 </div>
-                <button class="btn btn-success nav-btn ms-auto">Get Started</button>
+                <button class="btn btn-success nav-btn ms-auto" data-bs-target="#exampleModalToggle1"
+                    data-bs-toggle="modal">Get Started</button>
                 <button class="navbar-toggler shadow-none ms-2" type="button" data-bs-toggle="offcanvas"
                     data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -113,8 +114,8 @@
     <section class="hero-section-primary overflow-hidden min-vh-100 d-flex align-items-center">
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-md-6 col-12 order-md-1 order-2">
-                    <div class="hero-content text-md-start text-center">
+                <div class="col-lg-6 col-12 order-lg-1 order-2">
+                    <div class="hero-content text-lg-start text-center">
                         <h1 class="text-gradiant display-5 fw-medium mb-2">Smart <span
                                 class="display-4 fw-bold text-light">Strategies</span> to</h1>
                         <h1 class="text-gradiant display-5 fw-medium mb-2">Fuel Business</h1>
@@ -123,7 +124,7 @@
                             business
                             grow smarter and faster — turning bold ideas into measurable results.</p>
                         <div
-                            class="d-sm-flex justify-content-md-start justify-content-sm-center align-items-sm-center text-sm-start">
+                            class="d-sm-flex justify-content-lg-start justify-content-sm-center align-items-sm-center text-sm-start">
                             <ul class="list-1 list-unstyled text-primary pe-sm-4 mb-sm-4 mb-0 lh-lg">
                                 <li class="item-list"><i class="ri-checkbox-circle-fill"></i> Innovative Solutions</li>
                                 <li class="item-list"><i class="ri-checkbox-circle-fill"></i> Strategic Partnerships
@@ -138,10 +139,10 @@
                                 </li>
                             </ul>
                         </div>
-                        <a href="#" class="btn btn-gradient mb-3">Explore More</a>
+                        <a href="#" class="btn btn-gradient mb-4">Explore More</a>
                     </div>
                 </div>
-                <div class="col-lg-5 offset-lg-1 col-md-6 col-12 order-md-2 order-1 mb-md-0 mb-4">
+                <div class="col-lg-5 offset-lg-1 col-12 order-lg-2 order-1 mb-lg-0 mb-4">
                     <div class="hero-img d-flex justify-content-center position-relative">
                         <div class="orbit-container position-relative">
                             <!-- Inner Orbit -->
@@ -307,12 +308,9 @@
                     <div class="text-lg-start text-center aboutus-content">
                         <span class="badge rounded-pill bg-success text-light p-2 mb-3">About Our Agency</span>
                         <h2 class="text-primary mb-3 fw-semibold">Your growth is our goal and we bring the tools to make
-                            it
-                            happen.</h2>
-                        <p class="text-secondary">We help businesses grow with smart strategies, creative ideas, and
-                            real
-                            results. From startups to established brands, we’re here to guide your journey to success.
-                        </p>
+                            it happen.</h2>
+                        <p class="text-secondary">We help businesses grow with smart strategies, creative ideas, and real
+                            results. From startups to established brands, we’re here to guide your journey to success.</p>
                         <a href="#" class="btn btn-gradient">About More</a>
                     </div>
                 </div>
@@ -1012,18 +1010,21 @@
                 <div class="col-12 mb-4">
                     <div class="faqs-heading">
                         <h1 class="display-5 text-primary text-center fw-medium">Frequently Asked Questions</h1>
-                        <p class="text-secondary text-center mb-0">Have questions about our services, process, or pricing?
+                        <p class="text-secondary text-center mb-0">Have questions about our services, process, or
+                            pricing?
                         </p>
-                        <p class="text-secondary text-center">We’ve compiled a list of commonly asked questions to help you
+                        <p class="text-secondary text-center">We’ve compiled a list of commonly asked questions to help
+                            you
                             better understand how we support your business growth.</p>
                     </div>
                 </div>
                 <div class="col-12 mb-5">
-                    <div class="faqs-filters d-flex flex-wrap justify-content-center align-items-center gap-4" id="faq-categories">
-                        <button class="btn btn-glow"  data-category="general">General</button>
-                        <button class="btn btn-glow"  data-category="process">Process</button>
-                        <button class="btn btn-glow"  data-category="services">Services</button>
-                        <button class="btn btn-glow"  data-category="pricing">Pricing</button>
+                    <div class="faqs-filters d-flex flex-wrap justify-content-center align-items-center gap-4"
+                        id="faq-categories">
+                        <button class="btn btn-glow" data-category="general">General</button>
+                        <button class="btn btn-glow" data-category="process">Process</button>
+                        <button class="btn btn-glow" data-category="services">Services</button>
+                        <button class="btn btn-glow" data-category="pricing">Pricing</button>
                     </div>
                 </div>
                 <div class="col-12">
@@ -1197,18 +1198,204 @@
         </section>
     </footer>
 
-    <!-- modal -->
-    <section class="team-info-modal">
-        <div class="modal fade" id="personinfoModal" tabindex="-1" aria-labelledby="exampleModalLabel01">
+    <!-- team Information modal -->
+    <section>
+        <div class="modal fade team-info-modal" id="personinfoModal" tabindex="-1"
+            aria-labelledby="exampleModalLabel01">
             <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content position-relative rounded-4">
-                    <button type="button" class="btn btn-close top-0 end-0 position-absolute mt-2 z-1"
+                <div class="modal-content position-relative">
+                    <button type="button" class="btn-close  position-absolute top-0 end-0 mt-2 me-2 z-1"
                         data-bs-dismiss="modal" aria-label="Close"></button>
                     <div class="modal-body text-center"></div>
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- Authentication Section -->
+    <div class="modal fade auth-section" id="exampleModalToggle1" aria-hidden="true"
+        aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content overflow-hidden">
+                <div class="modal-body auth-img text-center">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 col-12">
+                            <div class="d-lg-block d-none">
+                                <h1 class="fw-medium display-5 text-primary">Welcome to Strivo</h1>
+                                <p class="mb-4 text-dark">Join us and start growing your business today.</p>
+                                <small class="d-block mb-1">Already have an account?</small>
+                                <button class="btn btn-auth" data-bs-target="#exampleModalToggle2"
+                                    data-bs-toggle="modal">LogIn</button>
+                                <button type="button" class="btn-close top-0 end-0 position-absolute mt-4 me-4 z-2"
+                                        data-bs-dismiss="modal" aria-label="Close">
+                                </button>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-12">
+                            <div class="modal-form text-center">
+                                <div class="d-block d-lg-none">
+                                    <h1 class="fw-bold text-primary">Welcome to Strivo</h1>
+                                    <p class="text-dark">Join us and start growing your business today.</p>
+                                    <button type="button" class="btn-close top-0 end-0 position-absolute mt-4 me-4 z-2"
+                                        data-bs-dismiss="modal" aria-label="Close">
+                                    </button>
+                                </div>
+                                <div class="d-lg-block d-none">
+                                    <h1 class="fw-bold text-primary">SignUp</h1>
+                                </div>
+                                <form class="form-auth mt-4">
+                                    <div class="row">
+                                        <div class="col-12 mb-3">
+                                            <a href="#"
+                                                class="btn btn-light d-flex align-items-center justify-content-center rounded-5 w-100">
+                                                <img src="./images/google.png" alt="continue with google">
+                                                <span class="ms-2">Continue with google</span>
+                                            </a>
+                                        </div>
+                                        <div class="col-12 mb-4">
+                                            <a href="#"
+                                                class="btn btn-dark d-flex align-items-center justify-content-center rounded-5 w-100">
+                                                <img src="./images/mac.png" alt="continue with google">
+                                                <span class="ms-2">Continue with Apple</span>
+                                            </a>
+                                        </div>
+                                        <div class="col-12 mb-4">
+                                            <p class="text-light mb-0">Or</p>
+                                        </div>
+                                        <div class="col-12 mb-3">
+                                            <input type="text" class="form-control" placeholder="Company Name"
+                                                id="inputSignupName">
+                                        </div>
+                                        <div class="col-12 mb-3">
+                                            <input type="email" class="form-control" placeholder="Email Address"
+                                                id="inputSignupEmail">
+                                        </div>
+                                        <div class="col-12 mb-3">
+                                            <input type="password" id="inputSignupPassword" class="form-control"
+                                                aria-describedby="passwordHelpInline" placeholder="Password">
+                                        </div>
+                                        <div class="col-12 mb-4">
+                                            <div class="form-check text-start">
+                                                <input class="form-check-input" type="checkbox"id="check1">
+                                                <label class="form-check-label  text-secondary" for="check1">I agree to the Terms and Conditions an Privacy
+                                                Policy.</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 mb-4">
+                                            <a href="./index.html" class="btn btn-primary rounded-5">SignUp</a>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="d-lg-none d-block">
+                                                <small class="text-center text-secondary">Already have an account?
+                                                    <a href="./login.html" class="fw-bold  text-success"
+                                                        data-bs-target="#exampleModalToggle2"
+                                                        data-bs-toggle="modal">LogIn</a>
+                                                </small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="modal fade auth-section" id="exampleModalToggle2" aria-hidden="true"
+        aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content overflow-hidden">
+                <div class="modal-body auth-img text-center">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 col-12">
+                            <div class="modal-form text-center">
+                                <div class="d-block d-lg-none">
+                                    <h1 class="fw-bold text-primary">Welcome Back!</h1>
+                                    <p class="text-light">Log in to continue managing your business efficiently.</p>
+                                    <button type="button" class="btn-close top-0 end-0 position-absolute mt-4 me-4 z-2"
+                                        data-bs-dismiss="modal" aria-label="Close">
+                                    </button>
+                                </div>
+                                <div class="d-lg-block d-none">
+                                    <h1 class="fw-bold text-primary">Log In</h1>
+                                </div>
+                                <form class="form-auth mt-4">
+                                    <div class="row">
+                                        <div class="col-12 mb-3">
+                                            <input type="email" class="form-control" placeholder="Email Address"
+                                                id="inputLoginEmail">
+                                        </div>
+                                        <div class="col-12 mb-3">
+                                            <input type="password" id="inputLoginPassword" class="form-control"
+                                                aria-describedby="passwordHelpInline" placeholder="Password">
+                                        </div>
+                                        <div class="col-12 mb-3">
+                                            <div class="d-flex flex-wrap justify-content-between align-items-center">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox"
+                                                        id="check2">
+                                                    <label class="form-check-label" for="check2">Remember
+                                                        me</label>
+                                                </div>
+                                                <a href="#" class="text-primary">Forget password</a>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 mb-4">
+                                            <a href="./index.html" class="btn btn-primary rounded-5">LogIn</a>
+                                        </div>
+                                        <div class="col-12 mb-4">
+                                            <p class="text-dark mb-0">Or</p>
+                                        </div>
+                                        <div class="col-12 mb-3">
+                                            <a href="#"
+                                                class="btn btn-light d-flex align-items-center justify-content-center rounded-5 w-100">
+                                                <img src="./images/google.png" alt="continue with google">
+                                                <span class="ms-2">Continue with google</span>
+                                            </a>
+                                        </div>
+                                        <div class="col-12 mb-4">
+                                            <a href="#"
+                                                class="btn btn-dark d-flex align-items-center justify-content-center rounded-5 w-100">
+                                                <img src="./images/mac.png" alt="continue with google">
+                                                <span class="ms-2">Continue with Apple</span>
+                                            </a>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="d-lg-none d-block">
+                                                <small class="text-center text-secondary">Don't have an account?
+                                                    <a href="./login.html" class="fw-bold  text-success"
+                                                        data-bs-target="#exampleModalToggle1"
+                                                        data-bs-toggle="modal">SignUp</a>
+                                                </small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-12">
+                            <div class="d-lg-block d-none">
+                                <h1 class="fw-medium display-5 text-light">Welcome Back!</h1>
+                                <p class="mb-4 text-light">Log in to continue managing your business efficiently.</p>
+                                <small class="mb-1 text-light d-block">Don't have an account?</small>
+                                <button class="btn btn-auth" data-bs-target="#exampleModalToggle1"
+                                    data-bs-toggle="modal">SignUp</button>
+                                <button type="button" class="btn-close auth-close-btn top-0 end-0 position-absolute mt-4 me-4 z-2"
+                                        data-bs-dismiss="modal" aria-label="Close">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
 
 
 
