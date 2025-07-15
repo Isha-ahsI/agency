@@ -442,8 +442,8 @@ tl8.from(".contactus-section .contact-info", {
 }, 2);
 
 //faqs
-var tl9=gsap.timeline({
-  scrollTrigger:{
+var tl9 = gsap.timeline({
+  scrollTrigger: {
     trigger: ".faqs-section .faqs-heading",
     scroller: "body",
     markers: true,
@@ -452,21 +452,21 @@ var tl9=gsap.timeline({
   }
 });
 
-tl9.from(".faqs-section .faqs-heading ,.faqs-section .faqs-filters",{
+tl9.from(".faqs-section .faqs-heading ,.faqs-section .faqs-filters", {
   scale: 0,
-  opacity:0,
+  opacity: 0,
   duration: 2,
 });
 
-tl9.from(".faqs-section .accordion",{
+tl9.from(".faqs-section .accordion", {
   x: -100,
   opacity: 0,
   duration: 2,
 });
 
-tl9.from(".faqs-section .faqs-img",{
+tl9.from(".faqs-section .faqs-img", {
   x: 100,
   opacity: 0,
   duration: 2,
-},2);
+}, 2);
 
