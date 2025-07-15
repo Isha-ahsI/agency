@@ -1,12 +1,13 @@
 //button.scss
-@each $color, $value in $theme-colors {
-    .btn {
-        padding: $btn-padding-y $btn-padding-x;
+.btn {
+    padding: $btn-padding-y $btn-padding-x;
+    transition: $transition-base;
+    @media (min-width: 0) and (max-width: 575.98px) {
+        padding: $btn-padding-y-sm $btn-padding-x-sm;
+        font-size: $btn-font-size-sm ;
+    }
 
-        @media (min-width: 0) and (max-width: 575.98px) {
-            padding: $btn-padding-y-sm $btn-padding-x-sm;
-            font-size: $btn-font-size-sm ;
-        }
+    @each $color, $value in $theme-colors {
 
         &.btn-#{$color} {
             background-color: $value;
@@ -28,14 +29,6 @@
                 background-color: $value;
             }
         }
-    }
-}
-
-.btn {
-    padding: $btn-padding-y $btn-padding-x;
-    @media (min-width: 0) and (max-width: 575.98px) {
-        padding: $btn-padding-y-sm $btn-padding-x-sm;
-        font-size: $btn-font-size-sm ;
     }
 
     &.btn-gradient {
@@ -64,7 +57,7 @@
         box-shadow: $box-shadow-sm;
 
         &:hover,
-        &:focus{
+        &:focus {
             color: $success;
             border-top: 2px solid $success;
             border-left: 2px solid $success;
@@ -73,17 +66,33 @@
             box-shadow: rgba($success, 0.4) 5px 5px, rgba($success, 0.3) 10px 10px,
                 rgba($success, 0.2) 15px 15px;
         }
+
         @media (min-width: 576px) and (max-width: 767.98px) {
-             font-size: $font-size-base;
+            font-size: $font-size-base;
         }
+
         @media (min-width: 0) and (max-width: 575.98px) {
             font-size: $btn-font-size-sm;
         }
     }
 
-    &.btn-close {
-        &:focus {
-            box-shadow: none;
-        }
+    &.btn-auth {
+        color: $primary;
+        background-color: rgba($light, 0.4);
+        border: 1px solid $light;
+        border-radius: $border-radius-pill;
     }
+    &:hover{
+        transform: scale(0.9);
+    }
+}
+
+.btn-close {
+    &.auth-close-btn{
+        filter: invert(1);
+    }
+    
+    &:focus {
+       box-shadow: none;
+   }
 }

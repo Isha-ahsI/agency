@@ -36,24 +36,21 @@
     border: 1px solid rgba($secondary, 0.5);
     border-radius: $border-radius-2xl;
     transition: $transition-base;
-    .billing-option{
+
+    .billing-option {
         border: 1px solid transparent;
         border-radius: $border-radius-2xl;
         background-color: transparent;
         color: $success;
         padding: 5px 15px;
-        &:hover,&.active{
+
+        &:hover,
+        &.active {
             background-color: rgba($success, 0.3);
             color: $primary;
         }
     }
 }
 
-.modal{
-    backdrop-filter: blur(12px);
-    .modal-dialog{
-        .modal-content{
-            background-color: rgba($light, 0.7);
-        }
-    }
-}
+
+

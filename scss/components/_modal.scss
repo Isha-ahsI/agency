@@ -1,0 +1,28 @@
+//modal.scss
+.modal {
+    backdrop-filter: blur(12px);
+
+    &.team-info-modal {
+        .modal-dialog {
+            .modal-content {
+                background-color: rgba($light, 0.6);
+                border-radius: $border-radius-xl;
+            }
+        }
+    }
+
+    &.auth-section {
+        .modal-dialog {
+            .modal-content {
+                border-radius: $border-radius-xl;
+                .modal-body {
+                    .modal-form {
+                        padding: 30px;
+                        background-color: rgba($light, 0.4);
+                        border-radius: $border-radius-xl;
+                    }
+                }
+            }
+        }
+    }
+}
