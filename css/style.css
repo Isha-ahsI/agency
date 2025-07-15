@@ -104,14 +104,6 @@ footer .footer-tagline {
   color: #023b51;
 }
 
-.modal {
-  -webkit-backdrop-filter: blur(12px);
-          backdrop-filter: blur(12px);
-}
-.modal .modal-dialog .modal-content {
-  background-color: rgba(248, 249, 250, 0.7);
-}
-
 body {
   font-family: "Inter", sans-serif !important;
 }
@@ -198,6 +190,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .btn {
   padding: 0.55rem 1.5rem;
+  transition: all 0.4s ease-in-out;
 }
 @media (min-width: 0) and (max-width: 575.98px) {
   .btn {
@@ -222,16 +215,6 @@ h1, h2, h3, h4, h5, h6 {
   color: #f8f9fa;
   background-color: #023b51;
 }
-
-.btn {
-  padding: 0.55rem 1.5rem;
-}
-@media (min-width: 0) and (max-width: 575.98px) {
-  .btn {
-    padding: 0.4rem 1rem;
-    font-size: 0.9rem;
-  }
-}
 .btn.btn-secondary {
   background-color: #6c757d;
   border: 2px solid #6c757d;
@@ -248,16 +231,6 @@ h1, h2, h3, h4, h5, h6 {
 .btn.btn-outline-secondary:hover {
   color: #f8f9fa;
   background-color: #6c757d;
-}
-
-.btn {
-  padding: 0.55rem 1.5rem;
-}
-@media (min-width: 0) and (max-width: 575.98px) {
-  .btn {
-    padding: 0.4rem 1rem;
-    font-size: 0.9rem;
-  }
 }
 .btn.btn-success {
   background-color: #298f9c;
@@ -276,16 +249,6 @@ h1, h2, h3, h4, h5, h6 {
   color: #f8f9fa;
   background-color: #298f9c;
 }
-
-.btn {
-  padding: 0.55rem 1.5rem;
-}
-@media (min-width: 0) and (max-width: 575.98px) {
-  .btn {
-    padding: 0.4rem 1rem;
-    font-size: 0.9rem;
-  }
-}
 .btn.btn-info {
   background-color: #2ad2e8;
   border: 2px solid #2ad2e8;
@@ -302,16 +265,6 @@ h1, h2, h3, h4, h5, h6 {
 .btn.btn-outline-info:hover {
   color: #f8f9fa;
   background-color: #2ad2e8;
-}
-
-.btn {
-  padding: 0.55rem 1.5rem;
-}
-@media (min-width: 0) and (max-width: 575.98px) {
-  .btn {
-    padding: 0.4rem 1rem;
-    font-size: 0.9rem;
-  }
 }
 .btn.btn-warning {
   background-color: #ffd323;
@@ -330,16 +283,6 @@ h1, h2, h3, h4, h5, h6 {
   color: #f8f9fa;
   background-color: #ffd323;
 }
-
-.btn {
-  padding: 0.55rem 1.5rem;
-}
-@media (min-width: 0) and (max-width: 575.98px) {
-  .btn {
-    padding: 0.4rem 1rem;
-    font-size: 0.9rem;
-  }
-}
 .btn.btn-danger {
   background-color: #dc2f2f;
   border: 2px solid #dc2f2f;
@@ -356,16 +299,6 @@ h1, h2, h3, h4, h5, h6 {
 .btn.btn-outline-danger:hover {
   color: #f8f9fa;
   background-color: #dc2f2f;
-}
-
-.btn {
-  padding: 0.55rem 1.5rem;
-}
-@media (min-width: 0) and (max-width: 575.98px) {
-  .btn {
-    padding: 0.4rem 1rem;
-    font-size: 0.9rem;
-  }
 }
 .btn.btn-light {
   background-color: #f8f9fa;
@@ -384,16 +317,6 @@ h1, h2, h3, h4, h5, h6 {
   color: #f8f9fa;
   background-color: #f8f9fa;
 }
-
-.btn {
-  padding: 0.55rem 1.5rem;
-}
-@media (min-width: 0) and (max-width: 575.98px) {
-  .btn {
-    padding: 0.4rem 1rem;
-    font-size: 0.9rem;
-  }
-}
 .btn.btn-dark {
   background-color: #212529;
   border: 2px solid #212529;
@@ -410,16 +333,6 @@ h1, h2, h3, h4, h5, h6 {
 .btn.btn-outline-dark:hover {
   color: #f8f9fa;
   background-color: #212529;
-}
-
-.btn {
-  padding: 0.55rem 1.5rem;
-}
-@media (min-width: 0) and (max-width: 575.98px) {
-  .btn {
-    padding: 0.4rem 1rem;
-    font-size: 0.9rem;
-  }
 }
 .btn.btn-gradient {
   background-image: linear-gradient(160deg, #023b51 0%, #298f9c 50%);
@@ -462,7 +375,20 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 0.9rem;
   }
 }
-.btn.btn-close:focus {
+.btn.btn-auth {
+  color: #023b51;
+  background-color: rgba(248, 249, 250, 0.4);
+  border: 1px solid #f8f9fa;
+  border-radius: 50rem;
+}
+.btn:hover {
+  transform: scale(0.9);
+}
+
+.btn-close.auth-close-btn {
+  filter: invert(1);
+}
+.btn-close:focus {
   box-shadow: none;
 }
 
@@ -804,7 +730,7 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 2;
 }
 
-.team-info-modal .modal .img-wrapper {
+.team-info-modal .img-wrapper {
   width: 100%;
   height: 100%;
   max-width: 120px;
@@ -837,10 +763,18 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+.auth-section .auth-img {
+  height: 100%;
+  width: 100%;
+  background-image: url("../../images/auth_img.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
 form .input-group .form-control {
   border-color: #f8f9fa;
   box-shadow: none;
-  padding: 10px 10px;
+  padding: 0.75rem 1rem;
 }
 form .input-group .input-group-text {
   background-color: #298f9c;
@@ -855,7 +789,25 @@ form.contactus-form .form-control, form.contactus-form .form-select {
   border-radius: 0;
   border-color: transparent;
   box-shadow: none;
-  padding: 15px;
+  padding: 0.75rem 1rem;
+}
+form.form-auth .form-control {
+  padding: 0.75rem 1rem;
+  background-color: rgba(248, 249, 250, 0.6);
+  border: 2px solid transparent;
+  color: #023b51;
+}
+form.form-auth .form-control:focus {
+  box-shadow: 0 0 0 0.25rem rgba(248, 249, 250, 0.7);
+}
+form.form-auth .form-check-input {
+  color: #023b51;
+  background-color: #f8f9fa;
+  box-shadow: none;
+  border: 2px solid transparent;
+}
+form.form-auth .form-check-input:checked {
+  background-color: #023b51;
 }
 
 .socialContainer {
@@ -950,6 +902,23 @@ form.contactus-form .form-control, form.contactus-form .form-select {
   padding: 1.25rem 1rem;
 }
 
+.modal {
+  -webkit-backdrop-filter: blur(12px);
+          backdrop-filter: blur(12px);
+}
+.modal.team-info-modal .modal-dialog .modal-content {
+  background-color: rgba(248, 249, 250, 0.6);
+  border-radius: 1rem;
+}
+.modal.auth-section .modal-dialog .modal-content {
+  border-radius: 1rem;
+}
+.modal.auth-section .modal-dialog .modal-content .modal-body .modal-form {
+  padding: 30px;
+  background-color: rgba(248, 249, 250, 0.4);
+  border-radius: 1rem;
+}
+
 .swiper.partner-swiper .swiper-wrapper {
   transition-timing-function: linear !important;
 }
@@ -967,7 +936,6 @@ form.contactus-form .form-control, form.contactus-form .form-select {
   width: 100%;
   max-width: 500px;
   height: 500px;
-  position: relative;
 }
 .hero-section-primary .hero-img .orbit {
   position: absolute;
