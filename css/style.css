@@ -496,22 +496,6 @@ h1, h2, h3, h4, h5, h6 {
 .card.service-card.service-card-soft-dark:hover {
   border-color: #212529;
 }
-.card.feature-card {
-  background-image: url(../../images/business-brainstorming-graph-chart-report-data-concept.jpg);
-  background-position: center;
-  background-size: cover;
-  border-radius: 10px;
-  border: 1px solid transparent;
-  box-shadow: 0 8px 32px rgba(33, 37, 41, 0.1);
-}
-.card.feature-card .card-body {
-  position: relative;
-  color: #fff;
-}
-.card.feature-card .card-body .card-title {
-  left: 0;
-  bottom: 0;
-}
 .card.price-card {
   border: 1px solid transparent;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
@@ -572,51 +556,20 @@ h1, h2, h3, h4, h5, h6 {
   transform: scale(0.9);
   border: 1px solid #298f9c;
 }
-.card.portfolio-card {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  border-color: transparent;
-  perspective: 1000px;
+.card.features-card {
+  background-color: transparent;
+  box-shadow: 0 0.5rem 1rem rgba(41, 143, 156, 0.3);
 }
-.card.portfolio-card .card-inner {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  transform-style: preserve-3d;
-  transition: transform 0.8s ease;
-}
-.card.portfolio-card .card-inner:hover {
-  transform: rotateY(180deg);
-}
-.card.portfolio-card .card-inner .card-front,
-.card.portfolio-card .card-inner .card-back {
+.card.features-card .features-content {
   position: absolute;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  backface-visibility: hidden;
-  padding: 100px 100px;
+  bottom: 0;
+  background-color: rgba(248, 249, 250, 0.7);
+  padding: 10px;
+  transition: all 0.5s linear;
+  transform: translateY(100%);
 }
-.card.portfolio-card .card-inner .card-front .card-img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  display: block;
-}
-.card.portfolio-card .card-inner .card-back {
-  position: relative;
-  transform: rotateY(180deg);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.card.portfolio-card .card-inner .card-back .back-content {
-  color: #212529;
-  z-index: 2;
-  text-align: center;
-  background-color: #298f9c;
+.card.features-card:hover .features-content {
+  transform: translateY(0);
 }
 
 .hero-section-primary {
@@ -698,7 +651,7 @@ h1, h2, h3, h4, h5, h6 {
   left: 50%;
   transform: translate(-50%, -50%);
   opacity: 0;
-  background-color: rgba(248, 249, 250, 0.7);
+  background-color: rgba(41, 143, 156, 0.5);
   width: 0;
   height: 0;
   transition: all 0.4s ease-in-out;
@@ -856,6 +809,14 @@ form.form-auth .form-check-input:checked {
   animation: slide-in-top 0.3s both;
 }
 
+.features-section .features-icon {
+  border: 1px solid transparent;
+  border-radius: 0.5rem;
+  background-color: #023b51;
+  color: #f8f9fa;
+  padding: 8px;
+}
+
 @keyframes slide-in-top {
   0% {
     transform: translateY(-50px);
@@ -907,7 +868,7 @@ form.form-auth .form-check-input:checked {
           backdrop-filter: blur(12px);
 }
 .modal.team-info-modal .modal-dialog .modal-content {
-  background-color: rgba(248, 249, 250, 0.6);
+  background-color: rgba(248, 249, 250, 0.5);
   border-radius: 1rem;
 }
 .modal.auth-section .modal-dialog .modal-content {
