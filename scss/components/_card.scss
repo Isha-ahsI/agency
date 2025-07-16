@@ -77,28 +77,7 @@
         }
     }
 
-    &.feature-card {
-        // background: rgba($light, 0.2);
-        // backdrop-filter: $primary(10px);
-        // -webkit-backdrop-filter: $primary(10px);
-        background-image: url(../../images/business-brainstorming-graph-chart-report-data-concept.jpg);
-        background-position: center;
-        background-size: cover;
-        border-radius: 10px;
-        border: 1px solid transparent;
-        box-shadow: 0 8px 32px rgba($dark, 0.1);
 
-        // padding: 20px;
-        .card-body {
-            position: relative;
-            color: $white;
-
-            .card-title {
-                left: 0;
-                bottom: 0;
-            }
-        }
-    }
 
     &.price-card {
         border: 1px solid transparent;
@@ -186,57 +165,22 @@
         }
     }
 
-    &.portfolio-card {
-        position: relative;
-        width: 100%;
-        height: 100%;
-        border-color: transparent;
-        perspective: 1000px;
-
-        .card-inner {
-            position: relative;
-            width: 100%;
-            height: 100%;
-            transform-style: preserve-3d;
-            transition: transform 0.8s ease;
-
-            &:hover {
-                transform: rotateY(180deg);
-            }
-
-            .card-front,
-            .card-back {
-                position: absolute;
-                width: 100%;
-                height: 100%;
-                overflow: hidden;
-                backface-visibility: hidden;
-                padding: 100px 100px;
-            }
-
-            .card-front {
-                .card-img {
-                    width: 100%;
-                    height: 100%;
-                    object-fit: cover;
-                    display: block;
-                }
-            }
-
-            .card-back {
-                position: relative;
-                transform: rotateY(180deg);
-                display: flex;
-                align-items: center;
-                justify-content: center;
-
-                .back-content {
-                    color: $dark;
-                    z-index: 2;
-                    text-align: center;
-                    background-color: $success;
-                }
+    &.features-card {
+        background-color: transparent;
+        box-shadow:0 .5rem 1rem rgba($success, .3);
+        .features-content {
+            position: absolute;
+            bottom: 0;
+            background-color: rgba($light, 0.7);
+            padding: 10px;
+            transition: all 0.5s linear;
+            transform: translateY(100%);
+        }
+        &:hover {
+            .features-content {
+                transform: translateY(0);
             }
         }
     }
 }
+

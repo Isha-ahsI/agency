@@ -87,7 +87,7 @@
                 left: 50%;
                 transform: translate(-50%, -50%);
                 opacity: 0;
-                background-color: rgba($gray-100, 0.7);
+                background-color: rgba($success, 0.5);
                 width: 0;
                 height: 0;
                 transition: $transition-base;
@@ -173,3 +173,4 @@
         background-position: center;
     }
 }
+
