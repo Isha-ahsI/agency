@@ -301,7 +301,7 @@ tl3.from(".aboutus-section .aboutus-img-wrap", {
   scale: 0,
   opacity: 0,
   duration: 2
-}, -0.1)
+}, "-0.1")
 
 //partner gsap
 var tl4 = gsap.timeline({
@@ -349,7 +349,7 @@ tl5.from(".footer-section .footer-subscribe-box", {
   opacity: 0,
   delay: 0.3,
   duration: 1
-}, -0.1);
+}, "-0.1");
 
 tl5.from(".footer-section .footer-title,.footer-section .footer-nav-group .footer-nav-link,.footer-section .contact-info,.footer-section .location-info,.footer-section .mail-info", {
   y: -30,
@@ -439,14 +439,14 @@ tl8.from(".contactus-section .contact-info", {
   x: 100,
   opacity: 0,
   duration: 2,
-}, 2);
+}, "2");
 
 //faqs
 var tl9 = gsap.timeline({
   scrollTrigger: {
     trigger: ".faqs-section .faqs-heading",
     scroller: "body",
-    markers: true,
+    markers: false,
     start: "top 50%",
     end: "top 80%",
   }
@@ -468,5 +468,39 @@ tl9.from(".faqs-section .faqs-img", {
   x: 100,
   opacity: 0,
   duration: 2,
-}, 2);
+}, "2");
+
+// features
+var tl10 = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".features-section .features-heading",
+    scroller: "body",
+    markers: true,
+    start: "top 50%",
+    end: "top 80%",
+  }
+});
+tl10.from(".features-section .features-heading", {
+  scale: 0,
+  opacity: 0,
+  duration: 1,
+});
+
+tl10.from(".features-section .features-heading-left",{
+  x: -100,
+  opacity: 0,
+  duration: 2,
+});
+
+tl10.from(".features-section .features-heading-right",{
+  x: 100,
+  opacity: 0,
+  duration: 2,
+},"2");
+
+tl10.from(".features-section .features-card",{
+  scale:0,
+  opacity: 0,
+  duration: 2,
+});
 
