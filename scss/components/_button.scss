@@ -1,5 +1,6 @@
 //button.scss
 .btn {
+    font-weight: $font-weight-medium;
     padding: $btn-padding-y $btn-padding-x;
     transition: $transition-base;
     @media (min-width: 0) and (max-width: 575.98px) {

@@ -1,5 +1,34 @@
 //card.scss
 .card {
+    &.hero-card-wrapper {
+        background-color: rgba($light, 0.2);
+        box-shadow: $box-shadow;
+        transition: $transition-base;
+
+        &.hero-img-card-1 {
+            rotate: 5deg;
+        }
+
+        &.hero-img-card-2 {
+            rotate: 355deg;
+        }
+
+        &.hero-img-card-3 {
+            rotate: 5deg;
+        }
+
+        &:hover {
+            &.hero-img-card-2 {
+                rotate: 360deg;
+            }
+
+            &.hero-img-card-1,
+            &.hero-img-card-3 {
+                rotate: 0deg;
+            }
+        }
+    }
+
     &.service-card {
         border-radius: $border-radius-2xl;
         box-shadow: $box-shadow-sm;
@@ -76,8 +105,6 @@
             }
         }
     }
-
-
 
     &.price-card {
         border: 1px solid transparent;
@@ -167,7 +194,8 @@
 
     &.features-card {
         background-color: transparent;
-        box-shadow:0 .5rem 1rem rgba($success, .3);
+        box-shadow: 0 .5rem 1rem rgba($success, .3);
+
         .features-content {
             position: absolute;
             bottom: 0;
@@ -176,6 +204,7 @@
             transition: all 0.5s linear;
             transform: translateY(100%);
         }
+
         &:hover {
             .features-content {
                 transform: translateY(0);
@@ -183,4 +212,3 @@
         }
     }
 }
-

@@ -18,6 +18,14 @@
     }
 }
 
+.hero-section-primary2 {
+    background-image: url('../../images/hero_bg02.jpeg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    padding-top: 100px;
+}
+
 //about-section image
 .aboutus-section {
     &.wave-bg-1 {
