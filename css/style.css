@@ -189,6 +189,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .btn {
+  font-weight: 500;
   padding: 0.55rem 1.5rem;
   transition: all 0.4s ease-in-out;
 }
@@ -398,6 +399,26 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+.card.hero-card-wrapper {
+  background-color: rgba(248, 249, 250, 0.2);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+  transition: all 0.4s ease-in-out;
+}
+.card.hero-card-wrapper.hero-img-card-1 {
+  rotate: 5deg;
+}
+.card.hero-card-wrapper.hero-img-card-2 {
+  rotate: 355deg;
+}
+.card.hero-card-wrapper.hero-img-card-3 {
+  rotate: 5deg;
+}
+.card.hero-card-wrapper:hover.hero-img-card-2 {
+  rotate: 360deg;
+}
+.card.hero-card-wrapper:hover.hero-img-card-1, .card.hero-card-wrapper:hover.hero-img-card-3 {
+  rotate: 0deg;
+}
 .card.service-card {
   border-radius: 5rem;
   box-shadow: 0 0.125rem 0.7rem rgba(0, 0, 0, 0.2);
@@ -584,6 +605,14 @@ h1, h2, h3, h4, h5, h6 {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.hero-section-primary2 {
+  background-image: url("../../images/hero_bg02.jpeg");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  padding-top: 100px;
 }
 
 .aboutus-section.wave-bg-1 {
@@ -815,6 +844,25 @@ form.form-auth .form-check-input:checked {
   background-color: #023b51;
   color: #f8f9fa;
   padding: 8px;
+}
+
+.hero-section-primary2 .arrow-icon {
+  left: 25%;
+}
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+  .hero-section-primary2 .arrow-icon {
+    left: 20%;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .hero-section-primary2 .arrow-icon {
+    left: 15%;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .hero-section-primary2 .arrow-icon {
+    left: 0%;
+  }
 }
 
 @keyframes slide-in-top {
