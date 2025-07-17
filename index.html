@@ -16,23 +16,25 @@
 
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-md fixed-top" id="mainNavbar">
+    <nav class="navbar navbar-expand-md fixed-top overflow-hidden" id="mainNavbar">
         <div class="container flex-md-column justify-content-center align-items-center">
             <div class="d-flex justify-content-between align-items-center w-100 mb-md-2">
-                <span class="d-md-block d-none mail-id text-primary"><i
-                        class="ri-mail-fill"></i>info@boowebsite.com</span>
+                <span class="d-md-block d-none mail-id text-primary"><i class="ri-mail-fill"></i>info@boowebsite.com</span>
                 <div class="nav-logo">
                     <a class="navbar-brand d-flex justify-content-md-center align-items-center text-center m-0"
                         href="#">
                         <h4 class="m-0 text-primary">Strivo</h4>
                     </a>
                 </div>
-                <button class="btn btn-success nav-btn ms-auto" data-bs-target="#exampleModalToggle1"
-                    data-bs-toggle="modal">Get Started</button>
+                <div class="nav-btn ms-auto">
+                    <button class="btn btn-success "  data-bs-target="#exampleModalToggle1" data-bs-toggle="modal">
+                        Get Started</button>
+                </div>
                 <button class="navbar-toggler shadow-none ms-2" type="button" data-bs-toggle="offcanvas"
                     data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+
             </div>
 
             <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
@@ -71,12 +73,6 @@
                             <a class="nav-link" href="#pricing">
                                 <i class="ri-money-dollar-circle-line fs-5 d-md-none me-1"></i>
                                 <span>Pricing</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#work">
-                                <i class="ri-layout-4-line fs-5 d-md-none me-1"></i>
-                                <span>Work</span>
                             </a>
                         </li>
                         <li class="nav-item">
@@ -321,7 +317,7 @@
     </section>
 
     <!-- Services Section -->
-    <section class="section-lg service-section" id="services">
+    <section class="section-lg service-section overflow-hidden" id="services">
         <div class="container">
             <div class="row">
                 <div class="col-12 mb-5">
@@ -491,19 +487,23 @@
     </section>
 
     <!-- Features Section -->
-    <section class="features-section section-lg bg-primary" id="features">
+    <section class="features-section section-lg bg-primary overflow-hidden" id="features">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-12">
                     <div class="text-lg-start text-center">
-                        <span class="badge rounded-pill bg-success text-light p-2 mb-3">Our Key Features</span>
+                        <span class="badge rounded-pill bg-success text-light p-2 mb-3 features-heading">Our Key
+                            Features</span>
                     </div>
                 </div>
                 <div class="col-lg-6 col-12 mb-lg-5 mb-2">
-                    <h1 class="text-success text-lg-start text-center mb-0">Powerful Tools for Business Growth</h1>
+                    <h1 class="text-success text-lg-start text-center mb-0 features-heading-left">Powerful Tools for
+                        Business Growth</h1>
                 </div>
                 <div class="col-lg-5 offset-lg-1 col-12 mb-5">
-                    <small class=" d-inline-flex text-light text-lg-start text-center mb-0">Strivo offers smart,
+                    <small
+                        class=" d-inline-flex text-light text-lg-start text-center mb-0 features-heading-right">Strivo
+                        offers smart,
                         scalable tools that help your business grow
                         faster. From marketing to analytics, we give you everything you need to succeed—right at your
                         fingertips.
@@ -516,52 +516,53 @@
                     <div class="card features-card position-relative overflow-hidden mb-4">
                         <img src="./images/growth_strategy1.jpg" alt="" class="img-fluid">
                         <div class="features-content d-flex align-items-center">
-                            <div class="features-icon me-3">
+                            <span class="features-icon me-3">
                                 <i class="ri-line-chart-line fs-1 lh-1 text-light"></i>
-                            </div>
+                            </span>
                             <h5 class="text-dark mb-0">Smarter Growth Starts With Real-Time Insights</h5>
                         </div>
                     </div>
                     <div class="card features-card position-relative overflow-hidden mb-4">
                         <img src="./images/marketing_managment.jpg" alt="" class="img-fluid">
                         <div class="features-content d-flex align-items-center">
-                            <div class="features-icon me-3">
+                            <span class="features-icon me-3">
                                 <i class="ri-group-line fs-1 lh-1 text-light"></i>
-                            </div>
+                            </span>
                             <h5 class="text-dark mb-0">Your Brand, Everywhere Your Customers Want To Be</h5>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-lg-4  col-md-6 col-12">
-                     <div class="card features-card position-relative overflow-hidden mb-4">
+                    <div class="card features-card position-relative overflow-hidden mb-4">
                         <img src="./images/powerfull_tools.jpg" alt="" class="img-fluid">
                         <div class="features-content d-flex align-items-center">
-                            <div class="features-icon me-3">
+                            <span class="features-icon me-3">
                                 <i class="ri-rocket-2-line fs-1 lh-1 text-light"></i>
-                            </div>
+                            </span>
                             <h5 class="text-dark mb-0">Powerful Tools to Fuel Your Business Expansion</h5>
                         </div>
                     </div>
                     <div class="card features-card position-relative overflow-hidden mb-4">
                         <img src="./images/automated_marketing.jpg" alt="" class="img-fluid">
                         <div class="features-content d-flex align-items-center">
-                            <div class="features-icon me-3">
+                            <span class="features-icon me-3">
                                 <i class="ri-hourglass-line fs-1 lh-1 text-light"></i>
-                            </div>
+                            </span>
                             <h5 class="text-dark mb-0">Automated Marketing That Saves Time and Delivers Results</h5>
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="col-lg-4 col-md-6 col-12">
                     <div class="card features-card position-relative overflow-hidden">
                         <img src="./images/growth_chart.jpg" alt="" class="img-fluid">
                         <div class="features-content d-flex align-items-center">
-                            <div class="features-icon me-3">
+                            <span class="features-icon me-3">
                                 <i class="ri-bar-chart-box-line fs-1 lh-1 text-light"></i>
-                            </div>
-                            <h5 class="text-dark mb-0">The process of tracking profit is hassle free anytime anywhere</h5>
+                            </span>
+                            <h5 class="text-dark mb-0">The process of tracking profit is hassle free anytime anywhere
+                            </h5>
                         </div>
                     </div>
                 </div>
@@ -570,7 +571,7 @@
     </section>
 
     <!-- Pricing Section -->
-    <section class="section-lg pricing-section" id="pricing">
+    <section class="section-lg pricing-section overflow-hidden" id="pricing">
         <div class="container">
             <div class="row">
                 <div class="col-12 text-center mb-5">
@@ -876,58 +877,8 @@
             </div>
     </section>
 
-    <!-- our-work(portfolio) Section-->
-    <section class="section-lg" id="work">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <span class="badge rounded-pill bg-success text-light p-2 mb-3">Our work</span>
-                </div>
-                <div class="col-lg-6 mb-5 col-12">
-                    <h1 class="text-primary">See What We’ve Achieved</h1>
-                </div>
-                <div class="col-lg-5 offset-lg-1 col-12">
-                    <small class="text-secondary mb-0">From startups to established enterprises, our work reflects
-                        innovation, strategy, and measurable success. Discover how we help brands grow, engage, and lead
-                        in their markets.</small>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xl-4 col-md-6 col-12">
-                    <div class="card portfolio-card position-relative overflow-hidden mb-4">
-                        <div class="card-inner">
-                            <div class="card-front">
-                                <img src="./images/41453.jpg" alt="" class="card-img">
-                            </div>
-                            <div class="card-back">
-                                <div class="overlay"></div>
-                                <div class="back-content p-4">
-                                    <h3 class="card-title">Conversion-Focused Website & Branding</h3>
-                                    <p class="card-text">Your website and brand aren't just about looking good—they're
-                                        about
-                                        driving results. We design and build fast, responsive websites that are
-                                        strategically
-                                        crafted to turn visitors into leads and customers. Every element—from visuals
-                                        and
-                                        messaging to user experience and layout—is optimized for conversion.Paired with
-                                        a
-                                        strong, consistent brand identity, we ensure your business stands out, builds
-                                        trust
-                                        instantly, and guides users toward action.Turns traffic into leads and customers
-                                        through a clear, persuasive, and optimized experience.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-4"></div>
-                <div class="col-4"></div>
-            </div>
-        </div>
-    </section>
-
     <!-- Contactus Section -->
-    <section class="section-lg contactus-section" id="contactus">
+    <section class="section-lg contactus-section overflow-hidden" id="contactus">
         <div class="overlay"></div>
         <div class="container">
             <div class="row align-items-center">
@@ -1032,7 +983,7 @@
     </section>
 
     <!-- FAQs Section-->
-    <section class="section-lg faqs-section">
+    <section class="section-lg faqs-section overflow-hidden">
         <div class="container">
             <div class="row">
                 <div class="col-12 mb-4">
@@ -1073,7 +1024,7 @@
 
     <!-- footer -->
     <footer>
-        <section class="bg-primary text-light pt-5 pb-3 footer-section">
+        <section class="bg-primary text-light pt-5 pb-3 footer-section overflow-hidden">
             <div class="container">
                 <div class="row">
                     <div class="col-12 mb-3">
@@ -1241,7 +1192,7 @@
     </section>
 
     <!-- Authentication Section -->
-    <div class="modal fade auth-section" id="exampleModalToggle1" aria-hidden="true"
+    <div class="modal fade auth-section" id="exampleModalToggle1" 
         aria-labelledby="exampleModalToggleLabel" tabindex="-1" data-bs-backdrop="static">
         <div class="modal-dialog modal-dialog-centered modal-xl">
             <div class="modal-content overflow-hidden">
@@ -1332,7 +1283,7 @@
         </div>
     </div>
 
-    <div class="modal fade auth-section" id="exampleModalToggle2" aria-hidden="true"
+    <div class="modal fade auth-section" id="exampleModalToggle2" 
         aria-labelledby="exampleModalToggleLabel2" tabindex="-1" data-bs-backdrop="static">
         <div class="modal-dialog modal-dialog-centered modal-xl">
             <div class="modal-content overflow-hidden">
