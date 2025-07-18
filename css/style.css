@@ -1,3 +1,9 @@
+.navbar.navbar1 {
+  background-color: transparent;
+}
+.navbar.navbar2 {
+  background-color: rgba(248, 249, 250, 0.7);
+}
 .navbar.nav-scroll {
   position: sticky;
   top: 0;
@@ -129,7 +135,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .text-warning {
-  color: #ffd323 !important;
+  color: #ffc107 !important;
 }
 
 .text-danger {
@@ -169,7 +175,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .bg-warning {
-  background-color: #ffd323 !important;
+  background-color: #ffc107 !important;
 }
 
 .bg-danger {
@@ -209,12 +215,12 @@ h1, h2, h3, h4, h5, h6 {
   color: #023b51;
 }
 .btn.btn-outline-primary {
-  border-color: #023b51;
+  border: 2px solid #023b51;
   color: #023b51;
 }
 .btn.btn-outline-primary:hover {
   color: #f8f9fa;
-  background-color: #023b51;
+  border: 2px solid #023b51;
 }
 .btn.btn-secondary {
   background-color: #6c757d;
@@ -226,12 +232,12 @@ h1, h2, h3, h4, h5, h6 {
   color: #6c757d;
 }
 .btn.btn-outline-secondary {
-  border-color: #6c757d;
+  border: 2px solid #6c757d;
   color: #6c757d;
 }
 .btn.btn-outline-secondary:hover {
   color: #f8f9fa;
-  background-color: #6c757d;
+  border: 2px solid #6c757d;
 }
 .btn.btn-success {
   background-color: #298f9c;
@@ -243,12 +249,12 @@ h1, h2, h3, h4, h5, h6 {
   color: #298f9c;
 }
 .btn.btn-outline-success {
-  border-color: #298f9c;
+  border: 2px solid #298f9c;
   color: #298f9c;
 }
 .btn.btn-outline-success:hover {
   color: #f8f9fa;
-  background-color: #298f9c;
+  border: 2px solid #298f9c;
 }
 .btn.btn-info {
   background-color: #2ad2e8;
@@ -260,29 +266,29 @@ h1, h2, h3, h4, h5, h6 {
   color: #2ad2e8;
 }
 .btn.btn-outline-info {
-  border-color: #2ad2e8;
+  border: 2px solid #2ad2e8;
   color: #2ad2e8;
 }
 .btn.btn-outline-info:hover {
   color: #f8f9fa;
-  background-color: #2ad2e8;
+  border: 2px solid #2ad2e8;
 }
 .btn.btn-warning {
-  background-color: #ffd323;
-  border: 2px solid #ffd323;
+  background-color: #ffc107;
+  border: 2px solid #ffc107;
 }
 .btn.btn-warning:hover {
   background-color: transparent;
-  border: 2px solid #ffd323;
-  color: #ffd323;
+  border: 2px solid #ffc107;
+  color: #ffc107;
 }
 .btn.btn-outline-warning {
-  border-color: #ffd323;
-  color: #ffd323;
+  border: 2px solid #ffc107;
+  color: #ffc107;
 }
 .btn.btn-outline-warning:hover {
   color: #f8f9fa;
-  background-color: #ffd323;
+  border: 2px solid #ffc107;
 }
 .btn.btn-danger {
   background-color: #dc2f2f;
@@ -294,12 +300,12 @@ h1, h2, h3, h4, h5, h6 {
   color: #dc2f2f;
 }
 .btn.btn-outline-danger {
-  border-color: #dc2f2f;
+  border: 2px solid #dc2f2f;
   color: #dc2f2f;
 }
 .btn.btn-outline-danger:hover {
   color: #f8f9fa;
-  background-color: #dc2f2f;
+  border: 2px solid #dc2f2f;
 }
 .btn.btn-light {
   background-color: #f8f9fa;
@@ -311,12 +317,12 @@ h1, h2, h3, h4, h5, h6 {
   color: #f8f9fa;
 }
 .btn.btn-outline-light {
-  border-color: #f8f9fa;
+  border: 2px solid #f8f9fa;
   color: #f8f9fa;
 }
 .btn.btn-outline-light:hover {
   color: #f8f9fa;
-  background-color: #f8f9fa;
+  border: 2px solid #f8f9fa;
 }
 .btn.btn-dark {
   background-color: #212529;
@@ -328,12 +334,12 @@ h1, h2, h3, h4, h5, h6 {
   color: #212529;
 }
 .btn.btn-outline-dark {
-  border-color: #212529;
+  border: 2px solid #212529;
   color: #212529;
 }
 .btn.btn-outline-dark:hover {
   color: #f8f9fa;
-  background-color: #212529;
+  border: 2px solid #212529;
 }
 .btn.btn-gradient {
   background-image: linear-gradient(160deg, #023b51 0%, #298f9c 50%);
@@ -494,10 +500,10 @@ h1, h2, h3, h4, h5, h6 {
   border-color: #2ad2e8;
 }
 .card.service-card.service-card-soft-warning::before {
-  background-color: rgba(255, 211, 35, 0.2);
+  background-color: rgba(255, 193, 7, 0.2);
 }
 .card.service-card.service-card-soft-warning:hover {
-  border-color: #ffd323;
+  border-color: #ffc107;
 }
 .card.service-card.service-card-soft-danger::before {
   background-color: rgba(220, 47, 47, 0.2);
@@ -609,6 +615,14 @@ h1, h2, h3, h4, h5, h6 {
 
 .hero-section-primary2 {
   background-image: url("../../images/hero_bg02.jpeg");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  padding-top: 100px;
+}
+
+.hero-section-primary3 {
+  background-image: url("../../images/magicpattern-gradient-1752815654283.jpeg");
   background-size: cover;
   background-position: center;
   width: 100%;
