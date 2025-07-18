@@ -22,12 +22,12 @@
         }
 
         &.btn-outline-#{$color} {
-            border-color: $value;
+            border: 2px solid $value;
             color: $value;
 
             &:hover {
                 color: $light;
-                background-color: $value;
+                border: 2px solid $value;
             }
         }
     }

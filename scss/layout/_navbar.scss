@@ -1,11 +1,18 @@
 //navbar.scss
 .navbar{
+    &.navbar1{
+        background-color: transparent;
+    }
+    &.navbar2{
+        background-color: rgba($light, 0.7);
+    }
     &.nav-scroll{
         position: sticky;
         top: 0; 
         background-color:$white; 
         z-index: 999;
     }
+   
     .nav-logo{
         @media (min-width:768px){
             position: absolute;

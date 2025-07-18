@@ -26,6 +26,14 @@
     padding-top: 100px;
 }
 
+.hero-section-primary3 {
+    background-image: url('../../images/magicpattern-gradient-1752815654283.jpeg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    padding-top: 100px;
+}
+
 //about-section image
 .aboutus-section {
     &.wave-bg-1 {
@@ -172,8 +180,8 @@
     }
 }
 
-.auth-section{
-    .auth-img{
+.auth-section {
+    .auth-img {
         height: 100%;
         width: 100%;
         background-image: url("../../images/auth_img.jpg");
@@ -181,4 +189,3 @@
         background-position: center;
     }
 }
-
