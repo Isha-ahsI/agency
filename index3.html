@@ -1,0 +1,1374 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agency</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar3 navbar-expand-md fixed-top overflow-hidden" id="mainNavbar">
+        <div class="container flex-md-column justify-content-center align-items-center">
+            <div class="d-flex justify-content-between align-items-center w-100 mb-md-2">
+                <span class="d-md-block d-none mail-id text-primary"><i
+                        class="ri-mail-fill"></i>info@boowebsite.com</span>
+                <div class="nav-logo">
+                    <a class="navbar-brand d-flex justify-content-md-center align-items-center text-center m-0"
+                        href="#">
+                        <h4 class="m-0 text-primary">Strivo</h4>
+                    </a>
+                </div>
+                <div class="nav-btn ms-auto">
+                    <button class="btn btn-success " data-bs-target="#exampleModalToggle1" data-bs-toggle="modal">
+                        Get Started</button>
+                </div>
+                <button class="navbar-toggler shadow-none ms-2" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+            </div>
+
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel" data-bs-scroll="true" data-bs-backdrop="false">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                    <button type="button" class="btn btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav nav-underline justify-content-end flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">
+                                <i class="ri-home-4-line fs-5 d-md-none me-1"></i>
+                                <span>Home</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#aboutus">
+                                <i class="ri-information-line fs-5 d-md-none me-1"></i>
+                                <span>About Us</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#services">
+                                <i class="ri-service-line fs-5 d-md-none me-1"></i>
+                                <span>Services</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#features">
+                                <i class="ri-star-line fs-5 d-md-none me-1"></i>
+                                <span>Features</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#pricing">
+                                <i class="ri-money-dollar-circle-line fs-5 d-md-none me-1"></i>
+                                <span>Pricing</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contactus">
+                                <i class="ri-send-plane-line fs-5 d-md-none me-1"></i>
+                                <span>Contact Us</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="d-md-none p-3">
+                    <ul class="navbar-nav list-unstyled">
+                        <li class="nav-item">
+                            <a class="nav-link mb-3" href="#">
+                                <i class="ri-question-line fs-5"></i>
+                                <span>Help</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i class="ri-logout-circle-r-line fs-5"></i>
+                                <span>Log out</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="offcanvas-footer d-md-none d-block p-4">
+                    <span class="text-primary"><i class="ri-mail-fill"></i>info@boowebsite.com</span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section-primary3 overflow-hidden min-vh-100  d-flex align-items-center">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-xl-6 col-12 order-xl-1 order-2 mb-5 mb-xl-0">
+                    <div class="hero-content text-center">
+                        <h1 class="display-4 fw-normal text-primary mb-0">Smart
+                            <span class="display-2 fw-medium text-success z-2 text-decoration-underline">Solutions</span>
+                            <span class="display-6">for</span>
+                        </h1>
+                        <h1 class="display-4 fw-normal text-success mb-4"><span class="display-5">Real</span>
+                            Business <span class="display-2 fw-medium text-primary text-decoration-underline">Growth</span> </h1>
+                        <p class="text-secondary mb-4">Empower your business with innovative strategies, intelligent
+                            automation, and performance-driven marketing. We deliver scalable solutions that turn your
+                            growth goals into measurable success.</p>
+
+                        <div class="email-subscription d-flex justify-content-between  align-items-center rounded-pill bg-light shadow-sm p-1 mb-4">
+                            <div>
+                                <input type="email" class="form-control  border-0 shadow-none me-2 ps-3"
+                                    placeholder="example@gmail.com" id="email-subscription">
+                            </div>
+                            <a href="#" class="btn btn-primary  rounded-pill d-sm-block d-none">Start Free Trial</a>
+                            <a href="#" class="btn btn-primary  rounded-circle d-sm-none d-block "><i class="ri-arrow-left-s-line fs-1"></i></a>
+                        </div>
+                        
+                        <div class="d-flex justify-content-center align-items-center mb-1">
+                            <div class="me-3">
+                                <i class="ri-star-fill fs-5 text-warning"></i>
+                                <i class="ri-star-fill fs-5 text-warning"></i>
+                                <i class="ri-star-fill fs-5 text-warning"></i>
+                                <i class="ri-star-fill fs-5 text-warning"></i>
+                                <i class="ri-star-half-line fs-5 text-warning"></i>
+                            </div>
+                            <p class="text-primary mb-0">4.5 out of 5</p>
+                        </div>
+                        <p class="text-primary mb-0">Trusted by over 20 thousand users</p>
+                    </div>
+                </div>
+                <div class="col-xl-5  offset-xl-1 col-12 order-xl-2 order-1 mt-5 mt-xl-0">
+                    <img src="./images/img-1.png" alt="" class="img-fluid  ">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partner Section -->
+    <section class="section-lg partner-section">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 mb-5">
+                    <div class="partner-heading">
+                        <h5 class="position-relative text-center z-0">
+                            <span
+                                class="position-relative z-1 bg-white text-success px-3 text-decoration-underline">Trusted
+                                By</span>
+                        </h5>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="swiper partner-swiper mb-5" id="swiper1">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="./images/b_logo/logo_1.png" alt="logo" class="img-fluid">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./images/b_logo/logo_2.png" alt="logo" class="img-fluid">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./images/b_logo/logo_3.png" alt="logo" class="img-fluid">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./images/b_logo/logo_4.png" alt="logo" class="img-fluid">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./images/b_logo/logo_5.png" alt="logo" class="img-fluid">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./images/b_logo/logo_6.png" alt="logo" class="img-fluid">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./images/b_logo/logo_7.png" alt="logo" class="img-fluid">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./images/b_logo/logo_8.png" alt="logo" class="img-fluid">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./images/b_logo/logo_9.png" alt="logo" class="img-fluid">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./images/b_logo/logo_10.png" alt="logo" class="img-fluid">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./images/b_logo/logo_11.png" alt="logo" class="img-fluid">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./images/b_logo/logo_12.png" alt="logo" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper partner-swiper" id="swiper2">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="./images/b_logo/logo_1.png" alt="logo" class="img-fluid">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./images/b_logo/logo_2.png" alt="logo" class="img-fluid">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./images/b_logo/logo_3.png" alt="logo" class="img-fluid">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./images/b_logo/logo_4.png" alt="logo" class="img-fluid">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./images/b_logo/logo_5.png" alt="logo" class="img-fluid">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./images/b_logo/logo_6.png" alt="logo" class="img-fluid">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./images/b_logo/logo_7.png" alt="logo" class="img-fluid">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./images/b_logo/logo_8.png" alt="logo" class="img-fluid">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./images/b_logo/logo_9.png" alt="logo" class="img-fluid">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./images/b_logo/logo_10.png" alt="logo" class="img-fluid">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./images/b_logo/logo_11.png" alt="logo" class="img-fluid">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./images/b_logo/logo_12.png" alt="logo" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About-us Section -->
+    <section class="section-lg aboutus-section wave-bg-1 overflow-hidden" id="aboutus">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 col-12 mb-lg-0 mb-5">
+                    <div class=" aboutus-img-wrap position-relative">
+                        <img src="./images/employee.jpg" alt="...employee" class="img-fluid aboutus-img">
+                        <div class="custom-border position-absolute"></div>
+                        <div class="custom-bg position-absolute"></div>
+                        <div class="position-absolute top-0 end-0 z-2 bg-light rounded-2 shadow">
+                            <div class="d-flex align-items-center p-sm-3 p-1">
+                                <img src="./images/expert_growth_strategists.png" alt="Expert Growth Strategists">
+                                <h6 class="text-dark mb-0 ms-2">Expert Growth Strategists</h6>
+                            </div>
+                        </div>
+                        <div class="position-absolute left-0 bottom-0 z-2 bg-light rounded-2 shadow">
+                            <div class="d-flex align-items-center p-sm-3 p-1">
+                                <h6 class="text-dark mb-0 me-2">Proven Business Results</h6>
+                                <img src="./images/proven_business _results.png" alt="Proven Business Results">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 offset-lg-1 col-12">
+                    <div class="text-lg-start text-center aboutus-content">
+                        <span class="badge rounded-pill bg-success text-light p-2 mb-3">About Our Agency</span>
+                        <h2 class="text-primary mb-3 fw-semibold">Your growth is our goal and we bring the tools to make
+                            it happen.</h2>
+                        <p class="text-secondary">We help businesses grow with smart strategies, creative ideas, and
+                            real
+                            results. From startups to established brands, we’re here to guide your journey to success.
+                        </p>
+                        <a href="#" class="btn btn-gradient">About More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="section-lg service-section overflow-hidden" id="services">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 mb-5">
+                    <div class="service-heading">
+                        <h6 class="underline-after text-center position-relative z-0">
+                            <span class="position-relative z-1 bg-white text-primary px-3">Our Best
+                                Services</span>
+                        </h6>
+                        <h1 class="d-block text-gradiant text-center fw-semibold">What we can Offer?</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="card service-card service-card-soft-success rounded-bottom-0 mb-4 overflow-hidden">
+                        <div class="card-body text-primary text-center z-2">
+                            <img src="./images/growth_strategy.png" alt="Growth Strategy" class="card-icon my-3">
+                            <h5 class="card-title position-relative mb-3">Growth Strategy</h5>
+                            <p class="card-text text-secondary">Build a clear roadmap for sustainable growth.</p>
+                            <ul class="list-group list-unstyled lh-lg">
+                                <li class="item-list"><i class="ri-checkbox-circle-fill"></i> Customized Solutions</li>
+                                <li class="item-list"><i class="ri-checkbox-circle-fill"></i> Timely and Reliable</li>
+                                <li class="item-list"><i class="ri-checkbox-circle-fill"></i> Continuous Improvement
+                                </li>
+                            </ul>
+                            <hr>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <h2 class="mb-0 opacity-25">01</h2>
+                                <a class="card-link text-decoration-none text-primary fw-medium" aria-current="page"
+                                    href="#">
+                                    <span>Read More</span>
+                                    <i class="ri-arrow-right-double-line fs-5"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="card service-card service-card-soft-success rounded-bottom-0 mb-4 overflow-hidden">
+                        <div class="card-body text-primary text-center z-2">
+                            <img src="./images/market_research.png" alt="" class="card-icon my-3">
+                            <h5 class="card-title position-relative mb-3">Market Research </h5>
+                            <p class="card-text text-secondary">Make informed decisions backed by real data.</p>
+                            <ul class="list-group list-unstyled lh-lg ">
+                                <li class="item-list"><i class="ri-checkbox-circle-fill"></i> Industry & competitor
+                                    analysis</li>
+                                <li class="item-list"><i class="ri-checkbox-circle-fill"></i> Target audience research
+                                </li>
+                                <li class="item-list"><i class="ri-checkbox-circle-fill"></i> Product-market fit
+                                    validation</li>
+                            </ul>
+                            <hr>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <h2 class="mb-0 opacity-25">02</h2>
+                                <a class="card-link text-decoration-none text-primary fw-medium" aria-current="page"
+                                    href="#">
+                                    <span>Read More</span>
+                                    <i class="ri-arrow-right-double-line fs-5"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="card service-card service-card-soft-success rounded-bottom-0 mb-4 overflow-hidden">
+                        <div class="card-body text-primary text-center z-2">
+                            <img src="./images/brand_positioning.png" alt="" class="card-icon my-3">
+                            <h5 class="card-title position-relative mb-3">Brand Positioning</h5>
+                            <p class="card-text text-secondary">Define uniquely what makes your brand stand out.</p>
+                            <ul class="list-group list-unstyled lh-lg ">
+                                <li class="item-list"><i class="ri-checkbox-circle-fill"></i>Unique value proposition
+                                    (UVP)</li>
+                                <li class="item-list"><i class="ri-checkbox-circle-fill"></i> Brand voice & messaging
+                                </li>
+                                <li class="item-list"><i class="ri-checkbox-circle-fill"></i> Competitive
+                                    differentiation</li>
+                            </ul>
+                            <hr>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <h2 class="mb-0 opacity-25">03</h2>
+                                <a class="card-link text-decoration-none text-primary fw-medium" aria-current="page"
+                                    href="#">
+                                    <span>Read More</span>
+                                    <i class="ri-arrow-right-double-line fs-5"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="card service-card service-card-soft-success rounded-bottom-0 mb-4 overflow-hidden">
+                        <div class="card-body text-primary text-center z-2">
+                            <img src="./images/digital_marketing.png" alt="" class="card-icon my-3">
+                            <h5 class="card-title position-relative mb-3">Digital Marketing</h5>
+                            <p class="card-text text-secondary">Drive leads with powerful, targeted campaigns.</p>
+                            <ul class="list-group list-unstyled lh-lg ">
+                                <li class="item-list"><i class="ri-checkbox-circle-fill"></i> SEO & content marketing
+                                </li>
+                                <li class="item-list"><i class="ri-checkbox-circle-fill"></i> Paid advertising (Google)
+                                </li>
+                                <li class="item-list"><i class="ri-checkbox-circle-fill"></i> Email marketing &
+                                    automation</li>
+                            </ul>
+                            <hr>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <h2 class="mb-0 opacity-25">04</h2>
+                                <a class="card-link text-decoration-none text-primary fw-medium" aria-current="page"
+                                    href="#">
+                                    <span>Read More</span>
+                                    <i class="ri-arrow-right-double-line fs-5"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="card service-card service-card-soft-success rounded-bottom-0 mb-4 overflow-hidden">
+                        <div class="card-body text-primary text-center z-2">
+                            <img src="./images/bussiness_solutions.png" alt="" class="card-icon my-3">
+                            <h5 class="card-title position-relative mb-3">Creative Business Solutions</h5>
+                            <p class="card-text text-secondary">Solve complex problems with innovative ideas.</p>
+                            <ul class="list-group list-unstyled lh-lg ">
+                                <li class="item-list"><i class="ri-checkbox-circle-fill"></i> Business model innovation
+                                </li>
+                                <li class="item-list"><i class="ri-checkbox-circle-fill"></i> Process optimization</li>
+                                <li class="item-list"><i class="ri-checkbox-circle-fill"></i> New product or service
+                                    ideation</li>
+                            </ul>
+                            <hr>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <h2 class="mb-0 opacity-25">05</h2>
+                                <a class="card-link text-decoration-none text-primary fw-medium" aria-current="page"
+                                    href="#">
+                                    <span>Read More</span>
+                                    <i class="ri-arrow-right-double-line fs-5"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="card service-card service-card-soft-success rounded-bottom-0 mb-4 overflow-hidden">
+                        <div class="card-body text-primary text-center z-2">
+                            <img src="./images/financial_planning.png" alt="" class="card-icon my-3">
+                            <h5 class="card-title position-relative mb-3">Financial Planning</h5>
+                            <p class="card-text text-secondary">Plan your budget around strategic business goals.</p>
+                            <ul class="list-group list-unstyled lh-lg">
+                                <li class="item-list"><i class="ri-checkbox-circle-fill"></i> Pricing strategy</li>
+                                <li class="item-list"><i class="ri-checkbox-circle-fill"></i> Budget allocation</li>
+                                <li class="item-list"><i class="ri-checkbox-circle-fill"></i> profitability analysis
+                                </li>
+                            </ul>
+                            <hr>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <h2 class="mb-0 opacity-25">06</h2>
+                                <a class="card-link text-decoration-none text-primary fw-medium" aria-current="page"
+                                    href="#">
+                                    <span>Read More</span>
+                                    <i class="ri-arrow-right-double-line fs-5"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features-section section-lg bg-primary overflow-hidden" id="features">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-12">
+                    <div class="text-lg-start text-center">
+                        <span class="badge rounded-pill bg-success text-light p-2 mb-3 features-heading">Our Key
+                            Features</span>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-12 mb-lg-5 mb-2">
+                    <h1 class="text-success text-lg-start text-center mb-0 features-heading-left">Powerful Tools for
+                        Business Growth</h1>
+                </div>
+                <div class="col-lg-5 offset-lg-1 col-12 mb-5">
+                    <small
+                        class=" d-inline-flex text-light text-lg-start text-center mb-0 features-heading-right">Strivo
+                        offers smart,
+                        scalable tools that help your business grow
+                        faster. From marketing to analytics, we give you everything you need to succeed—right at your
+                        fingertips.
+                    </small>
+                </div>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="card features-card position-relative overflow-hidden mb-4">
+                        <img src="./images/growth_strategy1.jpg" alt="" class="img-fluid">
+                        <div class="features-content d-flex align-items-center">
+                            <span class="features-icon me-3">
+                                <i class="ri-line-chart-line fs-1 lh-1 text-light"></i>
+                            </span>
+                            <h5 class="text-dark mb-0">Smarter Growth Starts With Real-Time Insights</h5>
+                        </div>
+                    </div>
+                    <div class="card features-card position-relative overflow-hidden mb-4">
+                        <img src="./images/marketing_managment.jpg" alt="" class="img-fluid">
+                        <div class="features-content d-flex align-items-center">
+                            <span class="features-icon me-3">
+                                <i class="ri-group-line fs-1 lh-1 text-light"></i>
+                            </span>
+                            <h5 class="text-dark mb-0">Your Brand, Everywhere Your Customers Want To Be</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4  col-md-6 col-12">
+                    <div class="card features-card position-relative overflow-hidden mb-4">
+                        <img src="./images/powerfull_tools.jpg" alt="" class="img-fluid">
+                        <div class="features-content d-flex align-items-center">
+                            <span class="features-icon me-3">
+                                <i class="ri-rocket-2-line fs-1 lh-1 text-light"></i>
+                            </span>
+                            <h5 class="text-dark mb-0">Powerful Tools to Fuel Your Business Expansion</h5>
+                        </div>
+                    </div>
+                    <div class="card features-card position-relative overflow-hidden mb-4">
+                        <img src="./images/automated_marketing.jpg" alt="" class="img-fluid">
+                        <div class="features-content d-flex align-items-center">
+                            <span class="features-icon me-3">
+                                <i class="ri-hourglass-line fs-1 lh-1 text-light"></i>
+                            </span>
+                            <h5 class="text-dark mb-0">Automated Marketing That Saves Time and Delivers Results</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="card features-card position-relative overflow-hidden">
+                        <img src="./images/growth_chart.jpg" alt="" class="img-fluid">
+                        <div class="features-content d-flex align-items-center">
+                            <span class="features-icon me-3">
+                                <i class="ri-bar-chart-box-line fs-1 lh-1 text-light"></i>
+                            </span>
+                            <h5 class="text-dark mb-0">The process of tracking profit is hassle free anytime anywhere
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="section-lg pricing-section overflow-hidden" id="pricing">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <div class="pricing-heading">
+                        <h6 class="underline-after text-center position-relative z-0">
+                            <span class="position-relative z-1 bg-white text-primary px-3">Our Pricing</span>
+                        </h6>
+                        <h1 class="d-block text-gradiant text-center fw-semibold">Plans That Grow With You</h1>
+                        <div class="billing-toggle d-inline-block">
+                            <button class="billing-option active" data-plan="monthly">Monthly</button>
+                            <button class="billing-option" data-plan="yearly">Yearly</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center align-items-center">
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="card price-card position-relative mb-4">
+                        <div class="card-body">
+                            <div class="card-title mb-4">
+                                <div class="d-flex align-items-center">
+                                    <h2 class="text-primary">Starter</h2>
+                                    <span class="badge bg-primary rounded-4 ms-2">Basic</span>
+                                </div>
+                                <small class="text-secondary">Perfect for individuals.</small>
+                            </div>
+                            <div class="card-price mb-4 d-flex align-items-end">
+                                <h1 class="text-primary amount" data-monthly="29" data-yearly="499">$19</h1>
+                                <h6 class="text-secondary">/Month</h6>
+                            </div>
+                            <div class="card-btn">
+                                <button class="btn btn-outline-success mb-2 w-100">Start Trial</button>
+                                <button class="btn btn-gradient mb-2 w-100">Subscribe</button>
+                            </div>
+                            <div class="card-info">
+                                <ul class="list-group list-group-flush list-unstyled lh-lg">
+                                    <li class="list-group-item"><i class="ri-checkbox-circle-fill"></i> Team members:1
+                                    </li>
+                                    <li class="list-group-item"><i class="ri-checkbox-circle-fill"></i> Users: Unlimited
+                                    </li>
+                                    <li class="list-group-item"><i class="ri-checkbox-circle-fill"></i> Integration
+                                        :Unlimited
+                                    </li>
+                                    <li class="list-group-item"><i class="ri-checkbox-circle-fill"></i> Total
+                                        Messages:150
+                                    </li>
+                                    <li class="list-group-item"><i class="ri-checkbox-circle-fill"></i> Assistants:2
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="card price-card position-relative mb-4">
+                        <div class="card-body">
+                            <div class="card-title mb-4">
+                                <div class="d-flex align-items-center">
+                                    <h2 class="text-primary">Bussiness</h2>
+                                    <div class="card-ribbon">
+                                        <h5 class="ribbon-content text-light mb-0">Most popular</h5>
+                                    </div>
+                                </div>
+                                <small class="text-secondary">Perfect for small bussinesses.</small>
+                            </div>
+                            <div class="card-price mb-4 d-flex align-items-end">
+                                <h1 class="text-primary amount" data-monthly="39" data-yearly="699">$39</h1>
+                                <h6 class="text-secondary">/Month</h6>
+                            </div>
+                            <div class="card-btn">
+                                <button class="btn btn-outline-success mb-2 w-100">Start Trial</button>
+                                <button class="btn btn-gradient mb-2 w-100">Subscribe</button>
+                            </div>
+                            <div class="card-info">
+                                <ul class="list-group list-group-flush list-unstyled lh-lg">
+                                    <li class="list-group-item"><i class="ri-checkbox-circle-fill"></i> Team members:3
+                                    </li>
+                                    <li class="list-group-item"><i class="ri-checkbox-circle-fill"></i> Users: Unlimited
+                                    </li>
+                                    <li class="list-group-item"><i class="ri-checkbox-circle-fill"></i> Integration
+                                        :Unlimited
+                                    </li>
+                                    <li class="list-group-item"><i class="ri-checkbox-circle-fill"></i> Total
+                                        Messages:650
+                                    </li>
+                                    <li class="list-group-item"><i class="ri-checkbox-circle-fill"></i> Assistants:5
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="card price-card position-relative mb-4">
+                        <div class="card-body">
+                            <div class="card-title mb-4">
+                                <div class="d-flex align-items-center">
+                                    <h2 class="text-primary">Professional</h2>
+                                    <span class="badge bg-primary rounded-4 ms-2">Pro</span>
+                                </div>
+                                <small class="text-secondary">Perfect for larger bussiness.</small>
+                            </div>
+                            <div class="card-price mb-4 d-flex align-items-end">
+                                <h1 class="text-primary amount" data-monthly="59" data-yearly="899">$59</h1>
+                                <h6 class="text-secondary">/Month</h6>
+                            </div>
+                            <div class="card-btn">
+                                <button class="btn btn-outline-success mb-2 w-100">Start Trial</button>
+                                <button class="btn btn-gradient mb-2 w-100">Subscribe</button>
+                            </div>
+                            <div class="card-info">
+                                <ul class="list-group list-group-flush list-unstyled lh-lg">
+                                    <li class="list-group-item"><i class="ri-checkbox-circle-fill"></i> Team members:5
+                                    </li>
+                                    <li class="list-group-item"><i class="ri-checkbox-circle-fill"></i> Users: Unlimited
+                                    </li>
+                                    <li class="list-group-item"><i class="ri-checkbox-circle-fill"></i> Integration
+                                        :Unlimited
+                                    </li>
+                                    <li class="list-group-item"><i class="ri-checkbox-circle-fill"></i> Total
+                                        Messages:1650
+                                    </li>
+                                    <li class="list-group-item"><i class="ri-checkbox-circle-fill"></i> Assistants:12
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our-Team Section-->
+    <section class="team-section wave-bg-2 position-relative overflow-hidden py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="row g-3">
+                        <div class="col-6 col-xl-4">
+                            <div class="d-flex justify-content-around gap-3 mt-4">
+                                <div class="d-flex flex-column align-self-end mt-5">
+                                    <div class="img-wrapper position-relative overflow-hidden mb-3">
+                                        <div class="overlay"></div>
+                                        <button class="view-user" data-index="0" data-bs-toggle="modal"
+                                            data-bs-target="#personinfoModal">
+                                            <i class="ri-eye-fill fs-1 text-light"></i>
+                                        </button>
+                                        <img src="./images/user_images/user1.jpg" alt="..." class="img-fluid">
+                                    </div>
+                                    <div class="img-wrapper position-relative overflow-hidden">
+                                        <div class="overlay"></div>
+                                        <button class="view-user" data-index="1" data-bs-toggle="modal"
+                                            data-bs-target="#personinfoModal">
+                                            <i class="ri-eye-fill fs-1 text-light"></i>
+                                        </button>
+                                        <img src="./images/user_images/user2.jpg" alt="..." class="img-fluid">
+                                    </div>
+                                </div>
+                                <div class="d-flex flex-column align-self-start">
+                                    <div class="img-wrapper position-relative overflow-hidden  mb-3">
+                                        <div class="overlay"></div>
+                                        <button class="view-user" data-index="2" data-bs-toggle="modal"
+                                            data-bs-target="#personinfoModal">
+                                            <i class="ri-eye-fill fs-1 text-light"></i>
+                                        </button>
+                                        <img src="./images/user_images/user3.jpg" alt="..." class="img-fluid">
+                                    </div>
+                                    <div class="img-wrapper position-relative overflow-hidden">
+                                        <div class="overlay"></div>
+                                        <button class="view-user" data-index="3" data-bs-toggle="modal"
+                                            data-bs-target="#personinfoModal">
+                                            <i class="ri-eye-fill fs-1 text-light"></i>
+                                        </button>
+                                        <img src="./images/user_images/user4.jpg" alt="..." class="img-fluid">
+                                    </div>
+                                </div>
+                                <div class="align-self-center">
+                                    <div class="img-wrapper position-relative overflow-hidden">
+                                        <div class="overlay"></div>
+                                        <button class="view-user" data-index="4" data-bs-toggle="modal"
+                                            data-bs-target="#personinfoModal">
+                                            <i class="ri-eye-fill fs-1 text-light"></i>
+                                        </button>
+                                        <img src="./images/user_images/user5.jpg" alt="..." class="img-fluid">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-none d-xl-block col-md-4">
+                            <div class="d-flex justify-content-around  gap-3">
+                                <div class="d-flex flex-column align-self-start">
+                                    <div class="img-wrapper position-relative overflow-hidden  mb-3">
+                                        <div class="overlay"></div>
+                                        <button class="view-user" data-index="5" data-bs-toggle="modal"
+                                            data-bs-target="#personinfoModal">
+                                            <i class="ri-eye-fill fs-1 text-light"></i>
+                                        </button>
+                                        <img src="./images/user_images/user6.jpg" alt="..." class="img-fluid">
+                                    </div>
+                                    <div class="img-wrapper position-relative overflow-hidden">
+                                        <div class="overlay"></div>
+                                        <button class="view-user" data-index="6" data-bs-toggle="modal"
+                                            data-bs-target="#personinfoModal">
+                                            <i class="ri-eye-fill fs-1 text-light"></i>
+                                        </button>
+                                        <img src="./images/user_images/user7.jpg" alt="..." class="img-fluid">
+                                    </div>
+                                </div>
+                                <div class="align-self-center">
+                                    <div class="img-wrapper position-relative overflow-hidden">
+                                        <div class="overlay"></div>
+                                        <button class="view-user" data-index="7" data-bs-toggle="modal"
+                                            data-bs-target="#personinfoModal">
+                                            <i class="ri-eye-fill fs-1 text-light"></i>
+                                        </button>
+                                        <img src="./images/user_images/user8.jpg" alt="..." class="img-fluid">
+                                    </div>
+                                </div>
+                                <div class="d-flex flex-column align-self-start">
+                                    <div class="img-wrapper position-relative overflow-hidden mb-3">
+                                        <div class="overlay"></div>
+                                        <button class="view-user" data-index="8" data-bs-toggle="modal"
+                                            data-bs-target="#personinfoModal">
+                                            <i class="ri-eye-fill fs-1 text-light"></i>
+                                        </button>
+                                        <img src="./images/user_images/user9.jpg" alt="..." class="img-fluid">
+                                    </div>
+                                    <div class="img-wrapper position-relative overflow-hidden">
+                                        <div class="overlay"></div>
+                                        <button class="view-user" data-index="9" data-bs-toggle="modal"
+                                            data-bs-target="#personinfoModal">
+                                            <i class="ri-eye-fill fs-1 text-light"></i>
+                                        </button>
+                                        <img src="./images/user_images/user10.jpg" alt="..." class="img-fluid">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-xl-4">
+                            <div class="d-flex justify-content-around  gap-3 mt-4">
+                                <div class="align-self-center">
+                                    <div class="img-wrapper position-relative overflow-hidden">
+                                        <div class="overlay"></div>
+                                        <button class="view-user" data-index="10" data-bs-toggle="modal"
+                                            data-bs-target="#personinfoModal">
+                                            <i class="ri-eye-fill fs-1 text-light"></i>
+                                        </button>
+                                        <img src="./images/user_images/user11.jpg" alt="..." class="img-fluid">
+                                    </div>
+                                </div>
+                                <div class="d-flex flex-column align-self-start">
+                                    <div class="img-wrapper position-relative overflow-hidden  mb-3">
+                                        <div class="overlay"></div>
+                                        <button class="view-user" data-index="11" data-bs-toggle="modal"
+                                            data-bs-target="#personinfoModal">
+                                            <i class="ri-eye-fill fs-1 text-light"></i>
+                                        </button>
+                                        <img src="./images/user_images/user12.jpg" alt="..." class="img-fluid">
+                                    </div>
+                                    <div class="img-wrapper position-relative overflow-hidden">
+                                        <div class="overlay"></div>
+                                        <button class="view-user" data-index="12" data-bs-toggle="modal"
+                                            data-bs-target="#personinfoModal">
+                                            <i class="ri-eye-fill fs-1 text-light"></i>
+                                        </button>
+                                        <img src="./images/user_images/user13.jpg" alt="..." class="img-fluid">
+                                    </div>
+                                </div>
+                                <div class="d-flex flex-column align-self-end  mt-5">
+                                    <div class="img-wrapper position-relative overflow-hidden  mb-3">
+                                        <div class="overlay"></div>
+                                        <button class="view-user" data-index="13" data-bs-toggle="modal"
+                                            data-bs-target="#personinfoModal">
+                                            <i class="ri-eye-fill fs-1 text-light"></i>
+                                        </button>
+                                        <img src="./images/user_images/user14.jpg" alt="..." class="img-fluid">
+                                    </div>
+                                    <div class="img-wrapper position-relative overflow-hidden">
+                                        <div class="overlay"></div>
+                                        <button class="view-user" data-index="14" data-bs-toggle="modal"
+                                            data-bs-target="#personinfoModal">
+                                            <i class="ri-eye-fill fs-1 text-light"></i>
+                                        </button>
+                                        <img src="./images/user_images/user15.jpg" alt="..." class="img-fluid">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <span class="badge rounded-pill bg-primary text-light p-2 mb-3">Experts</span>
+                        <h1 class="mb-1 fw-bold text-success">Meet Our Team</h1>
+                        <p class="text-muted mb-0">We're a team of passionate professionals dedicated to helping your
+                            business grow,</p>
+                        <p class="text-muted"> one smart strategy at a time</p>
+                        <a class="btn btn-primary btn-sm rounded-5">
+                            <span>Read success story</span>
+                            <i class="ri-arrow-right-line"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- Contactus Section -->
+    <section class="section-lg contactus-section overflow-hidden" id="contactus">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-11 offset-lg-1 col-12 mb-4">
+                    <div class="contactus-heading position-relative z-1 text-lg-start text-center">
+                        <h1 class="display-2 fw-normal">Contact Us</h1>
+                        <p>Have a question, project, or idea? We're here to help.</p>
+                    </div>
+                </div>
+                <div class="col-lg-7 offset-lg-1 col-12">
+                    <form class="contactus-form position-relative z-1 mb-lg-0 mb-4">
+                        <div class="row">
+                            <div class="col-12">
+                                <h2 class="text-center mb-4">Get in touch</h2>
+                            </div>
+                            <div class="col-sm-6 col-12 mb-4">
+                                <input type="text" class="form-control" placeholder="Company name" id="inputField04">
+                            </div>
+                            <div class="col-sm-6 col-12 mb-4">
+                                <input type="mail" class="form-control" placeholder="Email Address" id="inputField02">
+                            </div>
+                            <div class="col-sm-6 col-12 mb-4">
+                                <input type="text" class="form-control" placeholder="Phone no" id="inputField03">
+                            </div>
+                            <div class="col-sm-6 col-12 mb-4">
+                                <select class="form-select" id="selectField01">
+                                    <option selected>Interested Services</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                            <div class="col-12 mb-4">
+                                <textarea class="form-control" placeholder="message" id="exampleFormControlTextarea1"
+                                    rows="3"></textarea>
+                            </div>
+                            <div class="col-12 text-end">
+                                <a href="./index.html" class="btn btn-gradient rounded-5" type="button">
+                                    <i class="ri-send-plane-line"></i>
+                                    <span>Send</span>
+                                </a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-lg-4  col-12">
+                    <div class="contact-info position-relative z-1 ms-lg-4 ms-0 mb-lg-0 mb-4 text-lg-start text-center">
+                        <div class="d-flex justify-content-lg-start justify-content-center align-items-center">
+                            <i class="ri-phone-fill fs-5"></i>
+                            <h5 class="m-0 ms-2">Contact Us</h5>
+                        </div>
+                        <p class="mb-0">01-000-999-333</p>
+                        <p class="mb-4"> hello@strivoagency.com</p>
+
+                        <div class="d-flex justify-content-lg-start justify-content-center align-items-center">
+                            <i class="ri-map-pin-2-line fs-5"></i>
+                            <h5 class="m-0 ms-2">Location</h5>
+                        </div>
+                        <address class="mb-4">
+                            21 Innovation Avenue, Suite 403
+                            Business Park, Sector 18B
+                            Mumbai, Maharashtra 400072,
+                            India
+                        </address>
+
+                        <div class="d-flex justify-content-lg-start justify-content-center align-items-center">
+                            <i class="ri-calendar-schedule-line fs-5"></i>
+                            <h5 class="m-0 ms-2">Hours</h5>
+                        </div>
+                        <p class="mb-0">Service available : 24/7</p>
+                        <p class="mb-4">Office timing : 8am-6pm M-F</p>
+
+                        <div
+                            class="footer-social-icons d-flex justify-content-lg-start justify-content-center align-items-center overflow-hidden">
+                            <a href="https://x.com/?lang=en" target="_blank" class="socialContainer twitter-icon m-2">
+                                <div class="icon">
+                                    <i class="ri-twitter-line fs-4"></i>
+                                </div>
+                            </a>
+                            <a href="https://in.linkedin.com/" target="_blank"
+                                class="socialContainer linkedin-icon m-2">
+                                <div class="icon">
+                                    <i class="ri-linkedin-fill fs-4"></i>
+                                </div>
+                            </a>
+                            <a href="https://www.youtube.com/" target="_blank" class="socialContainer youtube-icon m-2">
+                                <div class="icon">
+                                    <i class="ri-youtube-fill fs-4"></i>
+                                </div>
+                            </a>
+                            <a href="https://www.facebook.com/" target="_blank"
+                                class="socialContainer facebook-icon m-2">
+                                <div class="icon">
+                                    <i class="ri-facebook-circle-fill fs-4"></i>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQs Section-->
+    <section class="section-lg faqs-section overflow-hidden">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 mb-4">
+                    <div class="faqs-heading">
+                        <h1 class="display-5 text-primary text-center fw-medium">Frequently Asked Questions</h1>
+                        <p class="text-secondary text-center mb-0">Have questions about our services, process, or
+                            pricing?
+                        </p>
+                        <p class="text-secondary text-center">We’ve compiled a list of commonly asked questions to help
+                            you
+                            better understand how we support your business growth.</p>
+                    </div>
+                </div>
+                <div class="col-12 mb-5">
+                    <div class="faqs-filters d-flex flex-wrap justify-content-center align-items-center gap-4"
+                        id="faq-categories">
+                        <button class="btn btn-glow" data-category="general">General</button>
+                        <button class="btn btn-glow" data-category="process">Process</button>
+                        <button class="btn btn-glow" data-category="services">Services</button>
+                        <button class="btn btn-glow" data-category="pricing">Pricing</button>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="row align-items-center">
+                        <div class="col-lg-7 col-12">
+                            <div class="accordion accordion-flush" id="accordionFlushExample1"></div>
+                        </div>
+                        <div class="col-lg-4 offset-lg-1 col-12 d-lg-block d-none">
+                            <div class="faqs-img d-lg-block d-none">
+                                <img src="./images/faqs_img.jpg" alt="man_searching" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <section class="bg-primary text-light pt-5 pb-3 footer-section overflow-hidden">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 mb-3">
+                        <div class="d-sm-flex justify-content-sm-between align-items-sm-center">
+                            <h4 class="footer-brand-title">Strivo</h4>
+                            <div class="footer-subscribe-box">
+                                <p class="mb-0">See our new update</p>
+                                <form>
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" placeholder="Email here..."
+                                            aria-label="Recipient’s username" aria-describedby="basic-addon2">
+                                        <span class="input-group-text" id="basic-addon2"><i
+                                                class="ri-arrow-right-line input-icon"></i></span>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="col-lg-2 col-sm-6 col-12 footer-nav-group mb-3">
+                        <h5 class="footer-title mb-2">Agency</h5>
+                        <ul class="list-group list-unstyled lh-lg">
+                            <li class="item-list"><a href="#" class="footer-nav-link">Home</a></li>
+                            <li class="item-list"><a href="#" class="footer-nav-link">About Us</a></li>
+                            <li class="item-list"><a href="#" class="footer-nav-link">Service</a></li>
+                            <li class="item-list"><a href="#" class="footer-nav-link">Features</a></li>
+                            <li class="item-list"><a href="#" class="footer-nav-link">Pricing</a></li>
+                            <li class="item-list"><a href="#" class="footer-nav-link">Work</a></li>
+                            <li class="item-list"><a href="#" class="footer-nav-link">Contact Us</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-sm-6 col-12 footer-nav-group mb-3">
+                        <h5 class="footer-title mb-2">Service</h5>
+                        <ul class="list-group list-unstyled lh-lg">
+                            <li class="item-list"><a href="#" class="footer-nav-link">Growth Strategy</a></li>
+                            <li class="item-list"><a href="#" class="footer-nav-link">Market Research</a></li>
+                            <li class="item-list"><a href="#" class="footer-nav-link">Brand Positioning</a></li>
+                            <li class="item-list"><a href="#" class="footer-nav-link">Digital Marketing</a></li>
+                            <li class="item-list"><a href="#" class="footer-nav-link">Creative Business Solutions</a>
+                            </li>
+                            <li class="item-list"><a href="#" class="footer-nav-link">Financial Planning</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-sm-6 col-12 footer-nav-group mb-3">
+                        <h5 class="footer-title mb-2">Help</h5>
+                        <ul class="list-unstyled lh-lg">
+                            <li class="item-list"><a href="#" class="footer-nav-link">Support Center</a></li>
+                            <li class="item-list"><a href="#" class="footer-nav-link">Terms & Condition</a></li>
+                            <li class="item-list"><a href="#" class="footer-nav-link">Disclaimer</a></li>
+                            <li class="item-list"><a href="#" class="footer-nav-link">FAQ</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-4 col-sm-6 col-12">
+                        <div class="contact-info mb-3">
+                            <div class="d-flex align-items-center">
+                                <i class="ri-phone-fill fs-5"></i>
+                                <h5 class="m-0 ms-2">Contact Us</h5>
+                            </div>
+                            <small>01-000-999-333</small>
+                        </div>
+                        <div class="location-info mb-3">
+                            <div class="d-flex align-items-center">
+                                <i class="ri-map-pin-2-line fs-5"></i>
+                                <h5 class="m-0 ms-2">Location</h5>
+                            </div>
+                            <address>
+                                21 Innovation Avenue, Suite 403
+                                Business Park, Sector 18B
+                                Mumbai, Maharashtra 400072,
+                                India
+                            </address>
+                        </div>
+                        <div class="mail-info">
+                            <div class="d-flex align-items-center">
+                                <i class="ri-mail-send-line fs-5"></i>
+                                <h5 class="m-0 ms-2">Send Email</h5>
+                            </div>
+                            <p> hello@strivoagency.com</p>
+                        </div>
+                    </div>
+
+                    <div class="col-12">
+                        <div class="d-flex flex-wrap justify-content-center gap-2 store-buttons-wrapper">
+                            <a href="https://play.google.com/store/games?hl=en_IN"
+                                class="store-button d-inline-flex gap-2 align-items-center bg-white text-dark text-decoration-none p-2 rounded-2"
+                                target="_blank">
+                                <img src="./images/playstore.png" alt="Google Play">
+                                <div>
+                                    <small class="text-secondary">Install now</small>
+                                    <h5 class="fw-bold lh-1 mb-0">Google Play</h5>
+                                </div>
+                            </a>
+                            <a href="https://www.apple.com/in/app-store/"
+                                class="store-button d-inline-flex gap-2 align-items-center bg-white text-dark text-decoration-none p-2 rounded-2"
+                                target="_blank">
+                                <img src="./images/apple.png" alt="App Store">
+                                <div>
+                                    <small class="text-secondary">Install now</small>
+                                    <h5 class="fw-semibold lh-1 mb-0">App Store</h5>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="footer-tagline text-light text-center pt-4 pb-3">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="d-lg-flex justify-content-lg-between align-items-lg-center">
+                            <p class="Copyright-section mb-2">Copyright © 2023 All rights reserved | Block is made with
+                                by
+                                <span class="text-success fw-bold">strivo</span>
+                            </p>
+                            <div
+                                class="footer-social-icons d-flex justify-content-center align-items-center overflow-hidden">
+                                <a href="https://x.com/?lang=en" target="_blank"
+                                    class="socialContainer twitter-icon m-2">
+                                    <div class="icon">
+                                        <i class="ri-twitter-line fs-4"></i>
+                                    </div>
+                                </a>
+                                <a href="https://in.linkedin.com/" target="_blank"
+                                    class="socialContainer linkedin-icon m-2">
+                                    <div class="icon">
+                                        <i class="ri-linkedin-fill fs-4"></i>
+                                    </div>
+                                </a>
+                                <a href="https://www.youtube.com/" target="_blank"
+                                    class="socialContainer youtube-icon m-2">
+                                    <div class="icon">
+                                        <i class="ri-youtube-fill fs-4"></i>
+                                    </div>
+                                </a>
+                                <a href="https://www.facebook.com/" target="_blank"
+                                    class="socialContainer facebook-icon m-2">
+                                    <div class="icon">
+                                        <i class="ri-facebook-circle-fill fs-4"></i>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
+
+    <!-- team Information modal -->
+    <section>
+        <div class="modal fade team-info-modal" id="personinfoModal" tabindex="-1"
+            aria-labelledby="exampleModalLabel01">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content position-relative">
+                    <button type="button" class="btn-close  position-absolute top-0 end-0 mt-2 me-2 z-1"
+                        data-bs-dismiss="modal" aria-label="Close"></button>
+                    <div class="modal-body text-center"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Authentication Section -->
+    <div class="modal fade auth-section" id="exampleModalToggle1" aria-labelledby="exampleModalToggleLabel"
+        tabindex="-1" data-bs-backdrop="static">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content overflow-hidden">
+                <div class="modal-body auth-img text-center">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 col-12">
+                            <div class="d-lg-block d-none">
+                                <h1 class="fw-medium display-5 text-primary">Welcome to Strivo</h1>
+                                <p class="mb-4 text-dark">Join us and start growing your business today.</p>
+                                <small class="d-block mb-1">Already have an account?</small>
+                                <button class="btn btn-auth" data-bs-target="#exampleModalToggle2"
+                                    data-bs-toggle="modal">LogIn</button>
+                                <button type="button" class="btn-close top-0 end-0 position-absolute mt-4 me-4 z-2"
+                                    data-bs-dismiss="modal" aria-label="Close">
+                                </button>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-12">
+                            <div class="modal-form text-center">
+                                <div class="d-block d-lg-none">
+                                    <h1 class="fw-bold text-primary">Welcome to Strivo</h1>
+                                    <p class="text-dark">Join us and start growing your business today.</p>
+                                    <button type="button" class="btn-close top-0 end-0 position-absolute mt-4 me-4 z-2"
+                                        data-bs-dismiss="modal" aria-label="Close">
+                                    </button>
+                                </div>
+                                <div class="d-lg-block d-none">
+                                    <h1 class="fw-bold text-primary">SignUp</h1>
+                                </div>
+                                <form class="form-auth mt-4">
+                                    <div class="row">
+                                        <div class="col-12 mb-3">
+                                            <a href="#"
+                                                class="btn btn-light d-flex align-items-center justify-content-center rounded-5 w-100">
+                                                <img src="./images/google.png" alt="continue with google">
+                                                <span class="ms-2">Continue with google</span>
+                                            </a>
+                                        </div>
+                                        <div class="col-12 mb-4">
+                                            <a href="#"
+                                                class="btn btn-dark d-flex align-items-center justify-content-center rounded-5 w-100">
+                                                <img src="./images/mac.png" alt="continue with google">
+                                                <span class="ms-2">Continue with Apple</span>
+                                            </a>
+                                        </div>
+                                        <div class="col-12 mb-4">
+                                            <p class="text-light mb-0">Or</p>
+                                        </div>
+                                        <div class="col-12 mb-3">
+                                            <input type="text" class="form-control" placeholder="Company Name"
+                                                id="inputSignupName">
+                                        </div>
+                                        <div class="col-12 mb-3">
+                                            <input type="email" class="form-control" placeholder="Email Address"
+                                                id="inputSignupEmail">
+                                        </div>
+                                        <div class="col-12 mb-3">
+                                            <input type="password" id="inputSignupPassword" class="form-control"
+                                                aria-describedby="passwordHelpInline" placeholder="Password">
+                                        </div>
+                                        <div class="col-12 mb-4">
+                                            <div class="form-check text-start">
+                                                <input class="form-check-input" type="checkbox" id="check1">
+                                                <label class="form-check-label  text-secondary" for="check1">I agree to
+                                                    the Terms and Conditions an Privacy
+                                                    Policy.</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 mb-4">
+                                            <a href="./index.html" class="btn btn-primary rounded-5">SignUp</a>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="d-lg-none d-block">
+                                                <small class="text-center text-secondary">Already have an account?
+                                                    <a href="./login.html" class="fw-bold  text-success"
+                                                        data-bs-target="#exampleModalToggle2"
+                                                        data-bs-toggle="modal">LogIn</a>
+                                                </small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade auth-section" id="exampleModalToggle2" aria-labelledby="exampleModalToggleLabel2"
+        tabindex="-1" data-bs-backdrop="static">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content overflow-hidden">
+                <div class="modal-body auth-img text-center">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 col-12">
+                            <div class="modal-form text-center">
+                                <div class="d-block d-lg-none">
+                                    <h1 class="fw-bold text-primary">Welcome Back!</h1>
+                                    <p class="text-light">Log in to continue managing your business efficiently.</p>
+                                    <button type="button" class="btn-close top-0 end-0 position-absolute mt-4 me-4 z-2"
+                                        data-bs-dismiss="modal" aria-label="Close">
+                                    </button>
+                                </div>
+                                <div class="d-lg-block d-none">
+                                    <h1 class="fw-bold text-primary">Log In</h1>
+                                </div>
+                                <form class="form-auth mt-4">
+                                    <div class="row">
+                                        <div class="col-12 mb-3">
+                                            <input type="email" class="form-control" placeholder="Email Address"
+                                                id="inputLoginEmail">
+                                        </div>
+                                        <div class="col-12 mb-3">
+                                            <input type="password" id="inputLoginPassword" class="form-control"
+                                                aria-describedby="passwordHelpInline" placeholder="Password">
+                                        </div>
+                                        <div class="col-12 mb-3">
+                                            <div class="d-flex flex-wrap justify-content-between align-items-center">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" id="check2">
+                                                    <label class="form-check-label" for="check2">Remember
+                                                        me</label>
+                                                </div>
+                                                <a href="#" class="text-primary">Forget password</a>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 mb-4">
+                                            <a href="./index.html" class="btn btn-primary rounded-5">LogIn</a>
+                                        </div>
+                                        <div class="col-12 mb-4">
+                                            <p class="text-dark mb-0">Or</p>
+                                        </div>
+                                        <div class="col-12 mb-3">
+                                            <a href="#"
+                                                class="btn btn-light d-flex align-items-center justify-content-center rounded-5 w-100">
+                                                <img src="./images/google.png" alt="continue with google">
+                                                <span class="ms-2">Continue with google</span>
+                                            </a>
+                                        </div>
+                                        <div class="col-12 mb-4">
+                                            <a href="#"
+                                                class="btn btn-dark d-flex align-items-center justify-content-center rounded-5 w-100">
+                                                <img src="./images/mac.png" alt="continue with google">
+                                                <span class="ms-2">Continue with Apple</span>
+                                            </a>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="d-lg-none d-block">
+                                                <small class="text-center text-secondary">Don't have an account?
+                                                    <a href="./login.html" class="fw-bold  text-success"
+                                                        data-bs-target="#exampleModalToggle1"
+                                                        data-bs-toggle="modal">SignUp</a>
+                                                </small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-12">
+                            <div class="d-lg-block d-none">
+                                <h1 class="fw-medium display-5 text-light">Welcome Back!</h1>
+                                <p class="mb-4 text-light">Log in to continue managing your business efficiently.</p>
+                                <small class="mb-1 text-light d-block">Don't have an account?</small>
+                                <button class="btn btn-auth" data-bs-target="#exampleModalToggle1"
+                                    data-bs-toggle="modal">SignUp</button>
+                                <button type="button"
+                                    class="btn-close auth-close-btn top-0 end-0 position-absolute mt-4 me-4 z-2"
+                                    data-bs-dismiss="modal" aria-label="Close">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.7/gsap.min.js"
+        integrity="sha512-f6bQMg6nkSRw/xfHw5BCbISe/dJjXrVGfz9BSDwhZtiErHwk7ifbmBEtF9vFW8UNIQPhV2uEFVyI/UHob9r7Cw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"
+        integrity="sha512-P2IDYZfqSwjcSjX0BKeNhwRUH8zRPGlgcWl5n6gBLzdi4Y5/0O4zaXrtO4K9TZK6Hn1BenYpKowuCavNandERg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/CustomBounce.min.js"
+        integrity="sha512-PJRGw5+wyjY5yrbQnhzzo0xE9NSx71YD6LPdm9TqjMhR2+ak4Id5exTqt0dcjkiz7LeReq6O4Wkyub12BJ8h4w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/CustomEase.min.js"
+        integrity="sha512-CuvnoNrIlhT8htAhjvvnA7EB4sUHfRvfFsjq+JvAKPotN8LlelK/lQgX+u9Gxxsl0+lXmEWRMLPv/oKT1W3dPw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
