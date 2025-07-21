@@ -6,6 +6,12 @@
     &.navbar2{
         background-color: rgba($light, 0.7);
     }
+    &.navbar3{
+         background-color: transparent;
+    }
+    &.navbar4{
+         background-color: $light;
+    }
     &.nav-scroll{
         position: sticky;
         top: 0; 

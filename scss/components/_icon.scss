@@ -80,16 +80,23 @@
 
 .hero-section-primary2{
     .arrow-icon{
-        left: 25%;
+        left: 300px;
         @media (min-width:  1200px) and (max-width:1399.98px) { 
-            left:20%;
+            left:250px;
          }
          @media (min-width:  992px) and (max-width: 1199.98px) {
-             left:15%;
+            left:150px
          }
          @media (min-width:768px) and (max-width:  991.98px) {
-            left:0%;
+            left:40px;
          }
+    }
+}
+
+.hero-section-primary4{
+    .arrow-icon2{
+      left:200px;
+
     }
 }
 

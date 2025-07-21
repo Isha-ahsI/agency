@@ -27,7 +27,66 @@
 }
 
 .hero-section-primary3 {
-    background-image: url('../../images/magicpattern-gradient-1752815654283.jpeg');
+    background-image: url('../../images/hero-bg03.png');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    padding-top: 100px;
+}
+
+.hero-section-primary4 {
+    position: relative;
+    background-image: url('../../images/2148816827.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    padding-top: 100px;
+    z-index: 0;
+
+    .overlay {
+        @media (min-width: 992px) {
+            position: absolute;
+            inset: 0;
+            background: $primary;
+            z-index: 1;
+            clip-path: polygon(0 0, 40% 0, 60% 100%, 0% 100%);
+
+        }
+
+        @media (min-width: 0px) and (max-width: 991.98px) {
+            position: absolute;
+            inset: 0;
+            background: rgba($dark, 0.8);
+            z-index: 1;
+
+        }
+    }
+
+    .user-avatars {
+        .user-image {
+            object-fit: cover;
+            width: 50px;
+            height: 50px;
+            border-radius: $border-radius-xxl;
+            overflow: hidden;
+            margin-left: -10px;
+        }
+
+        .user-image:first-child {
+            margin-left: 0;
+        }
+
+        .more {
+            background-color: $light;
+            color: $success;
+        }
+    }
+
+}
+
+.hero-section-primary5 {
+    background-image: url('../../images/bg-shape.png');
+    background-color: $primary;
     background-size: cover;
     background-position: center;
     width: 100%;
