@@ -210,14 +210,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 //gsap
-gsap.registerPlugin(ScrollTrigger, CustomEase, CustomBounce);
-CustomBounce.create("myBounce", {
-  strength: 0.6,
-  squash: 3,
-  squashID: "myBounce-squash",
-});
+gsap.registerPlugin(ScrollTrigger);
 
-//navbar/hero section gsap
+//navbar/hero section1 gsap
 var tl = gsap.timeline()
 
 tl.from(".navbar .nav-logo", {
@@ -259,33 +254,27 @@ tl.from(".hero-section-primary .hero-img", {
 }, "0.7");
 
 // service gsap
-var tl2 = gsap.timeline({
+var tl2 = gsap.timeline()
+tl2.from(".service-section .service-heading", {
+  scale: 0,
+  duration: 2,
   scrollTrigger: {
-    trigger: ".service-section",
+    trigger: ".service-section  .service-heading",
     scroller: "body",
     markers: false,
     end: "top 30%",
     start: 'top 70%',
   }
-})
-tl2.from(".service-section .service-heading", {
-  scale: 0,
-  duration: 2,
-});
-
-tl2.from(".service-section .card.service-card", {
-  opacity: 0,
-  duration: 2,
 });
 
 //about us gsap
 var tl3 = gsap.timeline({
   scrollTrigger: {
-    trigger: ".aboutus-section",
+    trigger: ".aboutus-section .aboutus-content",
     scroller: "body",
     markers: false,
-    start: "top 0%",
-    end: "top 30%",
+    start: "top 50%",
+    end: "top 80%",
 
   }
 });
@@ -333,7 +322,6 @@ var tl5 = gsap.timeline({
     markers: false,
     start: "top 80%",
     end: "top 80%",
-    toggleActions: "play none none reverse"
   }
 });
 
@@ -356,34 +344,13 @@ tl5.from(".footer-section .footer-title,.footer-section .footer-nav-group .foote
   opacity: 0,
   delay: 0.3,
   duration: 1,
-  stagger: 0.1
+  stagger: 0.1,
 });
 
-tl5.from(".store-buttons-wrapper .store-button", {
-  opacity: 0,
-  delay: 0.1,
-  duration: 1,
-  stagger: 0.1
-});
-
-tl5.from(".footer-tagline .Copyright-section", {
+tl5.from(".footer-tagline .Copyright-section, .footer-tagline .footer-social-icons ", {
   y: 30,
   opacity: 0,
-  duration: 1
-});
-
-tl5.from(".footer-tagline .footer-social-icons .social-media-icon", {
-  duration: 2,
-  y: -100,
-  ease: "myBounce"
-});
-
-tl5.to(".footer-tagline .footer-social-icons .social-media-icon", {
-  duration: 2,
-  scaleX: 1.4,
-  scaleY: 0.6,
-  transformOrigin: "center bottom",
-  ease: "myBounce-squash",
+  duration: 1,
 });
 
 //pricing gsap
@@ -411,6 +378,30 @@ tl6.from(".pricing-section .price-card", {
     end: "top 80%",
   }
 });
+
+//team gsap
+var tl10 = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".team-section",
+    scroller: "body",
+    markers: false,
+    start: "top 50%",
+    end: "top 80%",
+  }
+});
+
+tl10.from(".team-section .team-content", {
+  opacity: 0,
+  duration: 1,
+})
+
+tl10.from(".team-section .user-img-wrapper", {
+  scale: 0,
+  opacity: 0,
+  duration: 1,
+}, 0.5)
+
+
 
 //contactus gsap
 var tl8 = gsap.timeline({
@@ -475,7 +466,7 @@ var tl10 = gsap.timeline({
   scrollTrigger: {
     trigger: ".features-section .features-heading",
     scroller: "body",
-    markers: true,
+    markers: false,
     start: "top 50%",
     end: "top 80%",
   }
@@ -486,21 +477,60 @@ tl10.from(".features-section .features-heading", {
   duration: 1,
 });
 
-tl10.from(".features-section .features-heading-left",{
+tl10.from(".features-section .features-heading-left", {
   x: -100,
   opacity: 0,
   duration: 2,
 });
 
-tl10.from(".features-section .features-heading-right",{
+tl10.from(".features-section .features-heading-right", {
   x: 100,
   opacity: 0,
   duration: 2,
-},"2");
+}, "2");
 
-tl10.from(".features-section .features-card",{
-  scale:0,
+tl10.from(".features-section .features-card", {
+  scale: 0,
   opacity: 0,
   duration: 2,
 });
+
+var tl11 = gsap.timeline()
+tl11.from(".hero-section-primary2 .hero-content", {
+  scale: 0,
+  opacity: 0,
+  delay: 2,
+  duration: 2,
+});
+
+var tl12 = gsap.timeline()
+tl12.from(".hero-section-primary3 .hero-content", {
+  x: 100,
+  opacity: 0,
+  delay: 2,
+  duration: 1,
+})
+
+tl12.from(".hero-section-primary3 .hero-img", {
+  x: -100,
+  opacity: 0,
+  delay: 2,
+  duration: 1,
+}, 0)
+
+var tl13 = gsap.timeline()
+tl13.from(".hero-section-primary4 .overlay", {
+  x: -200,
+  opacity: 0,
+  delay: 2,
+  duration: 1,
+})
+tl13.from(".hero-section-primary4 .hero-content", {
+  opacity: 0,
+  delay: 2,
+  duration: 1,
+}, 1)
+
+
+
 
