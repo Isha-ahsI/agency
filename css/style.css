@@ -678,15 +678,6 @@ h1, h2, h3, h4, h5, h6 {
   color: #298f9c;
 }
 
-.hero-section-primary5 {
-  background-image: url("../../images/bg-shape.png");
-  background-color: #023b51;
-  background-size: cover;
-  background-position: center;
-  width: 100%;
-  padding-top: 100px;
-}
-
 .aboutus-section.wave-bg-1 {
   background-image: url("../../images/about_bg.svg");
   width: 100%;
